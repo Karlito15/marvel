@@ -1,0 +1,149 @@
+{
+	"year": 2022,
+	"templates": [
+		{
+			"name": "crysa",
+			"title": "2022 - Crysa - IT Solutions & Technology Template",
+			"to_scrape": false,
+			"home": "https://themeforest.net/item/crysa-it-solutions-technology-websites-joomla-4-template/39031504",
+			"preview": "https://preview.themeforest.net/item/crysa-it-solutions-technology-websites-joomla-4-template/full_screen_preview/39031504",
+			"basehref": "https://crysa.codelayers.net/crysa/",
+			"replace": ["", ""],
+			"patterns": [
+				"{css/}", 
+				"{js/}", 
+				"{img/}"
+			],
+			"replacements": [
+				"XXX/css/",
+				"XXX/js/",
+				"XXX/img/"
+			],
+			"pages": {
+				"about-style-1"                        : "https://crysa.codelayers.net/crysa/pages/about-us/about-style-1",
+				"about-style-2"                        : "https://crysa.codelayers.net/crysa/pages/about-us/about-style-2",
+				"about-style-3"                        : "https://crysa.codelayers.net/crysa/pages/about-us/about-style-3",
+				"blog-grid-three-column"               : "https://crysa.codelayers.net/crysa/blog/blog-grid-three-column",
+				"blog-grid-two-column"                 : "https://crysa.codelayers.net/crysa/blog/blog-grid-two-column",
+				"blog-standard"                        : "https://crysa.codelayers.net/crysa/blog/blog-standard",
+				"blog-standard-2"                      : "https://crysa.codelayers.net/crysa/index.php/blog/blog-standard/announcing-if-attachment-resolution-sentiments",
+				"blog-with-sidebar"                    : "https://crysa.codelayers.net/crysa/blog/blog-with-sidebar",
+				"blog-with-sidebar-2"                  : "https://crysa.codelayers.net/crysa/index.php/blog/blog-with-sidebar/announcing-if-attachment-resolution-sentiments",
+				"contact"                              : "https://crysa.codelayers.net/crysa/contact",
+				"contact-us"                           : "https://crysa.codelayers.net/crysa/pages/contact-us",
+				"error-page"                           : "https://crysa.codelayers.net/crysa/pages/error-page",
+				"home-onepage-version-one"             : "https://crysa.codelayers.net/crysa/home/onepage-version-one",
+				"home-onepage-version-three"           : "https://crysa.codelayers.net/crysa/home/onepage-version-three",
+				"home-onepage-version-two"             : "https://crysa.codelayers.net/crysa/home/onepage-version-two",
+				"home-version-one"                     : "https://crysa.codelayers.net/crysa/home/home-version-one",
+				"home-version-three"                   : "https://crysa.codelayers.net/crysa/home/home-version-three",
+				"home-version-two"                     : "https://crysa.codelayers.net/crysa/home/home-version-two",
+				"projects-four-column"                 : "https://crysa.codelayers.net/crysa/projects/projects-four-column",
+				"projects-four-column/1-it-management" : "https://crysa.codelayers.net/crysa/projects/projects-four-column/1-it-management",
+				"projects-three-column"                : "https://crysa.codelayers.net/crysa/projects/projects-three-column",
+				"projects-two-column"                  : "https://crysa.codelayers.net/crysa/projects/projects-two-column",
+				"services-details"                     : "https://crysa.codelayers.net/crysa/services/services-details",
+				"services-version-one"                 : "https://crysa.codelayers.net/crysa/services/services-version-one",
+				"services-version-two"                 : "https://crysa.codelayers.net/crysa/services/services-version-two",
+				"team"                                 : "https://crysa.codelayers.net/crysa/pages/team",
+				"team-single"                          : "https://crysa.codelayers.net/crysa/pages/team-single",
+				"why-choose-us"                        : "https://crysa.codelayers.net/crysa/pages/why-choose-us"
+			}
+		},
+		{
+			"name": "hagen",
+			"title": "2022 - Hagen - vCard & Portfolio Template",
+			"to_scrape": false,
+			"home": "https://themeforest.net/item/hagen-vcard-portfolio-template/36321985",
+			"preview": "https://preview.themeforest.net/item/hagen-vcard-portfolio-template/full_screen_preview/36321985",
+			"basehref": "https://html.tavonline.co/hagen/classic-version/",
+			"replace": ["", "assets/"],
+			"patterns": [
+				"{css/}", 
+				"{js/}", 
+				"{img/}"
+			],
+			"replacements": [
+				"XXX/css/",
+				"XXX/js/",
+				"XXX/img/"
+			],
+			"pages": {
+				"blog"                    : "https://html.tavonline.co/hagen/classic-version/blog.html",
+				"contact"                 : "https://html.tavonline.co/hagen/classic-version/contact.html",
+				"index"                   : "https://html.tavonline.co/hagen/classic-version/index.html",
+				"index-dark"              : "https://html.tavonline.co/hagen/classic-version/dark-wrapper.html",
+				"onepage"                 : "https://html.tavonline.co/hagen/classic-version/onepage.html",
+				"onepage-dark"            : "https://html.tavonline.co/hagen/classic-version/onepage-dark-wrapper.html",
+				"portfolio"               : "https://html.tavonline.co/hagen/classic-version/portfolio.html",
+				"resume"                  : "https://html.tavonline.co/hagen/classic-version/resume.html",
+				"single-blog"             : "https://html.tavonline.co/hagen/classic-version/single-blog.html",
+				"without-wrapper-index"   : "https://html.tavonline.co/hagen/without-wrapper/index.html",
+				"without-wrapper-onepage" : "https://html.tavonline.co/hagen/without-wrapper/onepage.html",
+				"work-1"                  : "https://html.tavonline.co/hagen/classic-version/work-1.html",
+				"work-2"                  : "https://html.tavonline.co/hagen/classic-version/work-2.html",
+				"work-3"                  : "https://html.tavonline.co/hagen/classic-version/work-3.html",
+				"work-4"                  : "https://html.tavonline.co/hagen/classic-version/work-4.html",
+				"work-5"                  : "https://html.tavonline.co/hagen/classic-version/work-5.html",
+				"work-6"                  : "https://html.tavonline.co/hagen/classic-version/work-6.html",
+				"work-7"                  : "https://html.tavonline.co/hagen/classic-version/work-7.html",
+				"work-8"                  : "https://html.tavonline.co/hagen/classic-version/work-8.html",
+				"work-9"                  : "https://html.tavonline.co/hagen/classic-version/work-9.html"
+			}
+		},
+		{
+			"name": "katen",
+			"title": "2022 - Katen - Blog & Magazine HubSpot Theme",
+			"to_scrape": false,
+			"home": "https://themeforest.net/item/katen-minimal-blog-magazine-html-template/31727148",
+			"preview": "https://preview.themeforest.net/item/katen-minimal-blog-magazine-html-template/full_screen_preview/31727148",
+			"basehref": "https://themeger.shop/html/katen/html/",
+			"replace": ["assets/", "assets/"],
+			"patterns": [
+				"{css/}", 
+				"{js/}", 
+				"{img/}"
+			],
+			"replacements": [
+				"XXX/css/",
+				"XXX/js/",
+				"XXX/img/"
+			],
+			"pages": {
+				"about"           : "https://themeger.shop/html/katen/html/about.html",
+				"blog-single"     : "https://themeger.shop/html/katen/html/blog-single.html",
+				"blog-single-alt" : "https://themeger.shop/html/katen/html/blog-single-alt.html",
+				"category"        : "https://themeger.shop/html/katen/html/category.html",
+				"classic"         : "https://themeger.shop/html/katen/html/classic.html",
+				"contact"         : "https://themeger.shop/html/katen/html/contact.html",
+				"index"           : "https://themeger.shop/html/katen/html/index.html",
+				"minimal"         : "https://themeger.shop/html/katen/html/minimal.html",
+				"personal"        : "https://themeger.shop/html/katen/html/personal.html",
+				"personal-alt"    : "https://themeger.shop/html/katen/html/personal-alt.html"
+			}
+		},
+		{
+			"name": "tokyo",
+			"title": "2022 - Tokyo - Tailwind CSS Personal Portfolio Template",
+			"to_scrape": false,
+			"home": "https://themeforest.net/item/tokyo-tailwind-css-personal-portfolio-template/42464788",
+			"preview": "https://preview.themeforest.net/item/tokyo-tailwind-css-personal-portfolio-template/full_screen_preview/42464788",
+			"basehref": "https://marketifythemes.net/tailwind/tokyo/",
+			"replace": ["assets/", "assets/"],
+			"patterns": [
+				"{css/}", 
+				"{js/}", 
+				"{img/}"
+			],
+			"replacements": [
+				"XXX/css/",
+				"XXX/js/",
+				"XXX/img/"
+			],
+			"pages": {
+				"index-light" : "https://marketifythemes.net/tailwind/tokyo/index.html",
+				"index-dark"  : "https://marketifythemes.net/tailwind/tokyo/index-dark.html"
+			}
+		}
+	]
+}

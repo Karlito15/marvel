@@ -1,0 +1,22 @@
+sendmail:
+  direction: html
+  section: Sendmail
+  icon: '<i class="fa-solid fa-envelope fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Config
+    id: config
+    cmd: null
+    help: null
+    prism: 'language-rest'
+    free: |
+      1/ configurer Dossier sendmail > sendmail.ini
+
+      2/ configurer php.ini :
+      chercher [mail function] et tout mettre en commentaire
+
+      3/ Ajouter Chemain vers Sendmail
+      sendmail_path = "\"D:\Program\Sendmail\sendmail.ini" -t -i"
+
+      4/ Activer Module Apache : ssl_module
+
+      5/ Activer Php Extension : php_openssl

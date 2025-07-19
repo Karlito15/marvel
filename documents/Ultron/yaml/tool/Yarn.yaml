@@ -1,0 +1,147 @@
+webpack_encore:
+  direction: horizontal
+  section: "Symfony Webpack Encore"
+  icon: '<i class="fab fa- fa-xlsymfony mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: "Launch Server"
+    id: yarn_server
+    cmd: yarn encore dev
+    help: null
+  - content: "Launch Server"
+    id: yarn_server_watch
+    cmd: yarn encore dev --watch
+    help: null
+
+yarn_add:
+  direction: horizontal
+  section: Add a Package
+  icon: '<i class="fab fa-yarn fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: "Add"
+    id: yarn_add
+    cmd: yarn add
+    help: null
+  - content: "&nbsp;&nbsp;&nbsp;&nbsp;--Package"
+    id: yarn_add_package
+    cmd: yarn add [package]
+    help: null
+  - content: "&nbsp;&nbsp;&nbsp;&nbsp;--Version"
+    id: yarn_add_package_version
+    cmd: yarn add [package]@[version]
+    help: null
+  - content: "&nbsp;&nbsp;&nbsp;&nbsp;--Tag"
+    id: yarn_add_package_tag
+    cmd: yarn add [package]@[tag]
+    help: null
+
+yarn_upgrage:
+  direction: horizontal
+  section: Upgrade a Package
+  icon: '<i class="fab fa-yarn fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: "Upgrade"
+    id: yarn_up
+    cmd: yarn upgrade
+    help: null
+  - content: "&nbsp;&nbsp;&nbsp;&nbsp;--Package"
+    id: yarn_up_package
+    cmd: yarn up [package]
+    help: null
+  - content: "&nbsp;&nbsp;&nbsp;&nbsp;--Version"
+    id: yarn_up_package_version
+    cmd: yarn up [package]@[version]
+    help: null
+  - content: "&nbsp;&nbsp;&nbsp;&nbsp;--Tag"
+    id: yarn_up_package_tag
+    cmd: yarn up [package]@[tag]
+    help: null
+
+yarn_remove:
+  direction: horizontal
+  section: Remove a Package
+  icon: '<i class="fab fa-yarn fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: "Remove"
+    id: yarn_remove
+    cmd: yarn remove
+    help: null
+  - content: "&nbsp;&nbsp;&nbsp;&nbsp;--Package"
+    id: yarn_remove_package
+    cmd: yarn remove [package]
+    help: null
+
+yarn_usage:
+  direction: horizontal
+  section: Usage
+  icon: '<i class="fab fa-yarn fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: "Check Packages"
+    id: yarn_check
+    cmd: yarn check
+    help: null
+  - content: "Checks for outdated package dependencies"
+    id: yarn_outdated
+    cmd: yarn outdated
+    help: null
+  - content: "Runs a defined package script"
+    id: yarn_run
+    cmd: yarn run
+    help: null
+  - content: "Config"
+    id: yarn_config
+    cmd: yarn config
+    help: null
+  - content: "&nbsp;&nbsp;&nbsp;&nbsp;--list"
+    id: yarn_config_list
+    cmd: yarn config list
+    help: null
+  - content: "&nbsp;&nbsp;&nbsp;&nbsp;--get"
+    id: yarn_config_get
+    cmd: yarn config get [value]
+    help: null
+  - content: "&nbsp;&nbsp;&nbsp;&nbsp;--set"
+    id: yarn_config_set
+    cmd: yarn config set [value]
+    help: null
+  - content: "&nbsp;&nbsp;&nbsp;&nbsp;--delete"
+    id: yarn_config_delete
+    cmd: yarn config delete [value]
+    help: null
+  - content: "&nbsp;&nbsp;&nbsp;&nbsp;--current"
+    id: yarn_config_current
+    cmd: yarn config current
+    help: null
+  - content: "Lists licenses for installed packages"
+    id: yarn_licenses
+    cmd: yarn licenses list
+    help: null
+
+yarn:
+  direction: horizontal
+  section: Yarn
+  icon: '<i class="fab fa-yarn fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: "Install"
+    id: yarn_install
+    cmd: npm install -g yarn
+    help: null
+  - content: "Upgrage Version"
+    id: yarn_version_latest
+    cmd: yarn set version latest
+    help: null
+  - content: "Help"
+    id: yarn_help
+    cmd: yarn --help
+    help: null
+  - content: "Cache Clean"
+    id: yarn_cache_clean
+    cmd: yarn cache clean
+    help: null
+  - content: "Version Number"
+    id: yarn_version
+    cmd: yarn version
+    help: null
+  - content: "Version Number for JS Tools"
+    id: yarn_versions
+    cmd: yarn versions
+    help: null

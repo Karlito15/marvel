@@ -1,0 +1,65 @@
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-01'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-02'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-03'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-04'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-05'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-06'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-07'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-08'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-09'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-10'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-11'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-12'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-13'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-14'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-15'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-16'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-17'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-18'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-19'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-20'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-21'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-22'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-23'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-24'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-25'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-26'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-27'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-28'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-29'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-30'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-31'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-32'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-33'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-34'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-35'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-36'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-37'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-38'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\block-39'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\footer'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\header'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\js'); ?>
+<?php echo $this->include('Thanos\Views\templates\2016\freebird\blocks\meta'); ?>
+<?php echo site_url('template/2016/freebird/XXXXXX'); ?>
+<?php echo site_url('templates/2016/freebird/images/XXXXXX'); ?>
+<?php echo link_tag(['href' => 'templates/2016/freebird/css/XXXXXX', 'rel' => 'stylesheet', 'type' => 'text/css']); ?>
+<?php echo script_tag(['src' => 'templates/2016/freebird/js/XXXXXX', 'defer' => null]); ?>
+<!DOCTYPE html>
+<html lang="fr">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+https://cdnjs.com/libraries/font-awesome/4.5.0
+https://cdnjs.com/libraries/respond.js
+https://cdnjs.com/libraries/html5shiv
+font-family: 'open sans', arial, sans-serif !important;
+
+<?php echo anchor('news/local/123', 'XXXXXX', ['title' => 'XXXXXX']); ?>
+<?php echo site_url(); ?>
+<?php echo base_url(); ?>
+<?php dump( current_url() ); ?>
+<?php dump( previous_url() ); ?>
+<?php dump( uri_string() ); ?>
+<?php dump( url_to('Sport::elegant', 'index.html') ); ?>

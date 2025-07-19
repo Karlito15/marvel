@@ -1,0 +1,71 @@
+<?php
+
+namespace Karlito\ThirdParty\Bezhanov;
+
+use Faker\Generator;
+use Fatalis\ThirdParty\Bezhanov;
+use Fatalis\ThirdParty\Fakr;
+
+class Demographic extends Bezhanov
+{
+    const UNIT_TYPE_METRIC   = 'metric';
+    const UNIT_TYPE_IMPERIAL = 'imperial';
+
+    /** @return string */
+    public static function race(): string
+    {
+        $faker = self::provider();
+
+        return $faker->race();
+    }
+
+    /** @return string */
+    public static function educationalAttainment(): string
+    {
+        $faker = self::provider();
+
+        return $faker->educationalAttainment();
+    }
+
+    /** @return string */
+    public static function demonym(): string
+    {
+        $faker = self::provider();
+
+        return $faker->demonym();
+    }
+
+    /** @return string */
+    public static function maritalStatus(): string
+    {
+        $faker = self::provider();
+
+        return $faker->maritalStatus();
+    }
+
+    /** @return string */
+    public static function gender(): string
+    {
+        $faker = self::provider();
+
+        return $faker->gender();
+    }
+
+    /** @return string */
+    public static function height(string $unit = self::UNIT_TYPE_METRIC): string
+    {
+        $faker = self::provider();
+
+        return $faker->height($unit);
+    }
+
+    /** @return \Bezhanov\Faker\Provider\Demographic|Generator */
+    private static function provider()
+    {
+        $faker = Faker::init();
+        $faker->addProvider(new \Bezhanov\Faker\Provider\Demographic($faker));
+
+        /** @var \Bezhanov\Faker\Provider\Demographic $faker */
+        return $faker;
+    }
+}

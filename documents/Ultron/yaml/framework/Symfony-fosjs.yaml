@@ -1,0 +1,40 @@
+tricks:
+  direction: null
+  section: FOS JS Routing Bundle
+  icon: null
+  items:
+    - content: FOS Js Routing
+      id: null
+      cmd: null
+      help: null
+      prism: 'language-php'
+      free: |
+        1/ composer require friendsofsymfony/jsrouting-bundle
+
+        2/ php bin/console assets:install --symlink public
+
+        3/
+        SANS Webpack :
+        <script src="{{ asset('bundles/fosjsrouting/js/router.min.js') }}"></script>
+        <script src="{{ path('fos_js_routing_js', { callback: 'fos.Router.setData' }) }}"></script>
+
+        AVEC Webpack :
+        php bin/console fos:js-routing:dump --format=json --target=public/js/fos_js_routes.json
+
+        4/ Add in JS File
+        const routes = require('../../public/js/fos_js_routes.json');
+        import Routing from '../../vendor/friendsofsymfony/jsrouting-bundle/Resources/public/js/router.min.js';
+
+        Routing.setRoutingData(routes);
+        # Routing.generate('rep_log_list');
+
+        5/ For Generate URL
+        Routing.generate('route_name', /* your params */, true)
+
+        6/ Add in Route config
+        options = { "expose" = true }
+        /* *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** */
+        ES 6
+        import {Module} from 'my-package';
+        ex :
+        import FilterControl from '/node_modules/bootstrap-table/dist/extensions/filter-control/bootstrap-table-filter-control.min.js';

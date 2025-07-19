@@ -1,0 +1,37 @@
+phpcs:
+  direction: html
+  section: PHP Code Sniffer
+  icon: '<i class="fab fa-php fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: PHP CodeSniffer
+    id: phpcs
+    cmd: null
+    help: null
+    prism: 'language-html'
+    free: |
+      Install :
+      1/
+      composer global require "squizlabs/php_codesniffer=*"
+
+      (See Doc : https://github.com/squizlabs/PHP_CodeSniffer/wiki)
+
+      CMD :
+      run : phpcs /path/to/code/myfile.php
+      run : phpcs /path/to/folder
+      run : phpcbf /path/to/folder(Beautiful & Fixer)
+      run : phpcs -i (Show a list of installed coding standards)
+
+      Options :
+       --report=summary
+       --extensions=php
+       --ignore=*/tests/*,*/data/* /path/to/code
+       --report=source /path/to/code
+       --report=code /path/to/code
+       --report=info /path/to/code
+       --report=csv /path/to/code
+       --report=csv --report-file=/path/to/file.csv /path/to/code
+       -d memory_limit=32M
+
+      Config File :
+      options : https://github.com/squizlabs/PHP_CodeSniffer/wiki/Configuration-Options
+      model :   https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xml.dist

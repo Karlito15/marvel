@@ -1,0 +1,51 @@
+constant:
+  direction: vertical
+  section: Core Constants
+  icon: '<i class="fab fa-free-code-camp fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: The path to the app directory.
+    id: APPPATH
+    cmd: APPPATH
+    help: null
+  - content: The path to the project root directory. Just above APPPATH.
+    id: ROOTPATH
+    cmd: ROOTPATH
+    help: null
+  - content: The path to the system directory.
+    id: SYSTEMPATH
+    cmd: SYSTEMPATH
+    help: null
+  - content: The path to the directory that holds the front controller.
+    id: FCPATH
+    cmd: FCPATH
+    help: null
+  - content: The path to the writable directory.
+    id: WRITEPATH
+    cmd: WRITEPATH
+    help: null
+
+ci:
+  direction: vertical
+  section: Installation
+  icon: '<i class="fab fa-free-code-camp fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: User Guide
+    id: user_guide
+    cmd: 'https://codeigniter.com/user_guide/index.html'
+    help: null
+  - content: Configuration App
+    id: app
+    cmd: 'https://codeigniter.com/user_guide/general/configuration.html'
+    help: 'Change the values in Config/App.php'
+  - content: Configuration System Directory
+    id: path
+    cmd: 'https://codeigniter.com/user_guide/general/managing_apps.html'
+    help: 'Change the value $systemDirectory in Config/Paths.php'
+  - content: Configuration Logging
+    id: log
+    cmd: 'https://codeigniter.com/user_guide/general/logging.html#configuration'
+    help: 'Change the values in Config/Logger.php'
+  - content: Configuration Env
+    id: .env
+    cmd: 'https://codeigniter.com/user_guide/general/configuration.html#environment-variables'
+    help: 'Edit .env for Local Dev'

@@ -1,0 +1,64 @@
+sports:
+  -
+    name: "club-soccer"
+    title: ""
+    uri: "/template/sport/"
+    thumbnail: "thumbnails/sports/club-soccer.jpg"
+    tags: ['sport', 'soccer']
+    enabled: true
+    one_page: false
+    multiple: false
+  -
+    name: "football"
+    title: ""
+    uri: "/template/sport/"
+    thumbnail: "thumbnails/sports/football.jpg"
+    tags: ['sport', 'soccer']
+    enabled: true
+    one_page: false
+    multiple: false
+  -
+    name: "football-club-web"
+    title: ""
+    uri: "/template/sport/"
+    thumbnail: null # "thumbnails/sports/football-club-web.jpg"
+    tags: ['sport', 'soccer']
+    enabled: true
+    one_page: false
+    multiple: false
+  -
+    name: "forward"
+    title: ""
+    uri: "/template/sport/"
+    thumbnail: "thumbnails/sports/forward.jpg"
+    tags: ['sport']
+    enabled: true
+    one_page: false
+    multiple: false
+  -
+    name: "gaiety"
+    title: ""
+    uri: "/template/sport/"
+    thumbnail: "thumbnails/sports/gaiety.jpg"
+    tags: ['sport']
+    enabled: true
+    one_page: true
+    multiple: false
+  -
+    name: "live-info"
+    title: ""
+    uri: "/template/sport/"
+    thumbnail: "thumbnails/sports/live-info.jpg"
+    tags: ['sport']
+    enabled: true
+    one_page: false
+    multiple: false
+  -
+    name: "rangers"
+    title: ""
+    uri: "/template/sport/"
+    thumbnail: "thumbnails/sports/rangers.jpg"
+    tags: ['resume']
+    enabled: true
+    one_page: false
+    multiple: false

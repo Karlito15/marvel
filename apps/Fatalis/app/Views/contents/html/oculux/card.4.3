@@ -1,0 +1,72 @@
+<?php
+/**
+ * @var CodeIgniter\View\View $view
+ * @var string $title
+ * @var array $entries
+ * @var array $breadcrumb
+ */
+$this->extend('Karlito\Views\bases\html\full');
+
+//echo $view->setVar('one', $breadcrumb[0])->setVar('two', $breadcrumb[1])->render('Karlito\Views\partials\html\breadcrumb.php');
+
+/** Container */
+$this->section('container');
+?>
+
+<div class="row clearfix">
+	<div class="col-xl-12">
+		<div class="card">
+			<div class="card-body">
+				<h3 class="mb-4 font600"><?php //echo $cardTitle; ?></h3>
+<?php foreach ($entries as $entry) :
+	switch ($entry['type']):
+		case 'array':
+			echo $view->setVar('entry', $entry)->render('contents\html\card\array.php');
+			break;
+		case 'datetime':
+			echo $view->setVar('entry', $entry)->render('contents\html\card\date.php');
+			break;
+		case 'datas':
+			echo $view->setVar('entry', $entry)->render('contents\html\card\data.php');
+			break;
+		case 'image':
+			echo $view->setVar('entry', $entry)->render('contents\html\card\image.php');
+			break;
+		default:
+			echo $view->setVar('entry', $entry)->render('contents\html\card\string.php');
+			break;
+	endswitch;
+endforeach; ?>
+			</div>
+			<div class="card-footer">&nbsp;</div>
+		</div>
+	</div>
+</div>
+
+<?php
+$this->endSection();
+
+/** Meta */
+$this->section('meta'); echo $this->include('Karlito\Views\partials\html\metas'); $this->endSection();
+
+/** Stylesheet */
+$this->section('stylesheet'); echo $this->include('App\Views\partials\html\stylesheets'); $this->endSection();
+
+/** Theme */
+$this->section('theme'); echo $this->include('Karlito\Views\partials\html\theme'); $this->endSection();
+
+/** Nav */
+$this->section('nav'); echo $this->include('Karlito\Views\partials\html\nav'); $this->endSection();
+
+/** Search */
+$this->section('search'); echo $this->include('Karlito\Views\partials\html\search'); $this->endSection();
+
+/** Sidebar Right */
+$this->section('sidebarRight'); echo $this->include('Karlito\Views\partials\html\sidebar-right'); $this->endSection();
+
+/** Sidebar Left */
+$this->section('sidebarLeft'); echo $this->include('App\Views\partials\html\sidebar-left'); $this->endSection();
+
+/** Javascript */
+$this->section('javascript'); echo $this->include('App\Views\partials\html\scripts'); $this->endSection();
+?>

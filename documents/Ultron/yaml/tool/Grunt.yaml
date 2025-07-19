@@ -1,0 +1,14 @@
+grunt:
+  direction: vertical
+  section: Grunt
+  icon: '<i class="fas fa-code fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: 'Example #1'
+    id: grunt_1
+    cmd: 'cmd #1'
+    help: null
+
+# grunt
+# grunt --help
+# grunt -V
+# grunt sass

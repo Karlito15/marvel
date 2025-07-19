@@ -1,0 +1,21 @@
+php:
+  direction: html
+  section: "Tips 4 Array"
+  icon: '<i class="fab fa-php fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: "Supprime les doublons dans un tableau"
+    id: null
+    cmd: null
+    help: null
+    prism: 'language-php'
+    free: |
+      $unique = array_map('unserialize', array_unique(array_map('serialize', $array_to_validate)));
+  - content: "Foreach plusieurs tableaux (meme taille)"
+    id: null
+    cmd: null
+    help: null
+    prism: 'language-php'
+    free: |
+      foreach (array_combine($datas, $inventories) as $number => $inventory) {
+          $inventory->setNumber($number);
+      }

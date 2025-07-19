@@ -1,0 +1,74 @@
+cmdr:
+  direction: html
+  section: Startup
+  icon: '<i class="fas fa-terminal fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Startup
+    id: startup
+    cmd: null
+    help: null
+    prism: 'language-css'
+    free: |
+        Pour Config terminal :
+
+        Settings
+         > task
+          > dupplicate {cmd::Cmder}
+          > rename {web}
+          > edit {web}
+           >  /icon "%CMDER_ROOT%\icons\cmder_yellow.ico"
+           > -new_console:d:E:\ cmd /k ""%ConEmuDir%\..\init.bat" "
+         > Startup
+          > select {web}
+
+  - content: Aliases
+    id: aliases
+    cmd: null
+    help: "Ajouter / Modifier des alias"
+    prism: 'language-bash'
+    free: |
+        Éditer le fichier "config/user_aliases.cmd"
+        
+        Exemples:
+      
+        ;= rem Variables
+        
+        ;= set np="C:\Program Files\Notepad++\notepad++.exe"
+        
+        ;= rem History
+        hist=cat -n "%CMDER_ROOT%\config\clink_history"
+        histf=cat -n "%CMDER_ROOT%\config\clink_history" | fzf
+        
+        ;= rem Edit files
+        host=%np% "C:\Windows\System32\drivers\etc\hosts"
+        httpd=%np% "D:\Wamp\3.3\bin\apache\apache2.4.54.2\conf\httpd.conf"
+        
+        ;= rem Composer
+        ccc    =composer clear-cache
+        ci     =composer install
+        cu     =composer update
+        
+        ;= rem Git
+        ga     =git add -A
+        gl     =git log --oneline --all --graph --decorate
+        gs     =git status
+        gpush  =git push origin $1
+        gpull  =git pull origin $1
+        greset =git reset --hard HEAD
+        
+        ;= rem NPM
+        nrb    =npm run build
+        nrw    =npm run watch
+        ni     =npm install --force
+        nu     =npm update
+        
+        ;= rem Launcher
+        codium ="D:\Program Files\VSCodium\VSCodium.exe"
+        dm     ="C:\Program Files\SourceGear\Common\DiffMerge\sgdm.exe"
+        hsql   ="C:\Program Files\HeidiSQL\heidisql.exe"
+        pm     ="C:\Users\gianc\AppData\Local\Postman\Postman.exe"
+        ps     ="C:\Program Files\JetBrains\PhpStorm 2022\bin\phpstorm64.exe"
+        st     ="C:\Program Files\Sublime Text\sublime_text.exe"
+        vs     ="C:\Users\gianc\AppData\Local\Programs\Microsoft VS Code\Code.exe"
+        wamp   ="D:\Wamp\3.3\wampmanager.exe"
+        nas    =ssh gian@NASako -p 57995

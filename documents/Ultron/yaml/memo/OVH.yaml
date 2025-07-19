@@ -1,0 +1,15 @@
+manager:
+  direction: html
+  section: Sous-Domaine
+  icon: null
+  items:
+  - content: Modifier Sous-domaine
+    id: cname
+    cmd: null
+    help: null
+    prism: 'language-php'
+    free: |
+      * Cliquer sur l'onglet  : "ZONE DNS"
+      * Cliquer sur le bouton : "Modifier en mode Textuel"
+
+      https://www.ovh.com/manager/

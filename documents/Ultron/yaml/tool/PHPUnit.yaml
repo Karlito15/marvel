@@ -1,0 +1,39 @@
+command:
+  direction: vertical
+  section: 'Tests Unitaires'
+  icon: '<i class="fab fa-php fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: 'Lancer les tests'
+    id: phpunit_launch
+    cmd: vendor\bin\phpunit
+    help: 'À la racine du projet'
+  - content: 'Configuration XML'
+    id: phpunit_config
+    cmd: vendor\bin\phpunit --generate-configuration
+    help: null
+  - content: 'Installation via Composer'
+    id: phpunit_composer
+    cmd: composer require --dev phpunit/phpunit
+    help: null
+
+installation:
+  direction: html
+  section: 'Installation'
+  icon: '<i class="fab fa-php fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Phar
+    id: phpunit_installation
+    cmd: null
+    help: null
+    prism: 'language-html'
+    free: |
+        * Télécharger https://phar.phpunit.de/phpunit-|version|.phar
+        * Sauvegarder le fichier sous C:\bin\phpunit.phar
+        * Créer un répertoire pour les binaires PHP; ex.: C:\bin
+        * Ajouter ;C:bin à votre variable d’environnement PATH
+        * Créer un script batch (dans C:\bin\phpunit.cmd):
+        * C:\Users\username> cd C:\bin
+        * C:\bin> echo @php "%~dp0phpunit.phar" %* > phpunit.cmd
+        * C:\bin> exit
+        * Tester PHPUnit à partir de n’importe quel chemin:
+        * C:\Users\username> phpunit --version

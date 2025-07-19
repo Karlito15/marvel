@@ -1,0 +1,46 @@
+2024:
+  -
+    name: "aicraft"
+    title: ""
+    uri: "/template/2024/"
+    thumbnail: null #"thumbnails/2024/aicraft.jpg"
+    tags: ['resume']
+    enabled: false
+    one_page: false
+    multiple: false
+  -
+    name: "melodica"
+    title: ""
+    uri: "/template/2024/"
+    thumbnail: null #"thumbnails/2024/melodica.jpg"
+    tags: ['resume']
+    enabled: false
+    one_page: false
+    multiple: false
+  -
+    name: "iknow"
+    title: ""
+    uri: "/template/2024/"
+    thumbnail: null #"thumbnails/2024/iknow.jpg"
+    tags: ['cv', 'resume']
+    enabled: false
+    one_page: false
+    multiple: false
+  -
+    name: "scholary"
+    title: ""
+    uri: "/template/2024/"
+    thumbnail: null #"thumbnails/2024/scholary.jpg"
+    tags: ['resume']
+    enabled: false
+    one_page: false
+    multiple: false
+  -
+    name: "vigo"
+    title: ""
+    uri: "/template/2024/"
+    thumbnail: null #"thumbnails/2024/vigo.jpg"
+    tags: ['health-supplement', 'landing-page']
+    enabled: false
+    one_page: false
+    multiple: false

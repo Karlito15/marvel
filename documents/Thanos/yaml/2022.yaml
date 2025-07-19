@@ -1,0 +1,37 @@
+2022:
+  -
+    name: "crysa"
+    title: ""
+    uri: "/template/2022/"
+    thumbnail: null #"thumbnails/2022/crysa.jpg"
+    tags: ['XXX']
+    enabled: false
+    one_page: false
+    multiple: false
+  -
+    name: "hagen"
+    title: ""
+    uri: "/template/2022/"
+    thumbnail: null #"thumbnails/2022/hagen.jpg"
+    tags: ['XXX']
+    enabled: false
+    one_page: false
+    multiple: false
+  -
+    name: "katen"
+    title: ""
+    uri: "/template/2022/"
+    thumbnail: null #"thumbnails/2022/katen.jpg"
+    tags: ['blog-magazine-minimal']
+    enabled: false
+    one_page: false
+    multiple: false
+  -
+    name: "tokyo"
+    title: ""
+    uri: "/template/2022/"
+    thumbnail: null #"thumbnails/2022/tokyo.jpg"
+    tags: ['personal', 'portfolio']
+    enabled: false
+    one_page: false
+    multiple: false

@@ -1,0 +1,36 @@
+install:
+  direction: html
+  section: "Installation Wordpress"
+  icon: '<i class="fab fa-wordpress fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: "Installation on Server"
+    id: wordpress_install
+    cmd: null
+    help: null
+    prism: 'language-powershell'
+    free: |
+      * dézipper Wordpress
+      * chmod -r http "wordpress"
+      * créer fichier wp-config.php
+
+wp:
+  direction: vertical
+  section: WordPress
+  icon: '<i class="fab fa-wordpress fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: 'Example #1'
+    id: wp_1
+    cmd: 'cmd  #1'
+    help: null
+  - content: 'Example #2'
+    id: wp_2
+    cmd: 'cmd  #2'
+    help: null
+  - content: 'Example #3'
+    id: wp_3
+    cmd: 'cmd  #3'
+    help: null
+  - content: 'Example #4'
+    id: wp_4
+    cmd: 'cmd  #4'
+    help: null

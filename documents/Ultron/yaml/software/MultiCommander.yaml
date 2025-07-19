@@ -1,0 +1,74 @@
+default:
+  direction: vertical
+  section: Default
+  icon: '<i class="fas fa-columns fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Name
+    id: name
+    cmd: '[N]'
+    help: null
+  - content: Count
+    id: count
+    cmd: '[C]'
+    help: null
+  - content: Extension
+    id: extension
+    cmd: '[E]'
+    help: null
+  - content: Folder
+    id: folder
+    cmd: '[F]'
+    help: null
+  - content: Year
+    id: extension
+    cmd: '[Y]'
+    help: null
+  - content: Month
+    id: extension
+    cmd: '[M]'
+    help: null
+  - content: Day
+    id: extension
+    cmd: '[D]'
+    help: null
+  - content: Heure
+    id: heure
+    cmd: '[h]'
+    help: null
+  - content: Minute
+    id: minute
+    cmd: '[m]'
+    help: null
+  - content: Second
+    id: second
+    cmd: '[s]'
+    help: null
+
+rename:
+  direction: vertical
+  section: Rename
+  icon: '<i class="fas fa-columns fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Parenthèse
+    id: parenthese
+    cmd: ' ()'
+    help: null
+  - content: Parenthèse + Contenu
+    id: parenthese_contenu
+    cmd: ' \((.*)\)'
+    help: null
+
+multiple:
+  direction: html
+  section: Multiple Replace
+  icon: '<i class="fas fa-columns fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Modèle
+    id: model
+    cmd: null
+    help: null
+    prism: 'language-html'
+    free: |
+      " \((.*)\)"|""
+      _|-
+      "  "|" "

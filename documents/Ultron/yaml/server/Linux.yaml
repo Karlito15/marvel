@@ -1,0 +1,404 @@
+command:
+  direction: horizontal
+  section: Command
+  icon: null
+  items:
+  - content: Folder
+    id: linux_cmd_ls
+    cmd: ls
+    help: null
+  - content: Folder Formatted
+    id: linux_cmd_ls_la
+    cmd: ls -la
+    help: null
+  - content: Print Working Directory
+    id: linux_cmd_pwd
+    cmd: pwd
+    help: null
+  - content: History
+    id: linux_history
+    cmd: history
+    help: null
+  - content: Clear
+    id: linux_clear
+    cmd: history -c
+    help: null
+  - content: Find
+    id: linux_find
+    cmd: find -name [FILENAME]
+    help: null
+  - content: Find Directory
+    id: linux_find_directory
+    cmd: find -name [FILENAME] type -d
+    help: null
+  - content: Find File
+    id: linux_find_file
+    cmd: find -name [FILENAME] type -f
+    help: null
+  - content: Remove all Files in Directory
+    id: remove_files_directory
+    cmd: rm ./[FOLDERNAME]/*
+    help: null
+  - content: Remove Directories Recursively
+    id: remove_directories
+    cmd: rm -rf ./[FOLDERNAME]
+    help: null
+
+install:
+  direction: horizontal
+  section: Installation
+  icon: null
+  items:
+  - content: Install
+    id: linux_install
+    cmd: sudo apt-get install NOM-DU-PACKAGE
+    help: null
+  - content: Update
+    id: linux_update
+    cmd: sudo apt-get update
+    help: null
+  - content: Upgrade
+    id: linux_port
+    cmd: sudo apt-get upgrade
+    help: null
+  - content: Clean
+    id: linux_clean
+    cmd: sudo apt-get clean
+    help: null
+  - content: Package Installed
+    id: linux_installed
+    cmd: sudo apt-get list --installed
+    help: null
+  - content: Search
+    id: linux_port
+    cmd: sudo apt-cache search NOM-DU-PACKAGE
+    help: null
+
+package-starter:
+  direction: horizontal
+  section: package starter
+  icon: null
+  items:
+  - content: vim
+    id: linux_vim
+    cmd: sudo apt-get install vim
+    help: null
+  - content: curl
+    id: linux_curl
+    cmd: sudo apt-get install curl
+    help: null
+  - content: unzip
+    id: linux_unzip
+    cmd: sudo apt-get install unzip
+    help: null
+  - content: git
+    id: linux_git
+    cmd: sudo apt-get install git
+    help: null
+  - content: composer
+    id: linux_composer
+    cmd: sudo apt-get install composer
+    help: null
+  - content: zsh
+    id: linux_zsh
+    cmd: sudo apt-get install zsh
+    help: null
+  - content: ranger
+    id: linux_ranger
+    cmd: sudo apt-get install ranger
+    help: null
+
+installation:
+  direction: horizontal
+  section: Installation
+  icon: null
+  items:
+  - content: Restart
+    id: linux_restart
+    cmd: sudo service NOMDUSERVICE restart
+    help: null
+  - content: Reload
+    id: linux_reload
+    cmd: sudo service NOMDUSERVICE reload
+    help: null
+  - content: List
+    id: linux_list
+    cmd: sudo service --status-all
+    help: null
+
+history:
+  direction: horizontal
+  section: History
+  icon: '<i class="fas fa-history fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Find
+    id: linux_ifconfig
+    cmd: sudo ifconfig
+    help: null
+  - content: Hostname
+    id: linux_hostname
+    cmd: sudo vim /etc/hostname
+    help: null
+  - content: SSH Port
+    id: linux_sshd_config
+    cmd: sudo vim /etc/ssh/sshd_config
+    help: null
+  - content: PHP Conf CLI
+    id: linux_cli
+    cmd: sudo vim /etc/php/7.0/cli/php.ini
+    help: null
+  - content: PHP Conf Browser
+    id: linux_fpm
+    cmd: sudo vim /etc/php/7.0/fpm/php.ini
+    help: null
+
+apache:
+  direction: horizontal
+  section: Apache
+  icon: null
+  items:
+  - content: Install
+    id: linux_install
+    cmd: sudo apt-get install apache2
+    help: null
+  - content: Activate Mods
+    id: linux_activate
+    cmd: sudo a2enmod rewrite
+    help: null
+  - content: Restart
+    id: linux_restart
+    cmd: sudo systemctl restart apache2
+    help: null
+  - content: Sites Enable
+    id: linux_a2ensite
+    cmd: sudo a2ensite NOM-DE-LA-CONF
+    help: null
+  - content: Sites Disable
+    id: linux_a2dissite
+    cmd: sudo a2dissite NOM-DE-LA-CONF
+    help: null
+  - content: Testet Config
+    id: linux_configtest
+    cmd: "/usr/sbin/apache2ctl configtest"
+    help: null
+  - content: Server Start
+    id: linux_cmd_server
+    cmd: php -S localhost:8000
+    help: null
+  - content: Server Start Public Folder
+    id: linux_cmd_server_public
+    cmd: php -S localhost:8000 -t public
+    help: null
+
+folders:
+  direction: horizontal
+  section: Folders
+  icon: '<i class="fas fa-folder-open fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Config
+    id: linux_confapache2
+    cmd: cd /etc/apache2/
+    help: null
+  - content: Root
+    id: linux_root
+    cmd: cd /var/www/html/
+    help: null
+  - content: PHP Folder
+    id: linux_conf
+    cmd: cd /etc/php/7.0
+    help: null
+
+# Supprimer un lien symbolique
+# sudo unlink /var/www/motion-transition-effect
+
+# Créer un lien symbolique
+# Avant toute chose, se mettre dans le répertoire dans lequel on souhaite créer le lien :
+# ln -s /emplacement/nom_du_fichier_source /emplacement/nom_du_lien
+
+# sudo ln -s /home/pi/www/html/Ambient-Canvas-Backgrounds /var/www/html/ambient-canvas-backgrounds
+# sudo ln -s /home/pi/www/html/Interactive-Landscape /var/www/html/interactive-landscape
+# sudo ln -s /home/pi/www/html/Motion-Transition-Effect /var/www/html/motion-transition-effect
+# sudo ln -s /home/pi/www/html/Travis /var/www/html/travis
+
+# /* ***** ***** ***** ***** ***** ***** ***** */
+
+# APACHE
+# activer les modules
+# sudo a2enmod access_compat.load actions.load alias.load   allowmethods.load  asis.load auth_basic.load  authn_core.load   authn_file.load    authz_groupfile.load    authz_user.load autoindex.load   cgi.load   dir.load   .env.load   include.load   mime.load  negotiation.load  rewrite.load  setenvif.load vhost_alias.load
+
+# /* ***** ***** ***** ***** ***** ***** ***** */
+
+# PHP
+
+# config:
+# /etc/php/7.0/
+
+# /* ***** ***** ***** ***** ***** ***** ***** */
+
+# PHP FPM
+
+# Préambule
+# sudo vim /etc/apt/sources.list
+# + ajouter non-free aux sources déja présente
+
+# installer fast-cgi pour apache
+# sudo apt-get install libapache2-mod-fastcgi
+
+# https://www.raspberrypi.org/forums/viewtopic.php?t=204703
+
+# https://tutoandco.colas-delmas.fr/developpement/installer-php7-0-php7-0-fpm-raspbian/
+# sudo apt-get install libapache2-mod-php7.0 php-apcu php-cgi php-cli php-mbstring php-yaml php7.0 php7.0-curl php7.0-fpm php7.0-gd php7.0-imap php7.0-intl php7.0-json php7.0-mbstring php7.0-mcrypt php7.0-mysql php7.0-opcache php7.0-readline php7.0-sqlite3 php7.0-xml php7.0-xmlrpc php7.0-zip -y
+# sudo a2enmod proxy_fcgi setenvif
+# sudo a2enconf php7.0-fpm
+# sudo a2dismod php7.0
+
+# sudo systemctl restart apache2
+# sudo systemctl restart php7.0-fpm
+
+# https://getgrav.org/blog/raspberrypi-nginx-php7-dev
+
+# 1- sudo vi /etc/apt/sources.list.d/10-buster.list
+# deb http://mirrordirector.raspbian.org/raspbian/ buster main contrib non-free rpi
+
+# 2- sudo vi /etc/apt/preferences.d/10-buster
+# Package: *
+# Pin: release n=stretch
+# Pin-Priority: 900
+
+# Package: *
+# Pin: release n=buster
+# Pin-Priority: 750
+
+# 3- sudo apt-get update
+
+# 4- sudo apt-get install -t buster php7.2 php7.2-curl php7.2-gd php7.2-fpm php7.2-cli php7.2-opcache php7.2-mbstring php7.2-xml php7.2-zip
+
+# /* ***** ***** ***** ***** ***** ***** ***** */
+
+# Installing MariaDB (mysql) on Raspberry Pi
+# MariaDB is and open source alternative to Oracle’s MySQL.
+
+# In order to install it, execute:
+# #sudo apt-get install mariadb-server mariadb-client -y
+
+# sudo apt-get install mysql-server mysql-client
+
+# /* ***** ***** ***** ***** ***** ***** ***** */
+
+# NodeJS
+# curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+# sudo apt-get install nodejs
+
+# /* ***** ***** ***** ***** ***** ***** ***** */
+
+# Sauvegarder la liste des logiciels Debian
+# dpkg --get-selections > ma_liste.txt
+
+# sudo apt list --installed
+# sudo dpkg-query -l | less
+
+# chmod g+w -R var/
+# chmod g+w -R vendor/
+# chmod g+w -R web/
+
+# <h3> Commande de Bases </h3>
+# man : help
+
+# ls  : dir
+#   -l    : Permet un affichage détaillé du répertoire (permissions d'accès, le nombre de liens physiques, le nom du propriétaire et du groupe, la taille en octets, et l'horodatage)
+#   -h    : Associé avec -l affiche la taille des fichiers avec un suffixe correspondant à l'unité (K, M, G)
+#   -a    : Permet l'affichage des fichiers et répertoires cachés (ceux qui commencent par un . (point))
+#   -lct  : Permet de trier les fichiers et répertoires par date de modification décroissante
+
+# mv    : move ou ren
+# cp    : copy
+# rm    : del ou erase
+# mkdir : mkdir ou md
+# rmdir : rmdir ou rd
+# pwd   : chdir
+
+# find : find
+#   -name : Recherche d'un fichier par son nom
+#   -iname  : Même chose que -name mais insensible à la casse
+#   -type : Recherche de fichier d'un certain type
+#   -atime  : Recherche par date de dernier accès
+#   -mtime  : Recherche par date de dernière modification
+#   -link : Recherche du nombre de liens au fichier
+#   -user : Recherche de fichiers appartenant à l'utilisateur donné
+#   -group  : Recherche de fichiers appartenant au groupe donné
+
+# Actions les plus fréquentes
+#   -exec : Exécute la commande donnée aux fichiers trouvés
+#   -ok   : Même chose que -exec mais demande une confirmation
+#   -ls   : exécute la commande ls à chaque fichier trouvé
+
+# Opérateurs les plus fréquents
+#   -a      : Opérateur ET
+#   -o      : Opérateur OU
+#   ! ou -not : Opérateur NOT
+
+# grep : find
+#   -c  : Retourne le nombre de lignes au lieu des lignes elles mêmes
+#   -n  : Retourne les lignes préfixées par leur numéro
+#   -i  : Insensible à la casse
+#   -r  : Recherche récursivement dans tous les sous-répertoires ; On peut utiliser la commande rgrep
+#   -G  : Recherche en utilisant une expression rationnelle basique (option par défaut)
+#   -E  : Recherche en utilisant une expression rationnelle étendue ; On peut utiliser la commande egrep
+#   -F  : Recherche en utilisant une chaîne fixe ; On peut utiliser la commande fgrep
+
+# kill / killall  : taskkill
+
+# apt-get
+#   update      : Met à jour la liste des packages disponibles en fonction des sources fournies.
+#   upgrade     : Met à jour tous les packages déjà installés.
+#   dist-upgrade  : Pareil que précédent mais permet également de passer à une version n+1 simplement de la distribution
+#   install     : Installe un ou plusieurs packages.
+#   remove      : Supprime un ou plusieurs packages.
+#   clean     : Efface du disque dur les packages téléchargés.
+
+# Options les plus fréquentes
+#   -f      : Utilisée avec install ou remove cette option permet de réparer un système dont les dépendances sont défectueuses.
+#   -m      : Ignore les paquets manquants (a éviter si on ne sait pas exactement ce que l'on fait).
+#   -s      : Fait une simulation des actions à mener sans rien toucher au système.
+#   -y      : Répond automatiquement oui à toutes les questions.
+#   -u      : Affiche les paquets mis à jour.
+#   –purge    : A utiliser conjointement avec remove pour supprimer tout ce qui peut l'être (fichiers de configuration par exemple).
+#   –reinstall  : Réinstaller les paquets avec leur version plus récente.
+
+# apt-cache search [NOM-DU-PACKAGE]
+
+# La commande LOCATE
+# Contrairement à la commande find, la commande locate utilise une base de données. 
+# Cela permet d'obtenir un résultat plus rapide. 
+# Cette base de données est mise à jour par la cron. 
+# Mais il est possible de forcer manuellement la mise à jour de cette base avec la commande suivante :
+# - updatedb
+
+# Il existe une version sécurisée de la commande locate, il s'agit de slocate. 
+# Cette dernière fonctionne de la même manière que locate mais prend en compte les droits des fichiers. 
+# Ainsi, l'utilisateur ne verra dans les résultats que les fichiers auxquels il a accès. 
+# Par défaut, locate est bien sûr sensible à la casse, mais si vous souhaitez ignorez la casse dans votre recherche, vous pouvez simplement utiliser le paramètre -i.
+
+# Voici quelques exemples d'utilisation de la commande locate :
+# - locate fichier.txt
+# - locate -c "*.txt"
+
+# La commande WHICH
+# La commande which sert à localiser l'emplacement d'une commande. Pour cela, elle s'appuie sur la variable PATH. Voici un exemple d'utilisation :
+# - which vi
+
+# La commande WHEREIS
+# La commande whereis fonctionne comme la commande which mais elle recherche en plus dans les pages de manuel ainsi que dans les codes sources.
+
+# whereis touch
+
+# La commande WHATIS
+# La commande whatis effectue les mêmes recherches que which, mais elle utilise une base de données. Cette base comprend une courte description des commandes issue des manuels, et permet un résultat plus rapide. Exemple :
+# - whateis pwd
+
+# Pour créer la base de données on utilise la commande makewhatis.
+# - makewhatis
+
+# La commande APROPOS
+# La commande apropos utilise la même base de données que whatis mais donne plus d'informations sur la commande recherchée.
+# - apropos pwd

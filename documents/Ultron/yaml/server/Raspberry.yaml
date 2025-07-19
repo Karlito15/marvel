@@ -1,0 +1,324 @@
+connection:
+  direction: vertical
+  section: Connection
+  icon: '<i class="fab fa-raspberry-pi fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: hostname
+    id: raspberry_admin
+    cmd: ssh pi@raspberrypi -p 57995
+    help: null
+  - content: ethernet
+    id: raspberry_ethernet
+    cmd: ssh pi@192.168.1.14 -p 57995
+    help: null
+  - content: wi-fi
+    id: raspberry_wifi
+    cmd: ssh pi@192.168.1.30 -p 57995
+    help: null
+  - content: Address Ip ethernet
+    id: raspberry_ethernet_ip
+    cmd: 192.168.1.14
+    help: null
+  - content: Address Ip wi-fi
+    id: raspberry_wifi_ip
+    cmd: 192.168.1.30
+    help: null
+  - content: Port
+    id: raspberry_port
+    cmd: '57995'
+    help: null
+  - content: PassPhrase
+    id: raspberry_passphrase
+    cmd: Coming Soon
+    help: null
+
+control:
+  direction: vertical
+  section: Control
+  icon: '<i class="fab fa-raspberry-pi fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Shut Down
+    id: raspberry_halt
+    cmd: sudo halt
+    help: null
+  - content: Restart
+    id: raspberry_reboot
+    cmd: sudo reboot
+    help: null
+
+others:
+  direction: vertical
+  section: Control
+  icon: '<i class="fab fa-raspberry-pi fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Hardware Information
+    id: raspberry_cpuinfo
+    cmd: cat /proc/cpuinfo
+    help: null
+  - content: Details Memory
+    id: raspberry_meminfo
+    cmd: cat /proc/meminfo
+    help: null
+  - content: Shows version of the Pi
+    id: raspberry_version
+    cmd: cat /proc/version
+    help: null
+  - content: Conf
+    id: raspberry_conf
+    cmd: sudo raspi-config
+    help: null
+  - content: User to Group
+    id: raspberry_usermod
+    cmd: sudo usermod -g www-data pi
+    help: null
+  - content: User Folder Pi
+    id: raspberry_root
+    cmd: cd /home/pi/www/html/
+    help: null
+
+# Le sudo
+
+# Si pas sudo alors
+
+# Activer le mot de passe root :
+
+# Shell
+# command sudo passwd root
+
+# Ensuite il suffit de se connecter avec l’utilisateur normal, puis de taper cette commande pour être root :
+
+# Shell
+# command su -
+
+# On peut alors supprimer l’utilisateur du group sudo (et adm pour plus de sécurité) :
+
+# Shell
+# command deluser pi sudo
+# command deluser pi adm
+
+# Editer le fichier /etc/sudoers.d/010_pi-nopasswd :
+
+# Shell
+# command chmod 740 /etc/sudoers.d/010_pi-nopasswd
+# command vi /etc/sudoers.d/010_pi-nopasswd
+
+# Et commenter la ligne :
+
+# Shell
+# #pi ALL=(ALL) NOPASSWD: ALL
+
+# Relancer bien le Raspberry Pi, sinon, l’utilisateur pi sera toujours autorisé à exécuter des commandes sudo.
+
+# Du coup, si vous tentez d’utiliser sudo avec l’utilisateur pi, Raspbian vous demande un mot de passe puis vous refuse l’accès :
+
+# Shell
+
+# pi@raspberrypi:~ $ sudo -i
+
+# We trust you have received the usual lecture from the local System
+# Administrator. It usually boils down to these three things:
+
+#     #1) Respect the privacy of others.
+#     #2) Think before you type.
+#     #3) With great power comes great responsibility.
+
+# [sudo] password for pi:
+# pi is not in the sudoers file. This incident will be reported.
+
+# We trust you have received the usual lecture from the local System
+# Administrator. It usually boils down to these three things:
+
+#     #1) Respect the privacy of others.
+#     #2) Think before you type.
+#     #3) With great power comes great responsibility.
+
+# [sudo] password for pi:
+# pi is not in the sudoers file. This incident will be reported.
+
+# Si sudo alors
+# Dans le cas où vous voulez tout de même utiliser sudo.
+# Je ne sais pas vous, mais j’ai tendance à oublier d’ajouter « sudo » devant les commandes qui ont besoin d’avoir les droits root.
+# Petite astuce pour ne plus avoir à le faire :
+
+# Shell
+
+# command sudo -i
+
+# A partir de là, plus besoin d’ajouter « sudo » à toutes les commandes.
+
+# Si vous ne vous êtes pas déconnecté après avoir changé le mot de passe, vous devriez avoir ce message :
+
+# Shell
+
+# pi@raspberrypi:~ $ sudo -i
+
+# SSH is enabled and the default password for the 'pi' user has not been changed.
+# This is a security risk - please login as the 'pi' user and type 'passwd' to set a new password.
+
+
+# SSH is enabled and the default password for the 'pi' user has not been changed.
+# This is a security risk - please login as the 'pi' user and type 'passwd' to set a new password.
+# Utiliser « Ctrl+d » 2 fois pour se déconnecter du sudo puis de la connexion ssh.
+# Puis se reconnecter au Raspberry Pi en SSH.
+# Le message devrait avoir disparu à la connexion sudo.
+
+# Shell
+
+# mignouf@blenderstorm:~$ ssh pi@10.0.0.3
+# pi@10.0.0.3's password:
+# Linux raspberrypi 4.9.80-v7+ #1098 SMP Fri Mar 9 19:11:42 GMT 2018 armv7l
+
+# The programs included with the Debian GNU/Linux system are free software;
+# the exact distribution terms for each program are described in the
+# individual files in /usr/share/doc/*/copyright.
+
+# Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+# permitted by applicable law.
+# Last login: Sun Apr 15 09:03:10 2018 from 10.0.0.13
+# pi@raspberrypi:~ $ sudo -i
+# root@raspberrypi:~#
+
+
+# The programs included with the Debian GNU/Linux system are free software;
+# the exact distribution terms for each program are described in the
+# individual files in /usr/share/doc/*/copyright.
+
+# Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+# permitted by applicable law.
+# Last login: Sun Apr 15 09:03:10 2018 from 10.0.0.13
+# pi@raspberrypi:~ $ sudo -i
+# root@raspberrypi:~#
+
+# Sauf avis contraire dans la suite de ce mémo, les commandes sont exécutées avec l’utilisateur root.
+
+
+# /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+
+
+# Arrêter / redémarrer le Raspberry Pi
+# Petite mise au point avant de commencer.
+
+# Je vois pas mal d’utilisateurs qui relancent leur Raspberry en débranchant la prise puis en la rebranchant.
+# !! A NE FAIRE QUAND CAS D’ABSOLUE NÉCESSITÉ !!
+# Vous risquez de perdre des données sinon.
+# Faut réfléchir un peu bon sang, c’est pas une console de jeux mais un ordinateur.
+
+# La bonne méthode pour redémarrer est :
+
+# Shell
+# command shutdown -r now
+
+# La commande « reboot » marche aussi.
+
+# La commande pour arrêter :
+
+# Shell
+# command shutdown -h now
+
+# Il existe aussi la commande « init 0 », mais elle est un peu brutale à mon goût (genre kill -9).
+
+
+# /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+
+
+# Mettre à jour raspi-config
+# Exécuter raspi-config :
+
+# Shell
+# command raspi-config
+
+# Sélectionner l’option « 8 Update » et attendre la fin du processus.
+
+# Ou directement avec cette commande :
+
+# Shell
+# command raspi-config nonint do_update
+
+# Raspi-Config se chargera à la fin du processus.
+
+# Mise à jour du firmware : rpi-update
+# « Un moyen plus facile d’obtenir le dernier firmware pour votre Raspberry Pi. »
+
+# Page officielle : https://github.com/Hexxeh/rpi-update
+
+# Comme expliqué sur le site, rpi-update va mettre à jour le firmware du Raspberry Pi 3.
+
+# !! NE PAS DÉBRANCHER LE RASPBERRY PI LORS DE LA MISE A JOUR !!
+
+# Exécuter rpi-update :
+
+# Shell
+# command rpi-update
+
+# Résultat :
+
+# Shell
+# root@raspberrypi:~# rpi-update
+#  *** Raspberry Pi firmware updater by Hexxeh, enhanced by AndrewS and Dom
+#  *** Performing self-update
+#   % Total % Received % Xferd Average Speed Time Time Time Current
+#                                  Dload Upload Total Spent Left Speed
+# 100 13403 100 13403 0 0 26354 0 --:--:-- --:--:-- --:--:-- 26332
+#  *** Relaunching after update
+#  *** Raspberry Pi firmware updater by Hexxeh, enhanced by AndrewS and Dom
+#  *** We're running for the first time
+#  *** Backing up files (this will take a few minutes)
+#  *** Backing up firmware
+#  *** Backing up modules 4.9.80-v7+
+# #############################################################
+# This update bumps to rpi-4.14.y linux tree
+# Be aware there could be compatibility issues with some drivers
+# Discussion here:
+# https://www.raspberrypi.org/forums/viewtopic.php?f=29&t=197689
+# ##############################################################
+#  *** Downloading specific firmware revision (this will take a few minutes)
+#   % Total % Received % Xferd Average Speed Time Time Time Current
+#                                  Dload Upload Total Spent Left Speed
+# 100 168 0 168 0 0 10 0 --:--:-- 0:00:16 --:--:-- 47
+# 100 55.6M 100 55.6M 0 0 922k 0 0:01:01 0:01:01 --:--:-- 1189k
+#  *** Updating firmware
+#  *** Updating kernel modules
+#  *** depmod 4.14.39+
+#  *** depmod 4.14.39-v7+
+#  *** Updating VideoCore libraries
+#  *** Using HardFP libraries
+#  *** Updating SDK
+#  *** Running ldconfig
+#  *** Storing current firmware revision
+#  *** Deleting downloaded files
+#  *** Syncing changes to disk
+#  *** If no errors appeared, your firmware was successfully updated to 793a5f5466cea7fb8aee649e5a3782dba9e0db2d
+#  *** A reboot is needed to activate the new firmware
+
+# Comme indiqué, relancer le Raspberry Pi 3 :
+
+# Shell
+# command shutdown -r now
+
+
+# /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+
+
+# Changer le nom
+
+# Par défaut, lors d’une nouvelle installation, le système s’appelle : raspberrypi
+
+# Dans raspi-config :
+
+# Sélectionner « 2 Network Options »
+# Puis « N1 Hostname »
+# Valider l’avertissement :
+# lettres minuscules (pas sensible à la casse)
+# les chiffres de 0 à 9
+# le nom ne doit ni commencer ni finir par un trait d’union (tiret).
+# pas de symboles, de signes de ponctuation ou d’espace
+# Saisir le nouveau nom et valider
+# Sortir de raspi-config et confirmer le reboot.
+
+# Vérifier :
+
+# Shell
+# root@pistorm:~# hostname
+# pistorm
+
+# /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */

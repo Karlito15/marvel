@@ -1,0 +1,37 @@
+2015:
+  -
+    name: "cannavaro"
+    title: "Cannavaro - Notepad Memo Admin Dashboard"
+    uri: "/template/2015/"
+    thumbnail: "thumbnails/2015/cannavaro.jpg"
+    tags: ['notepad', 'memo', 'admin', 2014]
+    enabled: true
+    one_page: false
+    multiple: false
+  -
+    name: "dogma"
+    title: "Dogma - Responsive Architecture Template"
+    uri: "/template/2015/"
+    thumbnail: "thumbnails/2015/dogma.jpg"
+    tags: ['architecture', 2015]
+    enabled: true
+    one_page: false
+    multiple: false
+  -
+    name: "hasta-corporate"
+    title: "Hasta - Multipurpose Commerce Theme"
+    uri: "/template/2015/"
+    thumbnail: "thumbnails/2015/hasta-corporate.jpg"
+    tags: ['commerce', 2015]
+    enabled: true
+    one_page: false
+    multiple: true
+  -
+    name: "hasta-multi"
+    title: "Hasta - Multipurpose HTML5 Template"
+    uri: "/template/2015/"
+    thumbnail: "thumbnails/2015/hasta-multi.jpg"
+    tags: ['commerce', 2015]
+    enabled: true
+    one_page: false
+    multiple: true

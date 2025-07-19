@@ -1,0 +1,7 @@
+//$uri    = service('uri');
+//$home   = $uri->getPath();
+//$lvl1   = ($uri->getSegment(1)) ? $uri->getSegment(1) : null;
+//$lvl2   = (!is_null($lvl1) && $uri->getSegment(2)) ? '/' . $lvl1 . '/' . $uri->getSegment(2) : null;
+//$lvl3   = (!is_null($lvl2) && $uri->getSegment(3)) ? '/' . $lvl2 . '/' . $uri->getSegment(3) : null;
+//$li     = '<li%3$s><a href="%1$s" title="%2$s">%2$s</a></li>';
+

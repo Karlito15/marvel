@@ -1,0 +1,97 @@
+<?php
+
+namespace Karlito\ThirdParty\Faker;
+
+use Fatalis\ThirdParty\Fakr;
+
+class Company extends Faker
+{
+    /** * @return string */
+    public static function company(): string
+    {
+        return self::init()->company;
+    }
+
+    /** * @return string */
+    public static function companySuffix(): string
+    {
+        return self::init()->companySuffix;
+    }
+
+    /** * @return string */
+    public static function jobTitle(): string
+    {
+        return self::init()->jobTitle;
+    }
+
+    /** * @return string */
+    public static function catchPhraseNoun(): string
+    {
+        if (self::$localization === 'fr_FR') {
+            $company = new \Faker\Provider\fr_FR\Company(self::init());
+            return $company->catchPhraseNoun();
+        } else {
+            return '';
+        }
+    }
+
+    /** * @return string */
+    public static function catchPhraseAttribute(): string
+    {
+        if (self::$localization === 'fr_FR') {
+            $company = new \Faker\Provider\fr_FR\Company(self::init());
+            return $company->catchPhraseAttribute();
+        } else {
+            return '';
+        }
+    }
+
+    /** * @return string */
+    public static function catchPhraseVerb(): string
+    {
+        if (self::$localization === 'fr_FR') {
+            $company = new \Faker\Provider\fr_FR\Company(self::init());
+            return $company->catchPhraseVerb();
+        } else {
+            return '';
+        }
+    }
+
+    /** * @return string */
+    public static function catchPhrase(): string
+    {
+        if (self::$localization === 'fr_FR') {
+            $company = new \Faker\Provider\fr_FR\Company(self::init());
+            return $company->catchPhrase();
+        } else {
+            return '';
+        }
+    }
+
+    /**
+     * @param bool $formatted
+     * @return string
+     */
+    public static function siret(bool $formatted = true): string
+    {
+        if (self::$localization === 'fr_FR') {
+            $company = new \Faker\Provider\fr_FR\Company(self::init());
+            return $company->siret($formatted);
+        } else {
+            return '';
+        }
+    }
+
+    /**
+     * @param bool $formatted
+     * @return string
+     */
+    public static function siren(bool $formatted = true)
+    {
+        if (self::$localization === 'fr_FR') {
+            return \Faker\Provider\fr_FR\Company::siren($formatted);
+        } else {
+            return '';
+        }
+    }
+}

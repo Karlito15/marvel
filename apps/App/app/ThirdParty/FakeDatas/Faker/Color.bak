@@ -1,0 +1,68 @@
+<?php
+
+namespace Karlito\ThirdParty\Faker;
+
+use Fatalis\ThirdParty\Fakr;
+
+class Color extends Faker
+{
+    /** * @return string */
+    public static function hexColor(): string
+    {
+        return self::init()->hexColor;
+    }
+
+    /** * @return string */
+    public static function safeHexColor(): string
+    {
+        return self::init()->safeHexColor;
+    }
+
+    /** * @return array */
+    public static function rgbColorAsArray(): array
+    {
+        return self::init()->rgbColorAsArray;
+    }
+
+    /** * @return string */
+    public static function rgbColor(): string
+    {
+        return self::init()->rgbColor;
+    }
+
+    /** * @return string */
+    public static function rgbCssColor(): string
+    {
+        return self::init()->rgbCssColor;
+    }
+
+    /** * @return string */
+    public static function rgbaCssColor(): string
+    {
+        return \Faker\Provider\Color::rgbaCssColor();
+    }
+
+    /** * @return string */
+    public static function safeColorName(): string
+    {
+        return self::init()->safeColorName;
+    }
+
+    /** * @return string */
+    public static function colorName(): string
+    {
+        return self::init()->colorName;
+    }
+
+    /** * @return string */
+    public static function hslColor(): string
+    {
+        return \Faker\Provider\Color::hslColor();
+    }
+
+    /** * @return array */
+    public static function hslColorAsArray(): array
+    {
+        return \Faker\Provider\Color::hslColorAsArray();
+    }
+}

@@ -1,0 +1,68 @@
+<?php
+
+namespace Karlito\ThirdParty\Bezhanov;
+
+use Faker\Generator;
+use Fatalis\ThirdParty\Bezhanov;
+use Fatalis\ThirdParty\Fakr;
+
+class Device extends Bezhanov
+{
+    /** @return int */
+    public static function deviceBuildNumber(): int
+    {
+        $faker = self::provider();
+
+        return $faker->deviceBuildNumber();
+    }
+
+    /** @return string */
+    public static function deviceManufacturer(): string
+    {
+        $faker = self::provider();
+
+        return $faker->deviceManufacturer();
+    }
+
+    /** @return string */
+    public static function deviceModelName(): string
+    {
+        $faker = self::provider();
+
+        return $faker->deviceModelName();
+    }
+
+    /** @return string */
+    public static function devicePlatform(): string
+    {
+        $faker = self::provider();
+
+        return $faker->devicePlatform();
+    }
+
+    /** @return string */
+    public static function deviceSerialNumber(): string
+    {
+        $faker = self::provider();
+
+        return $faker->deviceSerialNumber();
+    }
+
+    /** @return int */
+    public static function deviceVersion(): int
+    {
+        $faker = self::provider();
+
+        return $faker->deviceVersion();
+    }
+
+    /** @return \Bezhanov\Faker\Provider\Device|Generator */
+    private static function provider()
+    {
+        $faker = Faker::init();
+        $faker->addProvider(new \Bezhanov\Faker\Provider\Device($faker));
+
+        /** @var \Bezhanov\Faker\Provider\Device $faker */
+        return $faker;
+    }
+}

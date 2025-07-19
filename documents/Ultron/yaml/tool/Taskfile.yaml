@@ -1,0 +1,203 @@
+taskfile:
+  direction: null
+  section: Taskfile
+  icon: '<i class="fa-solid fa-terminal fa-xl" style="color: #a5a8ad;"></i>&nbsp;'
+  items:
+    - content: Modèle de Fichier Taskfile
+      id: null
+      cmd: null
+      help: null
+      prism: language-yaml
+      free: >
+        version: '3'
+
+        silent: true
+
+        tasks:
+            default:
+                cmds:
+                    - task: help
+
+            help:
+                desc: Display this help
+                cmds:
+                    - echo "{{.GREETING}}"
+                    - task --list
+
+        vars:
+            # DOCKER: docker
+            # DOCKER_COMPOSE: docker compose
+            # DOCKER_COMPOSE_STOP: "{{.DOCKER_COMPOSE}} stop"
+            # DOCKER_COMPOSE_UP: "{{.DOCKER_COMPOSE}} up"
+            # DOCKER_RUN: "{{.DOCKER}} run"
+            # PHPQA: jakzal/phpqa
+            # PHPQA_RUN: "{{.DOCKER_RUN}} --init -it --rm -v {{.PWD}}:/project -w /project {{.PHPQA}}"
+            # PWD: $PWD
+            COMPOSER: composer
+            GREETING: "Hello, Welcome to Symfony And Docker Taskfile !"
+            NPM: npm
+            PHPUNIT: "APP_ENV=test {{.SYMFONY}} php bin/phpunit"
+            SYMFONY: symfony
+            SYMFONY_CONSOLE: "{{.SYMFONY}} console"
+            ### COMPOSER
+            clear:
+                desc: "Clears composer's internal package cache"
+                cmds:
+                    - "{{.COMPOSER}} clear-cache"
+            install:
+                desc: "Install composer dependencies"
+                cmds:
+                    - "{{.COMPOSER}} install"
+            self-update:
+                desc: "Install composer dependencies"
+                cmds:
+                    - "{{.COMPOSER}} self-update"
+            update:
+                desc: "Update composer dependencies"
+                cmds:
+                    - "{{.COMPOSER}} update"
+            reinstall:
+                desc: "Uninstalls and reinstalls the given package names"
+                cmds:
+                    - "{{.COMPOSER}} reinstall"
+            validate:
+                desc: Validate composer.json file.
+                cmds:
+                    - "{{.COMPOSER}} validate"
+            cvd:
+                desc: Validate composer.json and composer.lock files in strict mode.
+                cmds:
+                    - "{{.COMPOSER}} validate --strict --check-lock"
+            ### NPM
+            clear:
+                desc: "Clear Cache"
+                cmds:
+                    - "{{.NPM}} cache clean --force"
+            install:
+                desc: "Install npm dependencies"
+                cmds:
+                    - "{{.NPM}} install --force"
+            update:
+                desc: "Update npm dependencies"
+                cmds:
+                    - "{{.NPM}} update"
+            build:
+                desc: "Build assets"
+                cmds:
+                    - "{{.NPM}} run build"
+            dev:
+                desc: "Build assets in dev mode"
+                cmds:
+                    - "{{.NPM}} run dev"
+            watch:
+                desc: "Watch assets"
+                cmds:
+                    - "{{.NPM}} run watch"
+            check-requirements:
+                desc: "Check symfony requirements"
+                cmds:
+                    - "{{.SYMFONY}} check:requirements"
+            # CONSOLE
+            cc:
+                desc: "Clear symfony cache"
+                cmds:
+                    - "{{.SYMFONY_CONSOLE}} cache:clear"
+            # Database & Doctrine
+            dc:
+                desc: "Create symfony database"
+                cmds:
+                    - "{{.SYMFONY_CONSOLE}} doctrine:database:create --if-not-exists"
+            dd:
+                desc: "Drop symfony database"
+                cmds:
+                    - "{{.SYMFONY_CONSOLE}} doctrine:database:drop --if-exists --force"
+            du:
+                desc: "Update symfony schema database"
+                cmds:
+                    - "{{.SYMFONY_CONSOLE}} doctrine:schema:update --force"
+            dmd:
+                desc: "Generate a migration by comparing your current database to your mapping information."
+                cmds:
+                    - "{{.SYMFONY_CONSOLE}} doctrine:migrations:diff --no-interaction"
+            dmm:
+                desc: "Execute a migration to the latest available version."
+                cmds:
+                    - "{{.SYMFONY_CONSOLE}} doctrine:migrations:migrate --no-interaction"
+            dmmp:
+                desc: "Execute a migration to a specified version."
+                cmds:
+                    - "{{.SYMFONY_CONSOLE}} doctrine:migrations:migrate prev --no-interaction"
+            fixtures:
+                desc: "Load fixtures"
+                cmds:
+                    - "{{.SYMFONY_CONSOLE}} doctrine:fixtures:load --no-interaction"
+            # Maker
+            mm:
+                desc: "Make symfony migration"
+                cmds:
+                    - "{{.SYMFONY_CONSOLE}} make:migration"
+            me:
+                desc: "Make entity"
+                cmds:
+                    - "{{.SYMFONY_CONSOLE}} make:entity"
+            mcmd:
+                desc: "Make command"
+                cmds:
+                    - "{{.SYMFONY_CONSOLE}} make:command"
+            mc:
+                desc: "Make controller"
+                cmds:
+                    - "{{.SYMFONY_CONSOLE}} make:controller"
+            mf:
+                desc: "Make form"
+                cmds:
+                    - "{{.SYMFONY_CONSOLE}} make:form"
+            mfix:
+                desc: "Make fixtures"
+                cmds:
+                    - "{{.SYMFONY_CONSOLE}} make:fixtures"
+            tc:
+                desc: "Make twig-component"
+                cmds:
+                    - "{{.SYMFONY_CONSOLE}} make:twig-component"
+            # Debug
+            dump-env:
+                desc: "Dump env"
+                cmds:
+                    - "{{.SYMFONY_CONSOLE}} debug:dotenv"
+            dump-env-container:
+                desc: "Dump env container"
+                cmds:
+                    - "{{.SYMFONY_CONSOLE}} debug:container --env-vars"
+            dump-router:
+                desc: "Dump routes"
+                cmds:
+                    - "{{.SYMFONY_CONSOLE}} debug:router"
+            # SERVER
+            start:
+                desc: "Server Symfony Start"
+                cmds:
+                    - "{{.SYMFONY}} local:server:start"
+            stop:
+                desc: "Server Symfony Stop"
+                cmds:
+                    - "{{.SYMFONY}} local:server:stop"
+            status:
+                desc: "Server Symfony Status"
+                cmds:
+                    - "{{.SYMFONY}} local:server:status"
+            log:
+                desc: "Display symfony logs"
+                cmds:
+                    - "{{.SYMFONY}} local:server:log"
+            open:
+                desc: "Server Symfony Open"
+                cmds:
+                    - "{{.SYMFONY}} open:local"
+            # open-webmail:
+            #     desc: "Server Symfony Open"
+            #     cmds:
+            #         - "{{.SYMFONY}} open:local:webmail"
+            # secure:
+            #     desc: "Server Certificate Authority for serving HTTPS"
+            #         - "{{.SYMFONY}} local:server:ca:install"

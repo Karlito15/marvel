@@ -1,0 +1,64 @@
+2018:
+  -
+    name: "bardy"
+    title: "Bardy - Beard Oil Shopify Theme"
+    uri: "/template/2018/"
+    thumbnail: null #"thumbnails/2018/bardy.jpg"
+    tags: ['commerce']
+    enabled: true
+    one_page: false
+    multiple: false
+  -
+    name: "berlin"
+    title: "Berlin"
+    uri: "/template/2018/"
+    thumbnail: null #"thumbnails/2018/berlin.jpg"
+    tags: ['portfolio']
+    enabled: true
+    one_page: false
+    multiple: false
+  -
+    name: "dot"
+    title: "Dot — A Clean & Minimalist Portfolio" # Multipurpose
+    uri: "/template/2018/"
+    thumbnail: null #"thumbnails/2018/dot.jpg"
+    tags: ['portfolio']
+    enabled: true
+    one_page: false
+    multiple: true
+  -
+    name: "mot"
+    title: "MOT - Minimalist Portfolio"
+    uri: "/template/2018/"
+    thumbnail: null #"thumbnails/2018/mot.jpg"
+    tags: ['portfolio']
+    enabled: true
+    one_page: false
+    multiple: false
+  -
+    name: "ramio"
+    title: "Ramio - Clean Coming Soon and Landing Page"
+    uri: "/template/2018/"
+    thumbnail: null #"thumbnails/2018/ramio.jpg"
+    tags: ['coming-soon', 'landing-page']
+    enabled: true
+    one_page: false
+    multiple: false
+  -
+    name: "tryit"
+    title: "Tryit - Product Offer Landing Pages"
+    uri: "/template/2018/"
+    thumbnail: null #"thumbnails/2018/tryit.jpg"
+    tags: ['landing-page', 'product-offer']
+    enabled: true
+    one_page: false
+    multiple: false
+  -
+    name: "v-rocket"
+    title: "VRocket - HTML5 Hosting"
+    uri: "/template/2018/"
+    thumbnail: null #"thumbnails/2018/v-rocket.jpg"
+    tags: ['hosting']
+    enabled: false
+    one_page: false
+    multiple: false

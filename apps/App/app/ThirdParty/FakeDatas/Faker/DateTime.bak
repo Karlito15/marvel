@@ -1,0 +1,209 @@
+<?php
+
+namespace Karlito\ThirdParty\Faker;
+
+use Fatalis\ThirdParty\Fakr;
+
+class DateTime extends Faker
+{
+    /**
+     * @param string $max
+     * @return string
+     */
+    public static function amPm($max = 'now'): string
+    {
+        return self::init()->amPm($max);
+    }
+
+    /** @return string */
+    public static function century(): string
+    {
+        return self::init()->century;
+    }
+
+    /**
+     * @param string $format
+     * @param string $max
+     * @return string
+     */
+    public static function date($format = 'Y-m-d', $max = 'now'): string
+    {
+        return self::init()->date($format, $max);
+    }
+
+    /**
+     * @param string $max
+     * @param null   $timezone
+     * @return \DateTime
+     */
+    public static function dateTime($max = 'now', $timezone = null): \DateTime
+    {
+        return self::init()->dateTime($max, $timezone);
+    }
+
+    /**
+     * @param string $max
+     * @param null   $timezone
+     * @return \DateTime
+     */
+    public static function dateTimeAD($max = 'now', $timezone = null): \DateTime
+    {
+        return self::init()->dateTimeAD($max, $timezone);
+    }
+
+    /**
+     * @param string $startDate
+     * @param string $endDate
+     * @param null   $timezone
+     * @return \DateTime
+     */
+    public static function dateTimeBetween($startDate = '-30 years', $endDate = 'now', $timezone = null): \DateTime
+    {
+        return self::init()->dateTimeBetween($startDate, $endDate, $timezone);
+    }
+
+    /**
+     * @param string $date
+     * @param string $interval
+     * @param null   $timezone
+     * @return \DateTime
+     */
+    public static function dateTimeInInterval($date = '-30 years', $interval = '+5 days', $timezone = null): \DateTime
+    {
+        return self::init()->dateTimeInInterval($date, $interval, $timezone);
+    }
+
+    /**
+     * @param string $max
+     * @param null   $timezone
+     * @return \DateTime
+     */
+    public static function dateTimeThisCentury($max = 'now', $timezone = null): \DateTime
+    {
+        return self::init()->dateTimeThisCentury($max, $timezone);
+    }
+
+    /**
+     * @param string $max
+     * @param null   $timezone
+     * @return \DateTime
+     */
+    public static function dateTimeThisDecade($max = 'now', $timezone = null): \DateTime
+    {
+        return self::init()->dateTimeThisDecade($max, $timezone);
+    }
+
+    /**
+     * @param string $max
+     * @param null   $timezone
+     * @return \DateTime
+     */
+    public static function dateTimeThisMonth($max = 'now', $timezone = null): \DateTime
+    {
+        return self::init()->dateTimeThisMonth($max, $timezone);
+    }
+
+    /**
+     * @param string $max
+     * @param null   $timezone
+     * @return \DateTime
+     */
+    public static function dateTimeThisYear($max = 'now', $timezone = null): \DateTime
+    {
+        return self::init()->dateTimeThisYear($max, $timezone);
+    }
+
+    /**
+     * @param string $max
+     * @return string
+     */
+    public static function dayOfMonth($max = 'now'): string
+    {
+        return self::init()->dayOfMonth($max);
+    }
+
+    /**
+     * @param string $max
+     * @return string
+     */
+    public static function dayOfWeek($max = 'now'): string
+    {
+        return self::init()->dayOfWeek($max);
+    }
+
+    /**
+     * @param string $max
+     * @return string
+     */
+    public static function iso8601($max = 'now'): string
+    {
+        return self::init()->iso8601($max);
+    }
+
+    /**
+     * @param string $max
+     * @return string
+     */
+    public static function month($max = 'now'): string
+    {
+        return self::init()->month($max);
+    }
+
+    /**
+     * @param string $max
+     * @return string
+     */
+    public static function monthName($max = 'now'): string
+    {
+        return self::init()->monthName($max);
+    }
+
+    /** @return string|null */
+    public static function getDefaultTimezone(): ?string
+    {
+        return \Faker\Provider\DateTime::getDefaultTimezone();
+    }
+
+    /**
+     * @param string $timezone
+     * @return void
+     */
+    public static function setDefaultTimezone($timezone = 'Europe/Paris'): void
+    {
+        \Faker\Provider\DateTime::setDefaultTimezone($timezone);
+    }
+
+    /**
+     * @param string $format
+     * @param string $max
+     * @return string
+     */
+    public static function time($format = 'H:i:s', $max = 'now'): string
+    {
+        return self::init()->time($format, $max);
+    }
+
+    /** @return string */
+    public static function timezone(): string
+    {
+        return self::init()->timezone;
+    }
+
+    /**
+     * @param string $max
+     * @return int
+     */
+    public static function unixTime($max = 'now'): int
+    {
+        return self::init()->unixTime($max);
+    }
+
+    /**
+     * @param string $max
+     * @return string
+     */
+    public static function year($max = 'now'): string
+    {
+        return self::init()->year($max);
+    }
+}

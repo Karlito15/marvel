@@ -1,0 +1,17 @@
+maildev:
+  direction: vertical
+  section: MailDev
+  icon: '<i class="fa-solid fa-envelope fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Install
+    id: install
+    cmd: 'npm install -g maildev'
+    help: null
+  - content: Run
+    id: run
+    cmd: maildev
+    help: null
+  - content: Go To
+    id: goto
+    cmd: http://127.0.0.1:1080
+    help: 'open browser'

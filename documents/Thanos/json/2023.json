@@ -1,0 +1,130 @@
+{
+	"year": 2023,
+	"templates": [
+		{
+			"name": "builty",
+			"title": "2023 - Builty - Industrial and Building Construction HTML Template",
+			"to_scrape": false,
+			"home": "https://themeforest.net/item/builty-industrial-and-building-construction-html-template/38858235",
+			"preview": "https://preview.themeforest.net/item/builty-industrial-and-building-construction-html-template/full_screen_preview/38858235",
+			"basehref": "https://winsfolio.net/html/builty/",
+			"replace": ["assets/", "assets/"],
+			"patterns": [
+				"{css/}", 
+				"{js/}", 
+				"{img/}"
+			],
+			"replacements": [
+				"XXX/css/",
+				"XXX/js/",
+				"XXX/img/"
+			],
+			"pages": {
+				"about"          : "https://winsfolio.net/html/builty/about.html",
+				"blog-detail"    : "https://winsfolio.net/html/builty/blog-detail.html",
+				"cart"           : "https://winsfolio.net/html/builty/cart.html",
+				"checkout"       : "https://winsfolio.net/html/builty/checkout.html",
+				"contact"        : "https://winsfolio.net/html/builty/contact.html",
+				"core-values"    : "https://winsfolio.net/html/builty/core-values.html",
+				"history"        : "https://winsfolio.net/html/builty/history.html",
+				"index-1"        : "https://winsfolio.net/html/builty/index.html",
+				"index-2"        : "https://winsfolio.net/html/builty/index-2.html",
+				"index-3"        : "https://winsfolio.net/html/builty/index-3.html",
+				"leadership"     : "https://winsfolio.net/html/builty/leadership.html",
+				"login"          : "https://winsfolio.net/html/builty/login.html",
+				"our-blog-1"     : "https://winsfolio.net/html/builty/our-blog-1.html",
+				"our-blog-2"     : "https://winsfolio.net/html/builty/our-blog-2.html",
+				"our-projects-1" : "https://winsfolio.net/html/builty/our-projects-1.html",
+				"our-projects-2" : "https://winsfolio.net/html/builty/our-projects-2.html",
+				"our-team"       : "https://winsfolio.net/html/builty/our-team.html",
+				"product-detail" : "https://winsfolio.net/html/builty/product-detail.html",
+				"product-grid"   : "https://winsfolio.net/html/builty/product-grid.html",
+				"product-list"   : "https://winsfolio.net/html/builty/product-list.html",
+				"project-detail" : "https://winsfolio.net/html/builty/project-detail.html",
+				"service-detail" : "https://winsfolio.net/html/builty/service-detail.html",
+				"services"       : "https://winsfolio.net/html/builty/services.html",
+				"team-detail"    : "https://winsfolio.net/html/builty/team-detail.html"
+			}
+		},
+		{
+			"name": "flen",
+			"title": "2023 - Flen - Agency & Portfolio Showcase Template ",
+			"to_scrape": false,
+			"home": "https://themeforest.net/item/flen-agency-portfolio-showcase-template/46872948",
+			"preview": "https://preview.themeforest.net/item/flen-agency-portfolio-showcase-template/full_screen_preview/46872948",
+			"basehref": "https://flen.tavonline.co/flen/",
+			"replace": ["assets/", "assets/"],
+			"patterns": [
+				"{css/}", 
+				"{js/}", 
+				"{img/}"
+			],
+			"replacements": [
+				"XXX/css/",
+				"XXX/js/",
+				"XXX/img/"
+			],
+			"pages": {
+				"about"               : "https://flen.tavonline.co/flen/about.html",
+				"classic-menu"        : "https://flen.tavonline.co/flen/classic-menu.html",
+				"contact"             : "https://flen.tavonline.co/flen/contact.html",
+				"corporate"           : "https://flen.tavonline.co/flen/corporate.html",
+				"creative-portfolio"  : "https://flen.tavonline.co/flen/creative-portfolio.html",
+				"cross-showcase"      : "https://flen.tavonline.co/flen/cross-showcase.html",
+				"freelancer"          : "https://flen.tavonline.co/flen/freelancer.html",
+				"fullscreen-showcase" : "https://flen.tavonline.co/flen/fullscreen-showcase.html",
+				"index"               : "https://flen.tavonline.co/flen/index.html",
+				"letterflow-showcase" : "https://flen.tavonline.co/flen/letterflow-showcase.html",
+				"news-classic"        : "https://flen.tavonline.co/flen/news-classic.html",
+				"news-list"           : "https://flen.tavonline.co/flen/news-list.html",
+				"photographer"        : "https://flen.tavonline.co/flen/photographer.html",
+				"projects-grid"       : "https://flen.tavonline.co/flen/projects-grid.html",
+				"roll-showcase"       : "https://flen.tavonline.co/flen/roll-showcase.html",
+				"single-news"         : "https://flen.tavonline.co/flen/single-news.html",
+				"split-showcase"      : "https://flen.tavonline.co/flen/split-showcase.html",
+				"work-1"              : "https://flen.tavonline.co/flen/work-1.html",
+				"work-2"              : "https://flen.tavonline.co/flen/work-2.html",
+				"work-3"              : "https://flen.tavonline.co/flen/work-3.html",
+				"work-4"              : "https://flen.tavonline.co/flen/work-4.html",
+				"work-5"              : "https://flen.tavonline.co/flen/work-5.html",
+				"work-6"              : "https://flen.tavonline.co/flen/work-6.html"
+			}
+		},
+		{
+			"name": "nextpage",
+			"title": "2023 - Nextpage - Newspaper, Magazine , Food HTML Template",
+			"to_scrape": false,
+			"home": "https://themeforest.net/item/nextpage-magazine-newspaper-html-template/28976671",
+			"preview": "https://themeforest.net/item/nextpage-magazine-newspaper-html-template/full_screen_preview/28976671",
+			"basehref": "https://solverwp.com/demo/html/nextpage/",
+			"replace": ["assets/", "assets/"],
+			"patterns": [
+				"{css/}", 
+				"{js/}", 
+				"{img/}"
+			],
+			"replacements": [
+				"XXX/css/",
+				"XXX/js/",
+				"XXX/img/"
+			],
+			"pages": {
+				"author"            : "https://solverwp.com/demo/html/nextpage/author.html",
+				"blog"              : "https://solverwp.com/demo/html/nextpage/blog.html",
+				"blog-details-1"    : "https://solverwp.com/demo/html/nextpage/blog-details.html",
+				"blog-details-2"    : "https://solverwp.com/demo/html/nextpage/blog-details-2.html",
+				"blog-left-sidebar" : "https://solverwp.com/demo/html/nextpage/blog-left-sidebar.html",
+				"cat-fashion"       : "https://solverwp.com/demo/html/nextpage/cat-fashion.html",
+				"cat-food"          : "https://solverwp.com/demo/html/nextpage/cat-food.html",
+				"cat-lifestyle"     : "https://solverwp.com/demo/html/nextpage/cat-lifestyle.html",
+				"cat-sports"        : "https://solverwp.com/demo/html/nextpage/cat-sports.html",
+				"cat-tech"          : "https://solverwp.com/demo/html/nextpage/cat-tech.html",
+				"error"             : "https://solverwp.com/demo/html/nextpage/error.html",
+				"index-1"           : "https://solverwp.com/demo/html/nextpage/index.html",
+				"index-2"           : "https://solverwp.com/demo/html/nextpage/index-2.html",
+				"index-3"           : "https://solverwp.com/demo/html/nextpage/index-3.html",
+				"index-4"           : "https://solverwp.com/demo/html/nextpage/index-4.html"
+			}
+		}
+	]
+}

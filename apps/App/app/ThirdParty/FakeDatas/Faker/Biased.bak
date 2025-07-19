@@ -1,0 +1,19 @@
+<?php
+
+namespace Karlito\ThirdParty\Faker;
+
+use Fatalis\ThirdParty\Fakr;
+
+class Biased extends Faker
+{
+    /**
+     * @param int    $min
+     * @param int    $max
+     * @param string $function
+     * @return int
+     */
+    public static function biasedNumberBetween(int $min = 0, int $max = 100, string $function = 'sqrt'): int
+    {
+        return self::init()->biasedNumberBetween($min, $max, $function);
+    }
+}

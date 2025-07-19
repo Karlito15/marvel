@@ -1,0 +1,71 @@
+part1:
+  direction: horizontal
+  section: Search Helper
+  icon: '<i class="fab fa-google fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Site
+    id: google_site
+    cmd: 'site: www.01net.com'
+    help: null
+  - content: Related
+    id: google_related
+    cmd: 'related: www.01net.com'
+    help: null
+  - content: Cache
+    id: google_cache
+    cmd: 'cache: www.01net.com'
+    help: null
+  - content: Link
+    id: google_link
+    cmd: 'link: www.01net.com'
+    help: null
+  - content: Define
+    id: google_define
+    cmd: 'define: lorem'
+    help: null
+  - content: In URL
+    id: google_inurl
+    cmd: 'inurl: www.01net.com'
+    help: null
+  - content: In Title
+    id: google_intitle
+    cmd: 'intitle: lorem'
+    help: null
+
+part2:
+  direction: horizontal
+  section: Search Helper
+  icon: '<i class="fas fa-search fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Map
+    id: google_maps
+    cmd: 'map: Cassino'
+    help: null
+  - content: Weather
+    id: google_weather
+    cmd: 'weather: Cassino'
+    help: null
+  - content: Filetype
+    id: google_filetype
+    cmd: 'filetype: PDF'
+    help: null
+  - content: Stocks
+    id: google_stocks
+    cmd: 'stocks: apple'
+    help: null
+  - content: Info
+    id: google_info
+    cmd: 'info: www.01net.com'
+    help: null
+  - content: All In Url
+    id: google_allinurl
+    cmd: 'allinurl: www.01net.com'
+    help: null
+  - content: All In Title
+    id: google_allintitle
+    cmd: 'allintitle: lorem'
+    help: null
+  - content: All In Text
+    id: google_allintext
+    cmd: 'allintext: iPhone'
+    help: null

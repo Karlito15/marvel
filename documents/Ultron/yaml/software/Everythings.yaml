@@ -1,0 +1,165 @@
+size:
+  direction: vertical
+  section: Size (Constantes de la taille)
+  icon: '<i class="fab fa-searchengin fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: empty
+    id: empty
+    cmd: 'empty'
+  - content: 0 Ko < taille <= 10 Ko
+    id: tiny
+    cmd: 'tiny'
+  - content: 10 Ko < taille <= 100 Ko
+    id: small
+    cmd: 'small'
+  - content: 100 Ko < taille <= 1 Mo
+    id: medium
+    cmd: 'medium'
+  - content: 1 Mo < taille <= 16 Mo
+    id: large
+    cmd: 'large'
+  - content: 16 Mo < taille <= 128 Mo
+    id: huge
+    cmd: 'huge'
+  - content: taille > 128 Mo
+    id: gigantic
+    cmd: 'gigantic'
+
+datetime:
+  direction: vertical
+  section: Size (Constantes de la taille)
+  icon: '<i class="fab fa-searchengin fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: today
+    id: today
+    cmd: 'today'
+  - content: yesterday
+    id: yesterday
+    cmd: 'yesterday'
+  - content: tomorrow
+    id: tomorrow
+    cmd: 'tomorrow'
+  - content: XXXXXXXXXXXX
+    id: XXXXXXXXXXXX
+    cmd: '<last|past|prev|current|this|coming|next><year|month|week>'
+  - content: XXXXXXXXXXXX
+    id: XXXXXXXXXXXX
+    cmd: '<last|past|prev|coming|next><x><years|months|weeks|days|hours|minutes|mins|seconds|secs>'
+  - content: Mois
+    id: months
+    cmd: 'january|february|march|april|may|june|july|august|september|october|november|december'
+  - content: Mois 3 lettres
+    id: months_3
+    cmd: 'jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec'
+  - content: Jour
+    id: days
+    cmd: 'sunday|monday|tuesday|wednesday|thursday|friday|saturday'
+  - content: Jour 3 lettres
+    id: days_3
+    cmd: 'sun|mon|tue|wed|thu|fri|sat'
+
+# Syntaxe de la date :
+#   année
+#   mois/année
+#   jour/mois/année
+
+# Opérateurs :
+#   space ET
+#   | OU
+#   ! NON
+#   < > Parenthèses
+#   " " Rechercher un argument exact.
+
+# Caractères de remplacement :
+#   * 0 caractères ou plus.
+#   ? UN seul caractère.
+#   *.  Le nom de fichier, sans extension.
+#   *.* Le nom de fichier et l'extension.
+
+# Macros :
+#   quot: Double apostrophe (")
+#   apos: Apostrophe (')
+#   amp:  Esperluette (&)
+#   lt: Plus petit que (<)
+#   gt: Plus grand que (>)
+#   #x: Code unicode caractère x.
+
+# Commutateurs :
+#   ascii:  Activer les comparaisons rapides de casse ASCII.
+#   case: Respecter la casse.
+#   diacritics: Respecter les accents, cédilles, etc.
+#   file: Détecter uniquement les fichiers.
+#   folder: Détecter uniquement les dossiers.
+#   noascii:  Désactiver les comparaisons rapides de casse ASCII.
+#   nocase: Ne pas respecter la casse.
+#   nodiacritics: Ne pas respecter les accents, cédilles, etc.
+#   nofileonly: Ne pas restreindre aux seuls fichiers.
+#   nofolderonly: Ne pas restreindre aux seuls dossiers.
+#   nopath: Ne pas respecter le chemin.
+#   noregex:  Désactiver les Expressions Régulières.
+#   nowfn:  Ne pas respecter le nom complet de fichier.
+#   nowholefilename:  Ne pas respecter le nom complet de fichier.
+#   nowholeword:  Ne pas respecter le mot entier.
+#   nowildcards:  Désactiver les caractères de remplacement.
+#   noww: Ne pas respecter le mot entier.
+#   path: Respecter les chemin et nom de fichier.
+#   regex:  Activer les Expressions Régulières.
+#   utf8: Désactiver les comparaisons rapides de casse ASCII.
+#   wfn:  Respecter le nom complet de fichier.
+#   wholefilename:  Respecter le nom complet de fichier.
+#   wholeword:  Respecter le mot entier.
+#   wildcards:  Activer les caractères de remplacement.
+#   ww: Respecter le mot entier.
+
+# Fonctions :
+#   attrib:<attributes> Recherche des fichiers et dossiers dotés des attributs indiqués.
+#   attributes:<attributes> Recherche des fichiers et dossiers dotés des attributs indiqués.
+#   child:<filename>  Recherche de dossier contenant un descendant respectant le nom de fichier.
+#   dateaccessed:<date> Recherche des fichiers et dossiers accédés à la date indiquée.
+#   datecreated:<date>  Recherche des fichiers et dossiers créés à la date indiquée.
+#   datemodified:<date> Recherche des fichiers et dossiers modifiés à la date indiquée.
+#   daterun:<date>  Recherche des fichiers et dossiers exécutés à la date indiquée.
+#   da:<date> Recherche des fichiers et dossiers accédés à la date indiquée.
+#   dc:<date> Recherche des fichiers et dossiers créés à la date indiquée.
+#   dm:<date> Recherche des fichiers et dossiers modifiés à la date indiquée.
+#   dr:<date> Recherche des fichiers et dossiers exécutés à la date indiquée.
+#   dupe: Recherche des doublons.
+#   empty:  Recherche des dossiers vides.
+#   ext:<list>  Recherche des fichiers dont l'extension correspond à l'une de celles compilées entre ";" dans la liste d'extension spécifiées.
+#   fsi:<index> Recherche des fichiers et dossiers dans l'index interne (de base 0) du système de fichier.
+#   len:<length>  Recherche des fichiers et dossiers correspondant à la longueur indiquée de nom de fichier.
+#   parents:<count> Recherche des fichiers et dossiers disposant du nombre indiqué de dossiers parents.
+#   rc:<date> Recherche des fichiers et dossiers récemment modifiés à la date indiquée.
+#   recentchange:<date> Recherche des fichiers et dossiers récemment modifiés à la date indiquée.
+#   root: Recherche des fichiers et dossiers sans aucun dossier parent.
+#   runcount:<count>  Recherche des fichiers et dossiers exécutés le nombre de fois indiqué.
+#   size:<size> Recherche des fichiers de la taille indiquée, en octets.
+#   type:<type> Recherche des fichiers et dossiers dotés du type indiqué.
+
+# Syntaxe des fonctions :
+#   function:value  Egal à la valeur indiquée.
+#   function:<=value  Inférieur ou égal à la valeur indiquée.
+#   function:<value Inférieur à la valeur indiquée.
+#   function:=value Egal à la valeur indiquée.
+#   function:>value Supérieur à la valeur indiquée.
+#   function:>=value  Supérieur ou égal à la valeur indiquée.
+#   function:start..end Se trouve dans plage des valeurs indiquée par ses début et fin.
+#   function:start-end  Se trouve dans plage des valeurs indiquée par ses début et fin.
+
+# Syntaxe de la taille :
+#   taille[kb|mb|gb]
+
+# Constantes des attributs :
+#   A Archive
+#   C Compressé
+#   D Répertoire
+#   E Crypté  H Caché
+#   I Non indexé par contenu
+#   L Point d'analyse
+#   N Normal
+#   O Hors ligne
+#   P Fichier dispersé
+#   R Lecture seule
+#   S Système
+#   T Temporaire
+#   V Lecteur

@@ -1,0 +1,46 @@
+2019:
+  -
+    name: "airi"
+    title: ""
+    uri: "/template/2019/"
+    thumbnail: null #"thumbnails/2019/airi.jpg"
+    tags: ['ecommerce', 'shopify']
+    enabled: false
+    one_page: false
+    multiple: false
+  -
+    name: "arlo"
+    title: ""
+    uri: "/template/2019/"
+    thumbnail: null #"thumbnails/2019/arlo.jpg"
+    tags: ['personal', 'portfolio']
+    enabled: false
+    one_page: false
+    multiple: false
+  -
+    name: "appside"
+    title: ""
+    uri: "/template/2019/"
+    thumbnail: null #"thumbnails/2019/appside.jpg"
+    tags: ['landing-page']
+    enabled: false
+    one_page: false
+    multiple: false
+  -
+    name: "bolo"
+    title: ""
+    uri: "/template/2019/"
+    thumbnail: null #"thumbnails/2019/bolo.jpg"
+    tags: []
+    enabled: false
+    one_page: false
+    multiple: false
+  -
+    name: "shella"
+    title: ""
+    uri: "/template/2019/"
+    thumbnail: null #"thumbnails/2019/shella.jpg"
+    tags: ['ecommerce']
+    enabled: false
+    one_page: false
+    multiple: false

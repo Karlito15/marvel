@@ -1,0 +1,142 @@
+phpstan:
+  direction: html
+  section: 'PHP Stan'
+  icon: '<i class="fab fa-php fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: PHP Stan
+    id: phpstan
+    cmd: null
+    help: null
+    prism: 'language-html'
+    free: |
+      Install :
+      1/ composer require phpstan/phpstan --dev
+
+      2/ create file config "phpstan.neon"
+
+      3/ edit config :
+
+        # https://phpstan.org/user-guide/command-line-usage
+        # Flag
+        vendor\bin\phpstan analyse --error-format
+        vendor\bin\phpstan analyse --no-progress
+        vendor\bin\phpstan analyse --quiet
+        vendor\bin\phpstan analyse --version
+        vendor\bin\phpstan analyse --help
+
+        # https://phpstan.org/user-guide/rule-levels
+        # Level
+        # 0 - 9
+        # 0- basic checks, unknown classes, unknown functions, unknown methods called on $this, wrong number of arguments passed to those methods and functions, always undefined variables
+        # 1- possibly undefined variables, unknown magic methods and properties on classes with __call and __get
+        # 2- unknown methods checked on all expressions (not just $this), validating PHPDocs
+        # 3- return types, types assigned to properties
+        # 4- basic dead code checking - always false instanceof and other type checks, dead else branches, unreachable code after return; etc.
+        # 5- checking types of arguments passed to methods and functions
+        # 6- report missing typehints
+        # 7- report partially wrong union types - if you call a method that only exists on some types in a union type, level 7 starts to report that; other possibly incorrect situations
+        # 8- report calling methods and accessing properties on nullable types
+        # 9- be strict about the mixed type - the only allowed operation you can do with it is to pass it to another mixed
+        level: 0
+
+        # https://phpstan.org/user-guide/baseline
+        # Multiple files
+        includes:
+          - phpstan-baseline.neon
+
+        parameters:
+
+        # https://phpstan.org/user-guide/discovering-symbols
+        parameters:
+          scanFiles:
+            - Foo.class.php
+          scanDirectories:
+            - classes
+
+        # https://phpstan.org/user-guide/output-format
+        # table       : Default. Grouped errors by file, colorized. For human consumption. Additionally, the table formatter will detect it runs in a Continuous Integration environment like GitHub Actions and TeamCity, and besides the table it will also output errors in the specific format for that environment.
+        # raw         : Contains one error per line, with path to file, line number, and error description
+        # checkstyle  : Creates a checkstyle.xml compatible output. Note that you’d have to redirect output into a file in order to capture the results for later processing.
+        # json        : Creates minified .json output without whitespaces. Note that you’d have to redirect output into a file in order to capture the results for later processing.
+        # prettyJson  : Creates human readable .json output with whitespaces and indentations. Note that you’d have to redirect output into a file in order to capture the results for later processing.
+        # junit       : Creates JUnit compatible output. Note that you’d have to redirect output into a file in order to capture the results for later processing.
+        # github      : Creates GitHub Actions compatible output.
+        # gitlab      : Creates format for use Code Quality widget on GitLab Merge Request.
+        # teamcity    : Creates TeamCity compatible output.
+        --error-format=X
+
+        # https://phpstan.org/user-guide/output-format#opening-file-in-an-editor
+        editorUrl: 'phpstorm://open?file=%%file%%&line=%%line%%'
+
+        # https://phpstan.org/user-guide/ignoring-errors
+        ignoreErrors:
+            -
+              message: '#Access to an undefined property [a-zA-Z0-9\\_]+::\$foo#'
+              path: some/dir/SomeFile.php
+            -
+              message: '#Call to an undefined method [a-zA-Z0-9\\_]+::doBar\(\)#'
+              paths:
+                - some/dir/*
+                - other/dir/*
+            -
+              messages:
+                - '#Call to an undefined method [a-zA-Z0-9\\_]+::doFooFoo\(\)#'
+                - '#Call to an undefined method [a-zA-Z0-9\\_]+::doFooBar\(\)#'
+              path: other/dir/AnotherFile.php
+            -
+              messages:
+                - '#Call to an undefined method [a-zA-Z0-9\\_]+::doFooFoo\(\)#'
+                - '#Call to an undefined method [a-zA-Z0-9\\_]+::doFooBar\(\)#'
+              paths:
+                - some/foo/dir/*
+                - other/foo/dir/*
+            -
+              message: '#Call to an undefined method [a-zA-Z0-9\\_]+::doFoo\(\)#'
+              path: other/dir/DifferentFile.php
+              count: 2 # optional
+            - '#Other error to ignore everywhere#'
+
+        # https://phpstan.org/user-guide/ignoring-errors#excluding-whole-files
+        excludePaths:
+          - tests/*/data/*
+
+        # https://phpstan.org/user-guide/extension-library
+        # https://github.com/phpstan/phpstan-doctrine
+          composer require --dev phpstan/phpstan-doctrine
+        # https://github.com/phpstan/phpstan-symfony
+          composer require --dev phpstan/phpstan-symfony
+
+        # https://phpstan.org/config-reference
+        paths:
+          - src/App
+
+        # Caching
+        tmpDir: tmp
+
+        # https://phpstan.org/config-reference#miscellaneous-parameters
+        phpVersion: 70400 # PHP 7.4
+
+
+      4/ Open CMD & Analyze :
+        run                 : vendor\bin\phpstan analyse
+        run (Name File)     : vendor\bin\phpstan analyse -c phpstan.neon
+        run (Memory Limite) : vendor\bin\phpstan analyse --memory-limit 2G
+        clear cache         : vendor\bin\phpstan clear-result-cache
+
+
+      For Symfony
+      composer require --dev phpstan/phpstan-symfony
+      includes:
+          - vendor/phpstan/phpstan-symfony/extension.neon
+          - vendor/phpstan/phpstan-symfony/rules.neon
+
+      parameters:
+          symfony:
+              containerXmlPath: var/cache/dev/srcDevDebugProjectContainer.xml
+              # or with Symfony 4.2+
+              containerXmlPath: var/cache/dev/srcApp_KernelDevDebugContainer.xml
+              # or with Symfony 5+
+              containerXmlPath: var/cache/dev/App_KernelDevDebugContainer.xml
+          # If you're using PHP config files for Symfony 5.3+, you also need this for auto-loading of `Symfony\Config`:
+          scanDirectories:
+              - var/cache/dev/Symfony/Config

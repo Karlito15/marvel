@@ -1,0 +1,28 @@
+2016:
+  -
+    name: "freebird"
+    title: "FreeBird - Photography Portfolio"
+    uri: "/template/2016/"
+    thumbnail: "thumbnails/2016/freebird.jpg"
+    tags: ['photography', 'portfolio']
+    enabled: true
+    one_page: false
+    multiple: false
+  -
+    name: "travis"
+    title: "Photography Travis"
+    uri: "/template/2016/"
+    thumbnail: null #"thumbnails/2016/travis.jpg"
+    tags: ['gallery', 'photography']
+    enabled: true
+    one_page: false
+    multiple: false
+  -
+    name: "x-data"
+    title: "X-DATA - Powerful Web Hosting"
+    uri: "/template/2016/"
+    thumbnail: "thumbnails/2016/x-data.jpg"
+    tags: ['hosting']
+    enabled: true
+    one_page: false
+    multiple: false

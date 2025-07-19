@@ -1,0 +1,64 @@
+2017:
+  -
+    name: "appino"
+    title: "APPINO! - A Perfect Mobile App Landing Page"
+    uri: "/template/2017/"
+    thumbnail: null #"thumbnails/2017/appino.jpg"
+    tags: ['landing-page', 'mobile']
+    enabled: true
+    one_page: false
+    multiple: false
+  -
+    name: "cariera"
+    title: "Cariera - Job Board"
+    uri: "/template/2017/"
+    thumbnail: null #"thumbnails/2017/cariera.jpg"
+    tags: ['job-board']
+    enabled: true
+    one_page: false
+    multiple: false
+  -
+    name: "inshot"
+    title: "Inshot - Creative Photography Portfolio"
+    uri: "/template/2017/"
+    thumbnail: null #"thumbnails/2017/inshot.jpg"
+    tags: ['photography', 'portfolio'] # 'creative', 
+    enabled: true
+    one_page: false
+    multiple: false
+  -
+    name: "mr-fix"
+    title: "Mr Fix - Car Repair Service"
+    uri: "/template/2017/"
+    thumbnail: null #"thumbnails/2017/mr-fix.jpg"
+    tags: ['car-repair-service']
+    enabled: true
+    one_page: false
+    multiple: false
+  -
+    name: "new-launch"
+    title: "New Launch - Coming Soon Page"
+    uri: "/template/2017/"
+    thumbnail: null #"thumbnails/2017/new-launch.jpg"
+    tags: ['coming-soon']
+    enabled: true
+    one_page: false
+    multiple: false
+  -
+    name: "seo-hub"
+    title: "SEOhub - Digital Marketing Agency"
+    uri: "/template/2017/"
+    thumbnail: null #"thumbnails/2017/seohub.jpg"
+    tags: ['marketing']
+    enabled: true
+    one_page: false
+    multiple: false
+  -
+    name: "wedding-invitation"
+    title: "Wedding - Couple Event & Celebration Muse" # Invitation
+    uri: "/template/2017/"
+    thumbnail: null #"thumbnails/2017/wedding-invitation.jpg"
+    tags: ['event', 'celebration']
+    enabled: true
+    one_page: false
+    multiple: false

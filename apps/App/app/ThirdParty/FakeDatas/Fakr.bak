@@ -1,0 +1,24 @@
+<?php
+
+namespace Karlito\ThirdParty;
+
+use Faker\Factory;
+use Faker\Generator;
+
+/**
+ * Class FakR
+ *
+ * @see : https://github.com/fzaninotto/faker
+ * @package KarlitoWeb\ThirdParty
+ */
+class Fakr
+{
+    /** @var string */
+    protected static string $localization = 'fr_FR';
+
+    /** @return Generator */
+    public static function init(): Generator
+    {
+        return Factory::create(self::$localization);
+    }
+}

@@ -1,0 +1,44 @@
+<?php
+
+namespace Karlito\ThirdParty\Bezhanov;
+
+use Faker\Generator;
+use Fatalis\ThirdParty\Bezhanov;
+use Fatalis\ThirdParty\Fakr;
+
+class Species extends Bezhanov
+{
+    /** @return string */
+    public static function bird(): string
+    {
+        $faker = self::provider();
+
+        return $faker->bird();
+    }
+
+    /** @return string */
+    public static function creature(): string
+    {
+        $faker = self::provider();
+
+        return $faker->creature();
+    }
+
+    /** @return string */
+    public static function plant(): string
+    {
+        $faker = self::provider();
+
+        return $faker->plant();
+    }
+
+    /** @return \Bezhanov\Faker\Provider\Species|Generator */
+    private static function provider()
+    {
+        $faker = Faker::init();
+        $faker->addProvider(new \Bezhanov\Faker\Provider\Species($faker));
+
+        /** @var \Bezhanov\Faker\Provider\Species $faker */
+        return $faker;
+    }
+}

@@ -1,0 +1,375 @@
+node:
+  direction: vertical
+  section: Node.js
+  icon: '<i class="fab fa-npm fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: List All Commands
+    id: npm_help
+    cmd: npm --help
+    help: null
+  - content: Install
+    id: npm_install
+    cmd: npm install npm -g
+    help: null
+  - content: Clean Install
+    id: npm_clean_install
+    cmd: npm clean-install
+    help: Install a project with a clean slate
+  - content: Install Global
+    id: npm_upgrade
+    cmd: npm install npm-windows-upgrade -g
+    help: null
+  - content: Control Config
+    id: npm_config_list
+    cmd: npm config list
+    help: null
+  - content: Start New Project
+    id: npm_init
+    cmd: npm init
+    help: null
+  - content: Update Project
+    id: npm_update
+    cmd: npm update -g
+    help: null
+  - content: Check Packages
+    id: npm_outdated
+    cmd: npm outdated
+    help: Check for outdated packages
+  - content: Cache Clean
+    id: npm_cache_clean
+    cmd: npm cache clean
+    help: null
+  - content: Display Version
+    id: npm_version
+    cmd: npm version
+    help: null
+
+server:
+  direction: horizontal
+  section: Local Server
+  icon: '<i class="fab fa-npm fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Restart
+    id: npm_server_restart
+    cmd: npm restart
+    help: null
+  - content: Stop
+    id: npm_server_stop
+    cmd: npm stop
+    help: null
+  - content: Start
+    id: npm_server_satrt
+    cmd: npm start
+    help: null
+
+webpack_encore:
+  direction: horizontal
+  section: Webpack Encore
+  icon: '<i class="fab fa-npm fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Production
+    id: npm_run_buil
+    cmd: npm run build
+    help: null
+
+alls:
+  direction: horizontal
+  section: Node
+  icon: '<i class="fab fa-npm fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: npm access
+    id: npm_access
+    cmd: npm access
+    help: null
+  - content: npm adduser
+    id: npm_adduser
+    cmd: npm adduser
+    help: null
+  - content: npm audit
+    id: npm_audit
+    cmd: npm audit
+    help: null
+  - content: npm bin
+    id: npm_bin
+    cmd: npm bin
+    help: null
+  - content: npm bugs
+    id: npm_bugs
+    cmd: npm bugs
+    help: null
+  - content: npm c
+    id: npm_c
+    cmd: npm c
+    help: null
+  - content: npm cache clean
+    id: npm_cache_clean
+    cmd: npm cache clean
+    help: null
+  - content: npm cache verify
+    id: npm_cache_verify
+    cmd: npm cache verify
+    help: null
+  - content: npm ci
+    id: npm_ci
+    cmd: npm ci
+    help: null
+  - content: npm cit,
+    id: npm_cit,
+    cmd: npm cit,
+    help: null
+  - content: npm clean-install-test
+    id: npm_clean_install_test
+    cmd: npm clean-install-test
+    help: null
+  - content: npm completion
+    id: npm_completion
+    cmd: npm completion
+    help: null
+  - content: npm config,
+    id: npm_config,
+    cmd: npm config,
+    help: null
+  - content: npm create
+    id: npm_create
+    cmd: npm create
+    help: null
+  - content: npm ddp
+    id: npm_ddp
+    cmd: npm ddp
+    help: null
+  - content: npm dedupe
+    id: npm_dedupe
+    cmd: npm dedupe
+    help: null
+  - content: npm deprecate
+    id: npm_deprecate
+    cmd: npm deprecate
+    help: null
+  - content: npm dist-tag
+    id: npm_dist_tag
+    cmd: npm dist-tag
+    help: null
+  - content: npm docs
+    id: npm_docs
+    cmd: npm docs
+    help: null
+  - content: npm doctor,
+    id: npm_doctor,
+    cmd: npm doctor,
+    help: null
+  - content: npm edit
+    id: npm_edit
+    cmd: npm edit
+    help: null
+  - content: npm explore
+    id: npm_explore
+    cmd: npm explore
+    help: null
+  - content: npm fund
+    id: npm_fund
+    cmd: npm fund
+    help: null
+  - content: npm get
+    id: npm_get
+    cmd: npm get
+    help: null
+  - content: npm help
+    id: npm_help
+    cmd: npm help
+    help: null
+  - content: npm help-search
+    id: npm_help_search
+    cmd: npm help-search
+    help: null
+  - content: npm hook
+    id: npm_hook
+    cmd: npm hook
+    help: null
+  - content: npm i
+    id: npm_i
+    cmd: npm i
+    help: null
+  - content: npm install-ci-test
+    id: npm_install_ci_test
+    cmd: npm install-ci-test
+    help: null
+  - content: npm install-test
+    id: npm_install_test
+    cmd: npm install-test
+    help: null
+  - content: npm it
+    id: npm_it
+    cmd: npm it
+    help: null
+  - content: npm link
+    id: npm_link
+    cmd: npm link
+    help: null
+  - content: npm list
+    id: npm_list
+    cmd: npm list
+    help: null
+  - content: npm ln,
+    id: npm_ln,
+    cmd: npm ln,
+    help: null
+  - content: npm login
+    id: npm_login
+    cmd: npm login
+    help: null
+  - content: npm logout
+    id: npm_logout
+    cmd: npm logout
+    help: null
+  - content: npm ls
+    id: npm_ls
+    cmd: npm ls
+    help: null
+  - content: npm org
+    id: npm_org
+    cmd: npm org
+    help: null
+  - content: npm owner
+    id: npm_owner
+    cmd: npm owner
+    help: null
+  - content: npm pack
+    id: npm_pack
+    cmd: npm pack
+    help: null
+  - content: npm ping
+    id: npm_ping
+    cmd: npm ping
+    help: null
+  - content: npm prefix,
+    id: npm_prefix,
+    cmd: npm prefix,
+    help: null
+  - content: npm profile
+    id: npm_profile
+    cmd: npm profile
+    help: null
+  - content: npm prune
+    id: npm_prune
+    cmd: npm prune
+    help: null
+  - content: npm publish
+    id: npm_publish
+    cmd: npm publish
+    help: null
+  - content: npm rb
+    id: npm_rb
+    cmd: npm rb
+    help: null
+  - content: npm rebuild
+    id: npm_rebuild
+    cmd: npm rebuild
+    help: null
+  - content: npm repo
+    id: npm_repo
+    cmd: npm repo
+    help: null
+  - content: npm root,
+    id: npm_root,
+    cmd: npm root,
+    help: null
+  - content: npm run
+    id: npm_run
+    cmd: npm run
+    help: null
+  - content: npm run --help
+    id: npm_run___help
+    cmd: npm run --help
+    help: null
+  - content: npm run build
+    id: npm_run_build
+    cmd: npm run build
+    help: null
+  - content: npm run dist
+    id: npm_run_dist
+    cmd: npm run dist
+    help: null
+  - content: npm run-script
+    id: npm_run_script
+    cmd: npm run-script
+    help: null
+  - content: npm s
+    id: npm_s
+    cmd: npm s
+    help: null
+  - content: npm se
+    id: npm_se
+    cmd: npm se
+    help: null
+  - content: npm search
+    id: npm_search
+    cmd: npm search
+    help: null
+  - content: npm set
+    id: npm_set
+    cmd: npm set
+    help: null
+  - content: npm shrinkwrap
+    id: npm_shrinkwrap
+    cmd: npm shrinkwrap
+    help: null
+  - content: npm star,
+    id: npm_star,
+    cmd: npm star,
+    help: null
+  - content: npm stars
+    id: npm_stars
+    cmd: npm stars
+    help: null
+  - content: npm t
+    id: npm_t
+    cmd: npm t
+    help: null
+  - content: npm team
+    id: npm_team
+    cmd: npm team
+    help: null
+  - content: npm test
+    id: npm_test
+    cmd: npm test
+    help: null
+  - content: npm token
+    id: npm_token
+    cmd: npm token
+    help: null
+  - content: npm tst
+    id: npm_tst
+    cmd: npm tst
+    help: null
+  - content: npm un,
+    id: npm_un,
+    cmd: npm un,
+    help: null
+  - content: npm uninstall
+    id: npm_uninstall
+    cmd: npm uninstall
+    help: null
+  - content: npm unpublish
+    id: npm_unpublish
+    cmd: npm unpublish
+    help: null
+  - content: npm unstar
+    id: npm_unstar
+    cmd: npm unstar
+    help: null
+  - content: npm up
+    id: npm_up
+    cmd: npm up
+    help: null
+  - content: npm v
+    id: npm_v
+    cmd: npm v
+    help: null
+  - content: npm view,
+    id: npm_view,
+    cmd: npm view,
+    help: null
+  - content: npm whoami
+    id: npm_whoami
+    cmd: npm whoami
+    help: null

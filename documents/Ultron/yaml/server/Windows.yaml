@@ -1,0 +1,49 @@
+command:
+  direction: vertical
+  section: Command
+  icon: '<i class="fab fa-windows fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: "Compresser Dossier"
+    id: windows_compress_archive
+    cmd: powershell -command Compress-Archive Folderpath Filepath.zip
+    help: renseigner le chemin absolu du dossier et du fichier
+  - content: "Décompresser ZIP"
+    id: windows_uncompress_archive
+    cmd: powershell Expand-Archive -LiteralPath Filepath.zip -DestinationPath Folderpath
+    help: renseigner le chemin absolu du dossier et du fichier
+
+menu:
+  direction: vertical
+  section: "Menu Démarrer"
+  icon: '<i class="fab fa-windows fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: "User"
+    id: windows_user
+    cmd: C:\Users\gianc\AppData\Roaming\Microsoft\Windows\Start Menu\Programs
+    help: null
+  - content: "All"
+    id: windows_all
+    cmd: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\
+    help: null
+
+ssh:
+  direction: vertical
+  section: "SSH"
+  icon: '<i class="fab fa-windows fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: "Créer une clé SSH"
+    id: ssh_keygen
+    cmd: ssh-keygen -t rsa -f "C:\Users\gianc\.ssh\nastradamus_rsa" -b 4096
+    help: null
+  - content: "Copier sur le Serveur"
+    id: ssh_copy_id
+    cmd: ssh-copy-id -i C:\Users\gianc\.ssh\nastradamus_rsa.pub sako@nastradamus
+    help: null
+  - content: "XXX"
+    id: ssh_xxx
+    cmd: WWW
+    help: null
+  - content: "XXX"
+    id: ssh_xxx
+    cmd: WWW
+    help: null

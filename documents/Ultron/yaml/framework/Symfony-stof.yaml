@@ -1,0 +1,33 @@
+tricks:
+  direction: null
+  section: StofDoctrineExtensionsBundle
+  icon: null
+  items:
+    - content: Stof Doctrine Extensions Bundle
+      id: null
+      cmd: null
+      help: null
+      prism: 'language-php'
+      free: |
+        // DESACTIVER SOFTDELETEABLE
+        $filters = $em->getFilters();
+        $filters->disable('softdeleteable');
+    
+        // UPLOAD FILES
+        $document = new Document();
+        $form = $this->createFormBuilder($document)->add('name')->add('myFile')->getForm();
+    
+        if ($this->getRequest()->getMethod() === 'POST') {
+            $form->bind($this->getRequest());
+            if ($form->isValid()) {
+              $em = $this->getDoctrine()->getManager();
+              $em->persist($document);  
+              $uploadableManager = $this->get('stof_doctrine_extensions.uploadable.manager');
+          
+              // Here, "getMyFile" returns the "UploadedFile" instance that the form bound in your $myFile property
+              $uploadableManager->markEntityToUpload($document, $document->getMyFile());
+              $em->flush();
+              return $this->redirect($this->generateUrl(...));
+            }
+        }
+        return array('form' => $form->createView());

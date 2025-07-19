@@ -1,0 +1,329 @@
+connection:
+  direction: vertical
+  section: Connection au NAS
+  icon: '<i class="fas fa-server fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: "Address IP"
+    id: nas_ip
+    cmd: 82.64.185.194
+    help: null
+  - content: "Port"
+    id: nas_port
+    cmd: '57995'
+    help: null
+  - content: "PassPhrase"
+    id: nas_passphrase
+    cmd: To Do
+    help: null
+  - content: "Hostname"
+    id: nas_hostname
+    cmd: sudo vi /etc/hostname
+    help: null
+  - content: "Gian on NASako"
+    id: nas_gian
+    cmd: ssh gian@NASako -p 57995
+    help: null
+  - content: "Gian on NASako"
+    id: nas_gian_ip
+    cmd: ssh gian@82.64.185.194 -p 57995
+    help: null
+
+conf_php:
+  direction: vertical
+  section: Config PHP
+  icon: '<i class="fa-brands fa-php fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: "<strong>PHP 8.0</strong>"
+    id: nas_php74_folder
+    cmd: cd /usr/local/etc/php80/cli
+    help: null
+  - content: "Edit PHP ini"
+    id: nas_php80_ini
+    cmd: vi /usr/local/etc/php80/cli/php.ini
+    help: null
+  - content: "Edit PHP ini 8.0 (Custom)"
+    id: nas_php80_ini_custom
+    cmd: sudo vi /usr/syno/etc/packages/WebStation/php_profile/d87a1256-cd2d-4c54-bd72-3f9e2f716e4b/conf.d/user_settings.ini
+    help: null
+  - content: "Edit PHP Extensions"
+    id: nas_php80_extensions
+    cmd: sudo vi /usr/local/etc/php80/cli/conf.d/extension.ini
+    help: null
+  - content: "Loaded Configuration File"
+    id: nas_php80_php_fpm
+    cmd: vi /volume1/@appstore/PHP8.0/misc/php-fpm.ini
+    help: null
+  - content: "<strong>PHP 7.4</strong>"
+    id: nas_php74_folder
+    cmd: cd /usr/local/etc/php74/cli
+    help: null
+  - content: "Edit PHP ini"
+    id: nas_php74_ini
+    cmd: vi /usr/local/etc/php74/cli/php.ini
+    help: null
+  - content: "Edit PHP ini 7.4 (Custom)"
+    id: nas_php74_ini_custom
+    cmd: sudo vi /usr/syno/etc/packages/WebStation/php_profile/182b445b-6caf-469f-acaa-a763582ba8db/conf.d/user_settings.ini
+    help: null
+  - content: "Edit PHP Extensions"
+    id: nas_php74_extensions
+    cmd: sudo vi /usr/local/etc/php74/cli/conf.d/extension.ini
+    help: null
+  - content: "Loaded Configuration File"
+    id: nas_php74_php_fpm
+    cmd: vi /volume1/@appstore/PHP7.4/misc/php-fpm.ini
+    help: null
+  - content: "Dossier PHP Extensions"
+    id: nas_php_extensions
+    cmd: cd /usr/lib/php/modules
+    help: null
+
+mariadb:
+  direction: vertical
+  section: MariaDB v.10.11.6
+  icon: '<i class="fa-solid fa-database fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: "Edit Conf Custom"
+    id: nas_mariadb_conf
+    cmd: sudo vi /var/packages/MariaDB10/etc/my.cnf
+    help: null
+  - content: "Read Conf Default"
+    id: nas_mariadb_read
+    cmd: sudo vi /volume1/@appstore/MariaDB10/usr/local/mariadb10/etc/mysql/my.cnf
+    help: null
+  - content: "Dossier DataBase"
+    id: nas_mariadb_datas
+    cmd: cd /var/packages/MariaDB10/target/mysql/
+    help: null
+
+apache:
+  direction: vertical
+  section: Apache
+  icon: '<i class="fa-solid fa-server fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: "Edit VHost"
+    id: nas_apache_vhost
+    cmd: sudo vi /usr/local/etc/apache24/sites-enabled/httpd-vhost.conf
+    help: null
+  - content: "Dossier VHost"
+    id: nas_apache_sitesenabled
+    cmd: cd /usr/local/etc/apache24/sites-enabled/
+    help: null
+  - content: "Dossier Error Page"
+    id: nas_apache_error
+    cmd: cd /volume1/@appstore/WebStation/error_page/
+    help: null
+
+web:
+  direction: vertical
+  section: Permissions
+  icon: '<i class="fa-solid fa-server fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: "Permission All Bin"
+    id: nas_symfony_bin
+    cmd: sudo chmod -R a+rw bin/
+    help: null
+  - content: "Permission All Public"
+    id: nas_symfony_public
+    cmd: sudo chmod -R a+rw public/
+    help: null
+  - content: "Permission All Var"
+    id: nas_symfony_var
+    cmd: sudo chmod -R a+rw var/
+    help: null
+  - content: "Permission All Vendor"
+    id: nas_symfony_vendor
+    cmd: sudo chmod -R a+rw vendor/
+    help: null
+
+droit:
+  direction: html
+  section: Droit
+  icon: '<i class="fa-solid fa-server fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: "Modifier Droits Dossiers & Fichiers"
+    id: droit
+    cmd: null
+    help: null
+    prism: 'language-php'
+    free: |
+      * Tous les répertoires doivent avoir les droits 2775 :
+      * sudo find /volume3/web/ -type d -exec chmod 2775 {} +
+      * Tous les fichiers eux doivent être en 0664 :
+      * sudo find /volume3/web/ -type f -exec chmod 0664 {} +
+      * sudo chgrp -R http FOLDER
+
+
+permissions:
+  direction: vertical
+  section: Permissions
+  icon: '<i class="fa-solid fa-server fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: "Edit List Groups"
+    id: nas_permission_list_groups
+    cmd: sudo vi /etc/group
+    help: null
+  - content: "Edit List Users"
+    id: nas_permission_list_users
+    cmd: sudo vi /etc/passwd
+    help: null
+  - content: "Add User to Group"
+    id: nas_permission_gpasswd
+    cmd: sudo gpasswd -a USER GROUP
+    help: null
+  - content: "Change User"
+    id: nas_permission_chownu
+    cmd: sudo chown -R USER FOLDER
+    help: null
+  - content: "Change Group"
+    id: nas_permission_chgrp
+    cmd: sudo chgrp -R GROUP FOLDER
+    help: null
+  - content: "Change User & Group"
+    id: nas_permission_chownug
+    cmd: sudo chown -R USER:GROUP FOLDER
+    help: null
+  - content: "Permission Tous"
+    id: nas_permission_chmoda
+    cmd: sudo chmod -R a+rw FILE
+    help: null
+  - content: "Permission Ecriture"
+    id: nas_permission_chmodgaw
+    cmd: sudo chmod -R ga+w FOLDER
+    help: null
+  - content: "Permission User"
+    id: nas_permission_chmodu
+    cmd: sudo chmod -R u+rw FILE
+    help: null
+  - content: "Permission Group"
+    id: nas_permission_chmodg
+    cmd: sudo chmod -R g+rw FILE
+    help: null
+  - content: "Permission Other"
+    id: nas_permission_chmodo
+    cmd: sudo chmod -R o-rw FILE
+    help: null
+  - content: "Changer Group"
+    id: nas_permission_group
+    cmd: sudo synoacltool -set-owner DOSSIER group http
+    help: null
+  - content: "Changer User"
+    id: nas_permission_user
+    cmd: sudo synoacltool -set-owner DOSSIER user admin
+    help: null
+  - content: "Recurvsive"
+    id: nas_permission_inherit
+    cmd: sudo synoacltool -enforce-inherit DOSSIER
+    help: null
+  - content: "Delete User in Group"
+    id: nas_permission_gpasswdd
+    cmd: sudo gpasswd -d USER GROUP
+    help: null
+
+history:
+  direction: vertical
+  section: History
+  icon: null
+  items:
+  - content: "VIM"
+    id: nas_history_vim
+    cmd: sudo vi /etc/vimrc
+    help: null
+  - content: "History"
+    id: nas_history
+    cmd: history
+    help: null
+  - content: "Clear History"
+    id: nas_clear
+    cmd: history -c
+    help: null
+
+services:
+  direction: vertical
+  section: Services
+  icon: null
+  items:
+  - content: "Liste des services"
+    id: nas_synoservicecfg
+    cmd: synopkg list
+    help: null
+  - content: "Status"
+    id: nas_synoservice
+    cmd: sudo synopkg status
+    help: null
+  - content: "Start"
+    id: nas_start
+    cmd: sudo synopkg start SERVICE
+    help: null
+  - content: "Stop"
+    id: nas_stop
+    cmd: sudo synopkg stop SERVICE
+    help: null
+  - content: "Hard Start"
+    id: nas_hard-start
+    cmd: sudo synopkg hard-start SERVICE
+    help: null
+  - content: "Hard Stop"
+    id: nas_hard-stop
+    cmd: sudo synopkg hard-stop SERVICE
+    help: null
+  - content: "Restart"
+    id: nas_restart
+    cmd: sudo synopkg restart SERVICE
+    help: null
+  - content: "Restart WebStation"
+    id: nas_restart_webstation
+    cmd: sudo synopkg restart WebStation
+    help: null
+  - content: "Status WebStation"
+    id: nas_status_webstation
+    cmd: sudo synopkg status WebStation
+    help: null
+  - content: "Apache2 Status"
+    id: nas_status_apache
+    cmd: sudo synopkg status Apache2.4
+    help: null
+  - content: "Apache2 Restart"
+    id: nas_restart_apache
+    cmd: sudo synopkg restart Apache2.4
+    help: null
+  - content: "PHP 7.4 Status"
+    id: nas_status_php74
+    cmd: sudo synopkg status PHP7.4
+    help: null
+  - content: "PHP 7.4 Restart"
+    id: nas_restart_php74
+    cmd: sudo synopkg restart PHP7.4
+    help: null
+  - content: "MariaDB10 Status"
+    id: nas_status_mariadb
+    cmd: sudo synopkg --status MariaDB10
+    help: null
+  - content: "MariaDB10 Restart"
+    id: nas_restart_mariadb
+    cmd: sudo synopkg restart MariaDB10
+    help: null
+  - content: "NGINX Status"
+    id: nas_status_ngnix
+    cmd: sudo synopkg --status nginx
+    help: null
+  - content: "NGINX Restart"
+    id: nas_restart_ngnix
+    cmd: sudo synopkg restart nginx
+    help: null
+
+cron_tab:
+  direction: vertical
+  section: Cron Tab
+  icon: null
+  items:
+  - content: Restart
+    id: nas_cron_crond
+    cmd: sudo synoservicectl --restart crond
+    help: null
+  - content: Edit
+    id: nas_cron_edit
+    cmd: sudo vi /etc/crontab
+    help: null
+# #min    hour    mday    month    wday    who     command
+# 0       0       1       *        *       root    /usr/syno/bin/syno_disk_health_record

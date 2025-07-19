@@ -1,0 +1,31 @@
+<?php
+
+namespace Karlito\ThirdParty\Faker;
+
+use Fatalis\ThirdParty\Fakr;
+
+class File extends Faker
+{
+    /** @return string */
+    public static function mimeType(): string
+    {
+        return self::init()->mimeType;
+    }
+
+    /** @return string */
+    public static function fileExtension(): string
+    {
+        return self::init()->fileExtension;
+    }
+
+    /**
+     * @param string $sourceDirectory
+     * @param string $targetDirectory
+     * @param bool   $fullPath
+     * @return string
+     */
+    public static function file(string $sourceDirectory = '/tmp', string $targetDirectory = '/tmp', bool $fullPath = true): string
+    {
+        return self::init()->file($sourceDirectory, $targetDirectory, $fullPath);
+    }
+}

@@ -1,0 +1,59 @@
+<?php
+
+namespace Karlito\ThirdParty\Bezhanov;
+
+use Faker\Generator;
+use Fatalis\ThirdParty\Bezhanov;
+use Fatalis\ThirdParty\Fakr;
+
+class Commerce extends Bezhanov
+{
+    /**
+     * @param int $digits   0 ... 9
+     * @return string
+     */
+    public static function promotionCode(int $digits = 6): string
+    {
+        $faker = self::provider();
+
+        return $faker->promotionCode($digits);
+    }
+
+    /**
+     * @param int  $max
+     * @param bool $fixedAmount
+     * @return string
+     */
+    public static function departmentCommerce(int $max = 4, bool $fixedAmount = true): string
+    {
+        $faker = self::provider();
+
+        return $faker->department($max, $fixedAmount);
+    }
+
+    /** @return string */
+    public static function productName(): string
+    {
+        $faker = self::provider();
+
+        return $faker->productName();
+    }
+
+    /** @return string */
+    public static function category(): string
+    {
+        $faker = self::provider();
+
+        return $faker->category();
+    }
+
+    /** @return \Bezhanov\Faker\Provider\Commerce|Generator */
+    private static function provider(): object
+    {
+        $faker = Faker::init();
+        $faker->addProvider(new \Bezhanov\Faker\Provider\Commerce($faker));
+
+        /** @var \Bezhanov\Faker\Provider\Commerce $faker */
+        return $faker;
+    }
+}

@@ -1,0 +1,55 @@
+emails:
+  -
+    name: "ecommerce"
+    title: ""
+    uri: "/template/email/"
+    thumbnail: "thumbnails/emails/ecommerce.jpg"
+    tags: ['email']
+    enabled: true
+    one_page: true
+    multiple: false
+  -
+    name: "email-01"
+    title: ""
+    uri: "/template/email/"
+    thumbnail: "thumbnails/emails/email-01.jpg"
+    tags: ['email']
+    enabled: true
+    one_page: true
+    multiple: false
+  -
+    name: "email-02"
+    title: ""
+    uri: "/template/email/"
+    thumbnail: "thumbnails/emails/email-02.jpg"
+    tags: ['email']
+    enabled: true
+    one_page: true
+    multiple: false
+  -
+    name: "email-03"
+    title: ""
+    uri: "/template/email/"
+    thumbnail: "thumbnails/emails/email-03.jpg"
+    tags: ['email']
+    enabled: true
+    one_page: true
+    multiple: false
+  -
+    name: "kinetic-interactive"
+    title: ""
+    uri: "/template/email/"
+    thumbnail: "thumbnails/emails/kinetic-interactive.jpg"
+    tags: ['email']
+    enabled: true
+    one_page: true
+    multiple: true
+  -
+    name: "modulo"
+    title: ""
+    uri: "/template/email/"
+    thumbnail: "thumbnails/emails/modulo.jpg"
+    tags: ['email']
+    enabled: true
+    one_page: true
+    multiple: true

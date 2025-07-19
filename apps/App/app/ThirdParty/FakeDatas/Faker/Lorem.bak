@@ -1,0 +1,73 @@
+<?php
+
+namespace Karlito\ThirdParty\Faker;
+
+use Fatalis\ThirdParty\Fakr;
+
+class Lorem extends Faker
+{
+    /** * @return string */
+    public static function word(): string
+    {
+        return self::init()->word();
+    }
+
+    /**
+     * @param int  $nb
+     * @param bool $asText
+     * @return array
+     */
+    public static function words(int $nb = 3, bool $asText = false): array
+    {
+        return self::init()->words($nb, $asText);
+    }
+
+    /**
+     * @param int  $nbWords
+     * @param bool $variableNbWords
+     * @return string
+     */
+    public static function sentence(int $nbWords = 6, bool $variableNbWords = true): string
+    {
+        return self::init()->sentence($nbWords, $variableNbWords);
+    }
+
+    /**
+     * @param int  $nb
+     * @param bool $asText
+     * @return array
+     */
+    public static function sentences(int $nb = 3, bool $asText = false): array
+    {
+        return self::init()->sentences($nb, $asText);
+    }
+
+    /**
+     * @param int  $nbSentences
+     * @param bool $variableNbSentences
+     * @return string
+     */
+    public static function paragraph(int $nbSentences = 3, bool $variableNbSentences = true): string
+    {
+        return self::init()->paragraph($nbSentences, $variableNbSentences);
+    }
+
+    /**
+     * @param int  $nb
+     * @param bool $asText
+     * @return array
+     */
+    public static function paragraphs(int $nb = 3, bool $asText = false): array
+    {
+        return self::init()->paragraphs($nb, $asText);
+    }
+
+    /**
+     * @param int $maxNbChars
+     * @return string
+     */
+    public static function text(int $maxNbChars = 200): string
+    {
+        return self::init()->text($maxNbChars);
+    }
+}

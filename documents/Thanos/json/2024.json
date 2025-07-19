@@ -1,0 +1,126 @@
+{
+	"year": 2024,
+	"templates": [
+		{
+			"name": "aicraft",
+			"title": "2024 - AIcraft - AI Application & Generator HTML Template",
+			"to_scrape": false,
+			"home": "https://themeforest.net/item/aicraft-ai-application-generator-html-template/50792725",
+			"preview": "https://preview.themeforest.net/item/aicraft-ai-application-generator-html-template/full_screen_preview/50792725",
+			"basehref": "https://solverwp.com/demo/html/aicraft/",
+			"replace": ["assets/", "assets/"],
+			"patterns": [
+				"{css/}", 
+				"{js/}", 
+				"{img/}"
+			],
+			"replacements": [
+				"XXX/css/",
+				"XXX/js/",
+				"XXX/img/"
+			],
+			"pages": {
+				"404"              : "https://solverwp.com/demo/html/aicraft/404.html",
+				"about"            : "https://solverwp.com/demo/html/aicraft/about.html",
+				"blog-details"     : "https://solverwp.com/demo/html/aicraft/blog-details.html",
+				"blogs"            : "https://solverwp.com/demo/html/aicraft/blogs.html",
+				"contact"          : "https://solverwp.com/demo/html/aicraft/contact.html",
+				"faq"              : "https://solverwp.com/demo/html/aicraft/faq.html",
+				"index-1"          : "https://solverwp.com/demo/html/aicraft/index.html",
+				"index-2"          : "https://solverwp.com/demo/html/aicraft/index-2.html",
+				"index-3"          : "https://solverwp.com/demo/html/aicraft/index-3.html",
+				"index-dark"       : "https://solverwp.com/demo/html/aicraft/index-dark.html",
+				"login"            : "https://solverwp.com/demo/html/aicraft/login.html",
+				"pricing"          : "https://solverwp.com/demo/html/aicraft/pricing.html",
+				"sign-up"          : "https://solverwp.com/demo/html/aicraft/sign-up.html",
+				"team-details"     : "https://solverwp.com/demo/html/aicraft/team-details.html",
+				"team"             : "https://solverwp.com/demo/html/aicraft/team.html",
+				"use-case-details" : "https://solverwp.com/demo/html/aicraft/use-case-details.html",
+				"use-cases"        : "https://solverwp.com/demo/html/aicraft/use-cases.html"
+			}
+		},
+		{
+			"name": "melodica",
+			"title": "2024 - Melodica - Music Band & Musician Template",
+			"to_scrape": false,
+			"home": "https://themeforest.net/item/melodica-music-band-musician-template/50888264",
+			"preview": "https://preview.themeforest.net/item/melodica-music-band-musician-template/full_screen_preview/50888264",
+			"basehref": "https://melodica.tavonline.co/",
+			"replace": ["assets/", "assets/"],
+			"patterns": [
+				"{css/}", 
+				"{js/}", 
+				"{img/}"
+			],
+			"replacements": [
+				"XXX/css/",
+				"XXX/js/",
+				"XXX/img/"
+			],
+			"pages": {
+				"contact"        : "https://melodica.tavonline.co/contact.html",
+				"discography"    : "https://melodica.tavonline.co/discography.html",
+				"events"         : "https://melodica.tavonline.co/events.html",
+				"gallery"        : "https://melodica.tavonline.co/gallery.html",
+				"index-1"        : "https://melodica.tavonline.co/index.html",
+				"index-2"        : "https://melodica.tavonline.co/demo-2.html",
+				"index-3"        : "https://melodica.tavonline.co/demo-3.html",
+				"index-4"        : "https://melodica.tavonline.co/demo-4.html",
+				"index-5"        : "https://melodica.tavonline.co/demo-5.html",
+				"index-6"        : "https://melodica.tavonline.co/demo-6.html",
+				"index-7"        : "https://melodica.tavonline.co/demo-7.html",
+				"index-8"        : "https://melodica.tavonline.co/demo-8.html",
+				"news-page"      : "https://melodica.tavonline.co/news-page.html",
+				"shop-page"      : "https://melodica.tavonline.co/shop-page.html",
+				"single-album"   : "https://melodica.tavonline.co/single-album.html",
+				"single-artist"  : "https://melodica.tavonline.co/single-artist.html",
+				"single-event"   : "https://melodica.tavonline.co/single-event.html",
+				"single-news"    : "https://melodica.tavonline.co/single-news.html",
+				"single-product" : "https://melodica.tavonline.co/single-product.html",
+				"single-video"   : "https://melodica.tavonline.co/single-video.html",
+				"video-gallery"  : "https://melodica.tavonline.co/video-gallery.html"
+			}
+		},
+		{
+			"name": "scholary",
+			"title": "2024 - Scholary - University, School and Coaching HTML Template",
+			"to_scrape": false,
+			"home": "https://themeforest.net/item/scholary-university-school-and-coaching-html-template/50944505",
+			"preview": "https://preview.themeforest.net/item/scholary-university-school-and-coaching-html-template/full_screen_preview/50944505",
+			"basehref": "https://htmldemo.zcubethemes.com/scholary/",
+			"replace": ["", "assets/"],
+			"patterns": [
+				"{css/}", 
+				"{js/}", 
+				"{img/}"
+			],
+			"replacements": [
+				"XXX/css/",
+				"XXX/js/",
+				"XXX/img/"
+			],
+			"pages": {
+				"404-error"        : "https://htmldemo.zcubethemes.com/scholary/404-error.html",
+				"about"            : "https://htmldemo.zcubethemes.com/scholary/about.html",
+				"blog-details"     : "https://htmldemo.zcubethemes.com/scholary/blog-details.html",
+				"blog"             : "https://htmldemo.zcubethemes.com/scholary/blog.html",
+				"contact"          : "https://htmldemo.zcubethemes.com/scholary/contact.html",
+				"courses-2"        : "https://htmldemo.zcubethemes.com/scholary/courses-2.html",
+				"courses"          : "https://htmldemo.zcubethemes.com/scholary/courses.html",
+				"event"            : "https://htmldemo.zcubethemes.com/scholary/event.html",
+				"faq"              : "https://htmldemo.zcubethemes.com/scholary/faq.html",
+				"index-1"          : "https://htmldemo.zcubethemes.com/scholary/index.html",
+				"index-2"          : "https://htmldemo.zcubethemes.com/scholary/index-2.html",
+				"index-3"          : "https://htmldemo.zcubethemes.com/scholary/index-3.html",
+				"pricing"          : "https://htmldemo.zcubethemes.com/scholary/pricing.html",
+				"projects"         : "https://htmldemo.zcubethemes.com/scholary/projects.html",
+				"single-courses-2" : "https://htmldemo.zcubethemes.com/scholary/single-courses-2.html",
+				"single-courses"   : "https://htmldemo.zcubethemes.com/scholary/single-courses.html",
+				"single-event"     : "https://htmldemo.zcubethemes.com/scholary/single-event.html",
+				"single-projects"  : "https://htmldemo.zcubethemes.com/scholary/single-projects.html",
+				"team-single"      : "https://htmldemo.zcubethemes.com/scholary/team-single.html",
+				"team"             : "https://htmldemo.zcubethemes.com/scholary/team.html"
+			}
+		}
+	]
+}

@@ -1,0 +1,123 @@
+command:
+  direction: vertical
+  section: Grav Command
+  icon: '<i class="fab fa-grav fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Lists commands
+    id: grav_list
+    cmd: php bin/grav list
+    help: null
+  - content: Displays help for a command
+    id: grav_help
+    cmd: php bin/grav help
+    help: null
+  - content: Creates a backup of the Grav instance
+    id: grav_backup
+    cmd: php bin/grav backup
+    help: null
+  - content: Clears Grav cache
+    id: grav_cache
+    cmd: php bin/grav cache
+    help: null
+  - content: Invalidate cache, but do not remove any files
+    id: grav_cache_invalidate
+    cmd: php bin/grav cache --invalidate
+    help: null
+  - content: If set purge old caches
+    id: grav_cache_purge
+    cmd: php bin/grav cache --purge
+    help: null
+  - content: If set will remove all including compiled, twig, doctrine caches
+    id: grav_cache_all
+    cmd: php bin/grav cache --all
+    help: null
+  - content: If set will remove only assets/*
+    id: grav_cache_assets_only
+    cmd: php bin/grav cache --assets-only
+    help: null
+  - content: If set will remove only images/*
+    id: grav_cache_images_only
+    cmd: php bin/grav cache --images-only
+    help: null
+  - content: If set will remove only cache/*
+    id: grav_cache_cache_only
+    cmd: php bin/grav cache --cache-only
+    help: null
+  - content: If set will remove only tmp/*
+    id: grav_cache_tmp_only
+    cmd: php bin/grav cache --tmp-only
+    help: null
+  - content: Handles cleaning chores for Grav distribution
+    id: grav_clean
+    cmd: php bin/grav clean
+    help: null
+  - content: Updates the composer vendor dependencies needed by Grav.
+    id: grav_composer
+    cmd: php bin/grav composer
+    help: null
+  - content: Installs the dependencies needed by Grav. Optionally can create symbolic links
+    id: grav_install
+    cmd: php bin/grav install
+    help: null
+  - content: Display the last few entries of Grav log
+    id: grav_logviewer
+    cmd: php bin/grav logviewer
+    help: null
+  - content: Creates a new Grav project with all the dependencies installed
+    id: grav_new-project
+    cmd: php bin/grav new-project [newproject]
+    help: null
+  - content: Setup of a base Grav system in your webroot, good for development, playing around or starting fresh
+    id: grav_sandbox
+    cmd: php bin/grav sandbox [directory]
+    help: null
+  - content: Run the Grav Scheduler. Best when integrated with system cron
+    id: grav_scheduler
+    cmd: php bin/grav scheduler
+    help: null
+  - content: Capable of running various Security checks
+    id: grav_security
+    cmd: php bin/grav security
+    help: null
+  - content: Checks various files for YAML errors
+    id: grav_yamllinter
+    cmd: php bin/grav yamllinter
+    help: null
+
+installation:
+  direction: vertical
+  section: GPM Command
+  icon: '<i class="fab fa-grav fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Lists commands
+    id: gpm_list
+    cmd: php bin/gpm list
+    help: null
+  - content: Displays help for a command
+    id: gpm_help
+    cmd: php bin/gpm help
+    help: null
+  - content: Lists the plugins and themes available for installation
+    id: gpm_index
+    cmd: php bin/gpm index
+    help: null
+  - content: Shows more informations about a package
+    id: gpm_info
+    cmd: php bin/gpm info
+    help: null
+  - content: Performs the installation of plugins and themes
+    id: gpm_install
+    cmd: php bin/gpm install
+    help: null
+  - content: Detects and performs an update of plugins and themes when available
+    id: gpm_update
+    cmd: php bin/gpm update
+    help: null
+  - content: Performs the uninstallation of plugins and themes
+    id: gpm_uninstall
+    cmd: php bin/gpm uninstall
+    help: null
+  - content: Detects and performs an update of Grav itself when available
+    id: gpm_self-upgrade
+    cmd: php bin/gpm self-upgrade
+    help: null

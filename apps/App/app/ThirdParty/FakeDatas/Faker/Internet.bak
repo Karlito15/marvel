@@ -1,0 +1,106 @@
+<?php
+
+namespace Karlito\ThirdParty\Faker;
+
+use Fatalis\ThirdParty\Fakr;
+
+class Internet extends Faker
+{
+    /** @return string */
+    public static function email(): string
+    {
+        return self::init()->email;
+    }
+
+    /** @return string */
+    public static function freeEmail(): string
+    {
+        return self::init()->freeEmail;
+    }
+
+    /** @return string */
+    public static function companyEmail(): string
+    {
+        return self::init()->companyEmail;
+    }
+
+    /** @return string */
+    public static function freeEmailDomain(): string
+    {
+        return self::init()->freeEmailDomain;
+    }
+
+    /** @return string */
+    public static function userName(): string
+    {
+        return self::init()->userName;
+    }
+
+    /**
+     * @param int $minLength
+     * @param int $maxLength
+     * @return string
+     */
+    public static function password($minLength = 6, $maxLength = 20): string
+    {
+        return self::init()->password($minLength, $maxLength);
+    }
+
+    /** @return string */
+    public static function domainName(): string
+    {
+        return self::init()->domainName;
+    }
+
+    /** @return string */
+    public static function domainWord(): string
+    {
+        return self::init()->domainWord;
+    }
+
+    /** @return string */
+    public static function tld(): string
+    {
+        return self::init()->tld;
+    }
+
+    /** @return string */
+    public static function url(): string
+    {
+        return self::init()->url;
+    }
+
+    /**
+     * @param int  $nbWords
+     * @param bool $variableNbWords
+     * @return string
+     */
+    public static function slug(int $nbWords = 6, bool $variableNbWords = true): string
+    {
+        return self::init()->slug($nbWords, $variableNbWords);
+    }
+
+    /** @return string */
+    public static function ipv4(): string
+    {
+        return self::init()->ipv4;
+    }
+
+    /** @return string */
+    public static function ipv6(): string
+    {
+        return self::init()->ipv6;
+    }
+
+    /** @return string */
+    public static function localIpv4(): string
+    {
+        return self::init()->localIpv4;
+    }
+
+    /** @return string */
+    public static function macAddress(): string
+    {
+        return self::init()->macAddress;
+    }
+}

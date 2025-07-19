@@ -1,0 +1,90 @@
+<?php
+
+namespace Karlito\ThirdParty\Faker;
+
+use Fatalis\ThirdParty\Fakr;
+
+class Person extends Faker
+{
+    /**
+     * @param null $gender
+     * @return string
+     */
+    public static function name($gender = null): string
+    {
+        return self::init()->name($gender);
+    }
+
+    /**
+     * @param null $gender
+     * @return string
+     */
+    public static function firstName($gender = null): string
+    {
+        return self::init()->firstName($gender);
+    }
+
+    /** @return string */
+    public static function lastName(): string
+    {
+        return self::init()->lastName;
+    }
+
+    /**
+     * @param null $gender
+     * @return string
+     */
+    public static function title($gender = null): string
+    {
+        return self::init()->title($gender);
+    }
+
+    /** @return string */
+    public static function firstNameMale(): string
+    {
+        return self::init()->firstNameMale;
+    }
+
+    /** @return string */
+    public static function firstNameFemale(): string
+    {
+        return self::init()->firstNameFemale;
+    }
+
+    /** @return string */
+    public static function titleMale(): string
+    {
+        return self::init()->titleMale;
+    }
+
+    /** @return string */
+    public static function titleFemale(): string
+    {
+        return self::init()->titleFemale;
+    }
+
+    /** @return string */
+    public static function prefix(): string
+    {
+        if (self::$localization === 'fr_FR') {
+            return \Faker\Provider\fr_FR\Person::prefix();
+        } else {
+            return '';
+        }
+    }
+
+    /**
+     * @param string|null $gender
+     * @param bool        $formatted
+     * @return string
+     */
+    public static function nir(string $gender = null, bool $formatted = false): string
+    {
+        if (self::$localization === 'fr_FR') {
+            $person = new \Faker\Provider\fr_FR\Person(self::init());
+            return $person->nir($gender, $formatted);
+        } else {
+            return '';
+        }
+    }
+}

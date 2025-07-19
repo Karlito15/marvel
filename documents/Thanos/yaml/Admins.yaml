@@ -1,0 +1,46 @@
+admins:
+  -
+    name: "XXX"
+    title: ""
+    uri: "/template/admin/"
+    thumbnail: "thumbnails/admins/XXX.jpg"
+    tags: ['admin']
+    enabled: true
+    one_page: true
+    multiple: false
+  -
+    name: "XXX"
+    title: ""
+    uri: "/template/admin/"
+    thumbnail: "thumbnails/admins/XXX.jpg"
+    tags: ['admin']
+    enabled: true
+    one_page: true
+    multiple: false
+  -
+    name: "XXX"
+    title: ""
+    uri: "/template/admin/"
+    thumbnail: "thumbnails/admins/XXX.jpg"
+    tags: ['admin']
+    enabled: true
+    one_page: true
+    multiple: false
+  -
+    name: "XXX"
+    title: ""
+    uri: "/template/admin/"
+    thumbnail: "thumbnails/admins/XXX.jpg"
+    tags: ['admin']
+    enabled: true
+    one_page: true
+    multiple: false
+  -
+    name: "XXX"
+    title: ""
+    uri: "/template/admin/"
+    thumbnail: "thumbnails/admins/XXX.jpg"
+    tags: ['admin']
+    enabled: true
+    one_page: true
+    multiple: false

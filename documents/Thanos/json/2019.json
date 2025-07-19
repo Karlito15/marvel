@@ -1,0 +1,231 @@
+{
+	"year": 2019,
+	"templates": [ 
+		{
+			"name": "airi",
+			"title": "2019 - Airi - Minimal Shopify Theme",
+			"to_scrape": false,
+			"home": "https://themeforest.net/item/airi-clean-minimal-ecommerce-shopify-theme/23188587",
+			"preview": "https://preview.themeforest.net/item/airi-clean-minimal-ecommerce-shopify-theme/full_screen_preview/23188587",
+			"basehref": "https://airi-demo.myshopify.com/",
+			"replace": ["", ""],
+			"patterns": [
+				"{css/}", 
+				"{js/}", 
+				"{img/}"
+			],
+			"replacements": [
+				"XXX/css/",
+				"XXX/js/",
+				"XXX/img/"
+			],
+			"pages": {
+				"index2"                              : "https://airi-demo-2.myshopify.com/",
+				"index"                               : "https://airi-demo.myshopify.com/",
+				"live-store"                          : "https://shopdemo.hasthemes.com/airi-preview/live-store.html",
+				"collections-all"                     : "https://airi-demo.myshopify.com/collections/all",
+				"pages-about"                         : "https://airi-demo.myshopify.com/pages/about",
+				"pages-contact"                       : "https://airi-demo.myshopify.com/pages/contact",
+				"pages-faq"                           : "https://airi-demo.myshopify.com/pages/faq",
+				"products-7-sample-affiliate-product" : "https://airi-demo.myshopify.com/products/7-sample-affiliate-product",
+				"products-8-countdown-product"        : "https://airi-demo.myshopify.com/products/8-countdown-product",
+				"products-dummy-product-name-4"       : "https://airi-demo.myshopify.com/products/dummy-product-name-4"
+			}
+		},
+		{
+			"name": "appside",
+			"title": "2019 - Appside - App Landing Page",
+			"to_scrape": false,
+			"home": "https://themeforest.net/item/appside-app-landing-page/23397925",
+			"preview": "https://themeforest.net/item/appside-app-landing-page/full_screen_preview/23397925",
+			"basehref": "https://bytesed.com/tf/appside/appside/",
+			"replace": ["assets/", "assets/"],
+			"patterns": [
+				"{css/}", 
+				"{js/}", 
+				"{img/}"
+			],
+			"replacements": [
+				"XXX/css/",
+				"XXX/js/",
+				"XXX/img/"
+			],
+			"pages": {
+				"blog"              : "https://bytesed.com/tf/appside/appside/blog.html",
+				"blog-dark"         : "https://bytesed.com/tf/appside/appside/blog-dark.html",
+				"blog-details"      : "https://bytesed.com/tf/appside/appside/blog-details.html",
+				"blog-details-dark" : "https://bytesed.com/tf/appside/appside/blog-details-dark.html",
+				"index-01"          : "https://bytesed.com/tf/appside/appside/index.html",
+				"index-02"          : "https://bytesed.com/tf/appside/appside/index-2.html",
+				"index-03"          : "https://bytesed.com/tf/appside/appside/index-3.html",
+				"index-04"          : "https://bytesed.com/tf/appside/appside/index-4.html",
+				"index-05"          : "https://bytesed.com/tf/appside/appside/index-5.html",
+				"index-06"          : "https://bytesed.com/tf/appside/appside/index-6.html",
+				"index-07"          : "https://bytesed.com/tf/appside/appside/index-7.html",
+				"index-08"          : "https://bytesed.com/tf/appside/appside/index-8.html",
+				"index-09"          : "https://bytesed.com/tf/appside/appside/index-9.html",
+				"index-10"          : "https://bytesed.com/tf/appside/appside/index-10.html",
+				"index-11"          : "https://bytesed.com/tf/appside/appside/index-11.html",
+				"index-12"          : "https://bytesed.com/tf/appside/appside/index-12.html",
+				"index-dark-1"      : "https://bytesed.com/tf/appside/appside/index-dark-1.html",
+				"index-dark-2"      : "https://bytesed.com/tf/appside/appside/index-dark-2.html"			
+			}
+		},
+		{
+			"name": "arlo",
+			"title": "2019 - Arlo - Personal / Portfolio / CV / Resume Template",
+			"to_scrape": false,
+			"home": "https://themeforest.net/item/arlo-personal-portfolio-template/23175475",
+			"preview": "https://preview.themeforest.net/item/arlo-personal-portfolio-template/full_screen_preview/23175475",
+			"basehref": "https://marketifythemes.net/html/aarlo/",
+			"replace": ["css/", "assets/"],
+			"patterns": [
+				"{css/}", 
+				"{js/}", 
+				"{img/}"
+			],
+			"replacements": [
+				"XXX/css/",
+				"XXX/js/",
+				"XXX/img/"
+			],
+			"pages": {
+				"index"       : "https://marketifythemes.net/html/aarlo/index.html",
+				"index-image" : "https://marketifythemes.net/html/aarlo/index-image.html",
+				"index-lines" : "https://marketifythemes.net/html/aarlo/index-lines.html",
+				"index-noise" : "https://marketifythemes.net/html/aarlo/index-noise.html"
+			}
+		},	
+		{
+			"name": "bolo",
+			"title": "2019 - Bolo - Creative Onepage Multipurpose Website Template",
+			"to_scrape": false,
+			"home": "https://themeforest.net/item/bolo-onepage-creative-website-template/25030305",
+			"preview": "https://preview.themeforest.net/item/bolo-onepage-creative-website-template/full_screen_preview/25030305",
+			"basehref": "https://www.madebydesignesia.com/themes/bolo/",
+			"replace": ["css/", "assets/"],
+			"patterns": [
+				"{css/}", 
+				"{js/}", 
+				"{img/}"
+			],
+			"replacements": [
+				"XXX/css/",
+				"XXX/js/",
+				"XXX/img/"
+			],
+			"pages": {
+				"about-us"         : "https://www.madebydesignesia.com/themes/bolo/about-us.html",
+				"blog"             : "https://www.madebydesignesia.com/themes/bolo/blog.html",
+				"blog-single"      : "https://www.madebydesignesia.com/themes/bolo/blog-single.html",
+				"contact"          : "https://www.madebydesignesia.com/themes/bolo/contact.html",
+				"index"            : "https://www.madebydesignesia.com/themes/bolo/index.html",
+				"index-business"   : "https://www.madebydesignesia.com/themes/bolo/index-business.html",
+				"index-onepage-10" : "https://www.madebydesignesia.com/themes/bolo/index-onepage-10.html",
+				"index-onepage-1"  : "https://www.madebydesignesia.com/themes/bolo/index-onepage-1.html",
+				"index-onepage-2"  : "https://www.madebydesignesia.com/themes/bolo/index-onepage-2.html",
+				"index-onepage-3"  : "https://www.madebydesignesia.com/themes/bolo/index-onepage-3.html",
+				"index-onepage-4"  : "https://www.madebydesignesia.com/themes/bolo/index-onepage-4.html",
+				"index-onepage-5"  : "https://www.madebydesignesia.com/themes/bolo/index-onepage-5.html",
+				"index-onepage-6"  : "https://www.madebydesignesia.com/themes/bolo/index-onepage-6.html",
+				"index-onepage-7"  : "https://www.madebydesignesia.com/themes/bolo/index-onepage-7.html",
+				"index-onepage-8"  : "https://www.madebydesignesia.com/themes/bolo/index-onepage-8.html",
+				"index-onepage-9"  : "https://www.madebydesignesia.com/themes/bolo/index-onepage-9.html",
+				"portfolio"        : "https://www.madebydesignesia.com/themes/bolo/portfolio.html",
+				"services"         : "https://www.madebydesignesia.com/themes/bolo/services.html"
+			}
+		},
+        {
+			"name": "shella",
+			"title": "2019 - Shella - eCommerce HTML template, responsive, multipurpose",
+			"to_scrape": false,
+			"home": "https://themeforest.net/item/shella-ecommerce-html-template-responsive-multipurpose/23548535",
+			"preview": "https://preview.themeforest.net/item/shella-ecommerce-html-template-responsive-multipurpose/full_screen_preview/23548535",
+			"basehref": "https://mpthemes.net/shella-html-template/html-master/dist/",
+			"replace": ["styles/", "assets/"],
+			"patterns": [
+				"{css/}", 
+				"{js/}", 
+				"{img/}"
+			],
+			"replacements": [
+				"XXX/css/",
+				"XXX/js/",
+				"XXX/img/"
+			],
+			"pages": {
+				"blog"                                    : "https://mpthemes.net/shella-html-template/html-master/dist/blog.html",
+				"blog-02"                                 : "https://mpthemes.net/shella-html-template/html-master/dist/blog-02.html",
+				"blog-03"                                 : "https://mpthemes.net/shella-html-template/html-master/dist/blog-03.html",
+				"blog-04"                                 : "https://mpthemes.net/shella-html-template/html-master/dist/blog-04.html",
+				"blog-post"                               : "https://mpthemes.net/shella-html-template/html-master/dist/blog-post.html",
+				"blog-post-02"                            : "https://mpthemes.net/shella-html-template/html-master/dist/blog-post-02.html",
+				"blog-post-03"                            : "https://mpthemes.net/shella-html-template/html-master/dist/blog-post-03.html",
+				"blogs-blog-high-street-cleansing-creams" : "https://mpthemes.net/shella-html-template/html-master/dist/blogs/blog/high-street-cleansing-creams",
+				"blogs-blog-one-of-the-best"              : "https://mpthemes.net/shella-html-template/html-master/dist/blogs/blog/one-of-the-best",
+				"checkout"                                : "https://mpthemes.net/shella-html-template/html-master/dist/checkout.html",
+				"collection"                              : "https://mpthemes.net/shella-html-template/html-master/dist/collection.html",
+				"collection-2-products-per-row"           : "https://mpthemes.net/shella-html-template/html-master/dist/collection-2-products-per-row.html",
+				"collection-4-products-per-row"           : "https://mpthemes.net/shella-html-template/html-master/dist/collection-4-products-per-row.html",
+				"collection-catalog-mode"                 : "https://mpthemes.net/shella-html-template/html-master/dist/collection-catalog-mode.html",
+				"collection-left-sidebar"                 : "https://mpthemes.net/shella-html-template/html-master/dist/collection-left-sidebar.html",
+				"collection-list"                         : "https://mpthemes.net/shella-html-template/html-master/dist/collection-list.html",
+				"collection-list-02"                      : "https://mpthemes.net/shella-html-template/html-master/dist/collection-list-02.html",
+				"collection-list-products"                : "https://mpthemes.net/shella-html-template/html-master/dist/collection-list-products.html",
+				"collection-look-book"                    : "https://mpthemes.net/shella-html-template/html-master/dist/collection-look-book.html",
+				"collection-look-book-02"                 : "https://mpthemes.net/shella-html-template/html-master/dist/collection-look-book-02.html",
+				"collection-right-sidebar"                : "https://mpthemes.net/shella-html-template/html-master/dist/collection-right-sidebar.html",
+				"collection-without-sidebar"              : "https://mpthemes.net/shella-html-template/html-master/dist/collection-without-sidebar.html",
+				"collection-without-sidebar-with-banner"  : "https://mpthemes.net/shella-html-template/html-master/dist/collection-without-sidebar-with-banner.html",
+				"collections-all"                         : "https://mpthemes.net/shella-html-template/html-master/dist/collections/all",
+				"collections-featured"                    : "https://mpthemes.net/shella-html-template/html-master/dist/collections/featured",
+				"gallery"                                 : "https://mpthemes.net/shella-html-template/html-master/dist/gallery.html",
+				"gallery-02"                              : "https://mpthemes.net/shella-html-template/html-master/dist/gallery-02.html",
+				"gallery-03"                              : "https://mpthemes.net/shella-html-template/html-master/dist/gallery-03.html",
+				"gallery-04"                              : "https://mpthemes.net/shella-html-template/html-master/dist/gallery-04.html",
+				"index-01"                                : "https://mpthemes.net/shella-html-template/html-master/dist/index.html",
+				"index-02"                                : "https://mpthemes.net/shella-html-template/html-master/dist/index-02.html",
+				"index-03"                                : "https://mpthemes.net/shella-html-template/html-master/dist/index-03.html",
+				"index-04"                                : "https://mpthemes.net/shella-html-template/html-master/dist/index-04.html",
+				"index-05"                                : "https://mpthemes.net/shella-html-template/html-master/dist/index-05.html",
+				"index-06"                                : "https://mpthemes.net/shella-html-template/html-master/dist/index-06.html",
+				"index-07"                                : "https://mpthemes.net/shella-html-template/html-master/dist/index-07.html",
+				"index-08"                                : "https://mpthemes.net/shella-html-template/html-master/dist/index-08.html",
+				"index-09"                                : "https://mpthemes.net/shella-html-template/html-master/dist/index-09.html",
+				"index-10"                                : "https://mpthemes.net/shella-html-template/html-master/dist/index-10.html",
+				"index-11"                                : "https://mpthemes.net/shella-html-template/html-master/dist/index-11.html",
+				"index-12"                                : "https://mpthemes.net/shella-html-template/html-master/dist/index-12.html",
+				"index-13"                                : "https://mpthemes.net/shella-html-template/html-master/dist/index-13.html",
+				"index-14"                                : "https://mpthemes.net/shella-html-template/html-master/dist/index-14.html",
+				"index-15"                                : "https://mpthemes.net/shella-html-template/html-master/dist/index-15.html",
+				"other-account"                           : "https://mpthemes.net/shella-html-template/html-master/dist/other-account.html",
+				"other-cart"                              : "https://mpthemes.net/shella-html-template/html-master/dist/other-cart.html",
+				"other-compare"                           : "https://mpthemes.net/shella-html-template/html-master/dist/other-compare.html",
+				"other-login"                             : "https://mpthemes.net/shella-html-template/html-master/dist/other-login.html",
+				"other-register"                          : "https://mpthemes.net/shella-html-template/html-master/dist/other-register.html",
+				"other-search"                            : "https://mpthemes.net/shella-html-template/html-master/dist/other-search.html",
+				"other-wishlist"                          : "https://mpthemes.net/shella-html-template/html-master/dist/other-wishlist.html",
+				"page-404"                                : "https://mpthemes.net/shella-html-template/html-master/dist/page-404.html",
+				"page-about-us"                           : "https://mpthemes.net/shella-html-template/html-master/dist/page-about-us.html",
+				"page-coming-soon"                        : "https://mpthemes.net/shella-html-template/html-master/dist/page-coming-soon.html",
+				"page-contact-us"                         : "https://mpthemes.net/shella-html-template/html-master/dist/page-contact-us.html",
+				"page-cookie-policy"                      : "https://mpthemes.net/shella-html-template/html-master/dist/page-cookie-policy.html",
+				"page-customer-service"                   : "https://mpthemes.net/shella-html-template/html-master/dist/page-customer-service.html",
+				"page-faqs"                               : "https://mpthemes.net/shella-html-template/html-master/dist/page-faqs.html",
+				"page-icons"                              : "https://mpthemes.net/shella-html-template/html-master/dist/page-icons.html",
+				"page-privacy-policy"                     : "https://mpthemes.net/shella-html-template/html-master/dist/page-privacy-policy.html",
+				"page-sizing-guide"                       : "https://mpthemes.net/shella-html-template/html-master/dist/page-sizing-guide.html",
+				"page-style"                              : "https://mpthemes.net/shella-html-template/html-master/dist/page-style.html",
+				"product"                                 : "https://mpthemes.net/shella-html-template/html-master/dist/product.html",
+				"product-02"                              : "https://mpthemes.net/shella-html-template/html-master/dist/product-02.html",
+				"product-02-with-column"                  : "https://mpthemes.net/shella-html-template/html-master/dist/product-02-with-column.html",
+				"product-03"                              : "https://mpthemes.net/shella-html-template/html-master/dist/product-03.html",
+				"product-04"                              : "https://mpthemes.net/shella-html-template/html-master/dist/product-04.html",
+				"product-05"                              : "https://mpthemes.net/shella-html-template/html-master/dist/product-05.html",
+				"product-06"                              : "https://mpthemes.net/shella-html-template/html-master/dist/product-06.html",
+				"product-with-column"                     : "https://mpthemes.net/shella-html-template/html-master/dist/product-with-column.html",
+				"search"                                  : "https://mpthemes.net/shella-html-template/html-master/dist/search.html"
+			}
+		}
+	]
+}

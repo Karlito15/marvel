@@ -1,0 +1,19 @@
+resumes:
+  -
+    name: "ryan-fitzgerald"
+    title: ""
+    uri: "/template/resume/"
+    thumbnail: "thumbnails/resumes/ryan-fitzgerald.jpg"
+    tags: ['resume']
+    enabled: true
+    one_page: true
+    multiple: false
+  -
+    name: "william-kelvin"
+    title: ""
+    uri: "/template/resume/"
+    thumbnail: "thumbnails/resumes/william-kelvin.jpg"
+    tags: ['resume']
+    enabled: true
+    one_page: true
+    multiple: false

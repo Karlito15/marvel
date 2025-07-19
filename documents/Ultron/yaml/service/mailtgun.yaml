@@ -1,0 +1,17 @@
+mailgun:
+  direction: html
+  section: 'Mailgun'
+  icon: '<i class="fa-solid fa-envelope fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Config
+    id: config
+    cmd: null
+    help: null
+    prism: 'language-php'
+    free: |
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        Aenean commodo ligula eget dolor. Aenean massa.
+        Cum sociis natoque penatibus et magnis dis parturient montes,
+        nascetur ridiculus mus.
+        Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+        sem. Nulla consequat massa quis enim.

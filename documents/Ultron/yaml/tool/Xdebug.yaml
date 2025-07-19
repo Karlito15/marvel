@@ -1,0 +1,36 @@
+xdebug:
+  direction: horizontal
+  section: null
+  icon: '<i class="fas fa-code fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: null
+    id: null
+    cmd: null
+    help: null
+    prism: null
+    free: |
+      * Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+      * Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+      * Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+  - content: null
+    id: null
+    cmd: null
+    help: null
+
+
+PHPStorm
+  - Run
+  - Start Listening to PHP debug
+
+  - Browsers
+    -> Firefox : activate xdebug helper
+    -> Chrome  : activate xdebug helper
+  - Configuer en ajoutant une whitelist
+  - Activer IDE key : PHPStorm
+  - Activer l'extention en cliquant sur le logo dans la barre d'url
+  - Refresh
+
+  - PHPStorm
+  - Run
+  - Edit Configuration
+  - Add PHP web App

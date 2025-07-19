@@ -1,0 +1,28 @@
+2023:
+  -
+    name: "builty"
+    title: ""
+    uri: "/template/2023/"
+    thumbnail: null #"thumbnails/2023/builty.jpg"
+    tags: ['industrial-and-building-construction']
+    enabled: false
+    one_page: false
+    multiple: false
+  -
+    name: "flen"
+    title: ""
+    uri: "/template/2023/"
+    thumbnail: null #"thumbnails/2023/flen.jpg"
+    tags: ['XXX']
+    enabled: false
+    one_page: false
+    multiple: false
+  -
+    name: "nextpage"
+    title: ""
+    uri: "/template/2023/"
+    thumbnail: null #"thumbnails/2023/nextpage.jpg"
+    tags: ['magazine-newspaper']
+    enabled: false
+    one_page: false
+    multiple: false

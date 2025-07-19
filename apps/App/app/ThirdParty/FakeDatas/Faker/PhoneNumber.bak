@@ -1,0 +1,97 @@
+<?php
+
+namespace Karlito\ThirdParty\Faker;
+
+use Fatalis\ThirdParty\Fakr;
+
+class PhoneNumber extends Faker
+{
+    /** @return string */
+    public static function phoneNumber(): string
+    {
+        return self::init()->phoneNumber;
+    }
+
+    /** @return string */
+    public static function e164PhoneNumber(): string
+    {
+        return self::init()->e164PhoneNumber;
+    }
+
+    /**
+     * International Mobile Equipment Identity (IMEI)
+     *
+     * @return string
+     */
+    public static function imei(): string
+    {
+        $phone = new \Faker\Provider\PhoneNumber(self::init());
+        return $phone->imei();
+    }
+
+    /** @return string */
+    public static function phoneNumber07(): string
+    {
+        if (self::$localization === 'fr_FR') {
+            $phone = new \Faker\Provider\fr_FR\PhoneNumber(self::init());
+            return $phone->phoneNumber07();
+        } else {
+            return '';
+        }
+    }
+
+    /** @return string */
+    public static function phoneNumber07WithSeparator(): string
+    {
+        if (self::$localization === 'fr_FR') {
+            $phone = new \Faker\Provider\fr_FR\PhoneNumber(self::init());
+            return $phone->phoneNumber07WithSeparator();
+        } else {
+            return '';
+        }
+    }
+
+    /** @return string */
+    public static function phoneNumber08(): string
+    {
+        if (self::$localization === 'fr_FR') {
+            $phone = new \Faker\Provider\fr_FR\PhoneNumber(self::init());
+            return $phone->phoneNumber08();
+        } else {
+            return '';
+        }
+    }
+
+    /** @return string */
+    public static function phoneNumber08WithSeparator(): string
+    {
+        if (self::$localization === 'fr_FR') {
+            $phone = new \Faker\Provider\fr_FR\PhoneNumber(self::init());
+            return $phone->phoneNumber08WithSeparator();
+        } else {
+            return '';
+        }
+    }
+
+    /** @return string */
+    public static function mobileNumber(): string
+    {
+        if (self::$localization === 'fr_FR') {
+            $phone = new \Faker\Provider\fr_FR\PhoneNumber(self::init());
+            return $phone->mobileNumber();
+        } else {
+            return '';
+        }
+    }
+
+    /** @return string */
+    public static function serviceNumber(): string
+    {
+        if (self::$localization === 'fr_FR') {
+            $phone = new \Faker\Provider\fr_FR\PhoneNumber(self::init());
+            return $phone->serviceNumber();
+        } else {
+            return '';
+        }
+    }
+}

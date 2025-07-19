@@ -1,0 +1,44 @@
+<?php
+
+namespace Karlito\ThirdParty\Bezhanov;
+
+use Faker\Generator;
+use Fatalis\ThirdParty\Bezhanov;
+use Fatalis\ThirdParty\Fakr;
+
+class Food extends Bezhanov
+{
+    /** @return string */
+    public static function ingredient(): string
+    {
+        $faker = self::provider();
+
+        return $faker->ingredient();
+    }
+
+    /** @return string */
+    public static function spice(): string
+    {
+        $faker = self::provider();
+
+        return $faker->spice();
+    }
+
+    /** @return string */
+    public static function measurement(): string
+    {
+        $faker = self::provider();
+
+        return $faker->measurement();
+    }
+
+    /** @return \Bezhanov\Faker\Provider\Food|Generator */
+    private static function provider()
+    {
+        $faker = Faker::init();
+        $faker->addProvider(new \Bezhanov\Faker\Provider\Food($faker));
+
+        /** @var \Bezhanov\Faker\Provider\Food $faker */
+        return $faker;
+    }
+}

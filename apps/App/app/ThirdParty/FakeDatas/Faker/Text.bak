@@ -1,0 +1,20 @@
+<?php
+
+namespace Karlito\ThirdParty\Faker;
+
+use Fatalis\ThirdParty\Fakr;
+
+class Text extends Faker
+{
+    /**
+     * Generate a text string by the Markov chain algorithm.
+     *
+     * @param int $maxNbChars
+     * @param int $indexSize
+     * @return string
+     */
+    public static function realText(int $maxNbChars = 200, int $indexSize = 2): string
+    {
+        return self::init()->realText($maxNbChars, $indexSize);
+    }
+}

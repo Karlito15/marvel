@@ -1,0 +1,82 @@
+2020:
+  -
+    name: "arlo"
+    title: ""
+    uri: "/template/2020/"
+    thumbnail: null #"thumbnails/2020/arlo.jpg"
+    tags: []
+    enabled: false
+    one_page: false
+    multiple: false
+  -
+    name: "arty"
+    title: ""
+    uri: "/template/2020/"
+    thumbnail: null #"thumbnails/2020/arty.jpg"
+    tags: []
+    enabled: false
+    one_page: false
+    multiple: false
+  -
+    name: "bank"
+    title: ""
+    uri: "/template/2020/"
+    thumbnail: null #"thumbnails/2020/bank.jpg"
+    tags: ['mobile-app', 'wallet', 'banking', 'finance']
+    enabled: false
+    one_page: false
+    multiple: false
+  -
+    name: "bingle"
+    title: ""
+    uri: "/template/2020/"
+    thumbnail: null #"thumbnails/2020/bingle.jpg"
+    tags: ['landing-page', 'mobile-app']
+    enabled: false
+    one_page: false
+    multiple: false
+  -
+    name: "digimax"
+    title: ""
+    uri: "/template/2020/"
+    thumbnail: null #"thumbnails/2020/digimax.jpg"
+    tags: ['seo', 'digital', 'marketing', 'agency']
+    enabled: false
+    one_page: false
+    multiple: false
+  -
+    name: "nairo"
+    title: ""
+    uri: "/template/2020/"
+    thumbnail: null #"thumbnails/2020/XXX.jpg"
+    tags: ['personal', 'portfolio']
+    enabled: false
+    one_page: false
+    multiple: false
+  -
+    name: "poet-and-pen"
+    title: ""
+    uri: "/template/2020/"
+    thumbnail: null #"thumbnails/2020/poet-and-pen.jpg"
+    tags: ['personal', 'blog']
+    enabled: false
+    one_page: false
+    multiple: false
+  -
+    name: "quarty"
+    title: ""
+    uri: "/template/2020/"
+    thumbnail: null #"thumbnails/2020/quarty.jpg"
+    tags: []
+    enabled: false
+    one_page: false
+    multiple: false
+  -
+    name: "tunis"
+    title: ""
+    uri: "/template/2020/"
+    thumbnail: null #"thumbnails/2020/tunis.jpg"
+    tags: ['personal', 'portfolio']
+    enabled: false
+    one_page: false
+    multiple: false

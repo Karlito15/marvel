@@ -1,0 +1,52 @@
+<?php
+
+namespace Karlito\ThirdParty\Bezhanov;
+
+use Faker\Generator;
+use Fatalis\ThirdParty\Bezhanov;
+use Fatalis\ThirdParty\Fakr;
+
+class Educator extends Bezhanov
+{
+    /** @return string */
+    public static function university(): string
+    {
+        $faker = self::provider();
+
+        return $faker->university();
+    }
+
+    /** @return string */
+    public static function secondarySchool(): string
+    {
+        $faker = self::provider();
+
+        return $faker->secondarySchool();
+    }
+
+    /** @return string */
+    public static function course(): string
+    {
+        $faker = self::provider();
+
+        return $faker->course();
+    }
+
+    /** @return string */
+    public static function campus(): string
+    {
+        $faker = self::provider();
+
+        return $faker->campus();
+    }
+
+    /** @return \Bezhanov\Faker\Provider\Educator|Generator */
+    private static function provider()
+    {
+        $faker = Faker::init();
+        $faker->addProvider(new \Bezhanov\Faker\Provider\Educator($faker));
+
+        /** @var \Bezhanov\Faker\Provider\Educator $faker */
+        return $faker;
+    }
+}

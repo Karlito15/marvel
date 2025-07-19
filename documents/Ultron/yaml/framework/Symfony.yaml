@@ -1,0 +1,513 @@
+cache:
+  direction: horizontal
+  section: Cache
+  icon: null
+  items:
+  - content: Clear
+    id: symfony_cache_clear
+    cmd: php bin/console cache:clear
+    help: null
+  - content: "&nbsp;&nbsp;&nbsp;&nbsp;--Dev"
+    id: symfony_cache_clear_dev
+    cmd: php bin/console cache:clear --.env dev
+    help: null
+  - content: "&nbsp;&nbsp;&nbsp;&nbsp;--Test"
+    id: symfony_cache_clear_test
+    cmd: php bin/console cache:clear --.env test
+    help: null
+  - content: "&nbsp;&nbsp;&nbsp;&nbsp;--Prod"
+    id: symfony_cache_clear_prod
+    cmd: php bin/console cache:clear --.env prod
+    help: null
+  - content: "&nbsp;&nbsp;&nbsp;&nbsp;--No Warmup"
+    id: symfony_cache_warmup
+    cmd: php bin/console cache:clear --no-warmup
+    help: null
+
+others:
+  direction: horizontal
+  section: Others
+  icon: null
+  items:
+  - content: Assets
+    id: symfony_assets_install
+    cmd: php bin/console assets:install
+    help: null
+  - content: Assets --end
+    id: symfony_assets_install_env_prod
+    cmd: php bin/console assets:install --env prod
+    help: null
+  - content: Assets --symlink
+    id: symfony_assets_install_symlink
+    cmd: php bin/console assets:install --symlink public
+    help: null
+  - content: About
+    id: symfony_about
+    cmd: php bin/console about
+    help: null
+  - content: Help
+    id: symfony_help
+    cmd: php bin/console help
+    help: null
+  - content: List
+    id: symfony_list_assets
+    cmd: php bin/console list COMMANDNAME
+    help: "php bin/console list assets"
+
+server:
+  direction: horizontal
+  section: Server
+  icon: null
+  items:
+  - content: Debug
+    id: symfony_server_dump
+    cmd: php bin/console server:dump
+    help: 'Start a dump server that collects and displays dumps in a single place'
+  - content: Log
+    id: symfony_server_log
+    cmd: php bin/console server:log
+    help: 'Start a log server that displays logs in real time'
+
+maker:
+  direction: vertical
+  section: Maker
+  icon: null
+  items:
+    - content: Auth
+      id: symfony_maker_auth
+      cmd: php bin/console make:auth
+      help: null
+    - content: Command
+      id: symfony_maker_command
+      cmd: php bin/console make:command
+      help: null
+    - content: Controller
+      id: symfony_maker_controller
+      cmd: php bin/console make:controller
+      help: null
+    - content: CRUD
+      id: symfony_maker_crud
+      cmd: php bin/console make:crud
+      help: null
+    - content: Docker Database
+      id: symfony_maker_docker_database
+      cmd: php bin/console make:docker:database
+      help: null
+    - content: Entity
+      id: symfony_maker_entity
+      cmd: php bin/console make:entity
+      help: null
+    - content: Entity
+      id: symfony_maker_entity_regenerate
+      cmd: php bin/console make:entity --regenerate
+      help: null
+    - content: Entity
+      id: symfony_maker_entity_overwrite
+      cmd: php bin/console make:entity --regenerate --overwrite App
+      help: null
+    - content: Fixtures
+      id: symfony_maker_fixtures
+      cmd: php bin/console make:fixtures
+      help: null
+    - content: Form
+      id: symfony_maker_form
+      cmd: php bin/console make:form
+      help: null
+    - content: Functional-test
+      id: symfony_maker_functional_test
+      cmd: php bin/console make:functional-test
+      help: null
+    - content: Message
+      id: symfony_maker_message
+      cmd: php bin/console make:message
+      help: null
+    - content: Messenger Middleware
+      id: symfony_maker_messenger_middleware
+      cmd: php bin/console make:messenger-middleware
+      help: null
+    - content: Migration
+      id: symfony_maker_migration
+      cmd: php bin/console make:migration
+    - content: Registration-form
+      id: symfony_maker_registration_form
+      cmd: php bin/console make:registration-form
+      help: null
+    - content: Reset Password
+      id: symfony_maker_reset_password
+      cmd: php bin/console make:reset-password
+      help: null
+    - content: Serializer:encoder
+      id: symfony_maker_serializer_encoder
+      cmd: php bin/console make:serializer:encoder
+      help: null
+    - content: Serializer:normalizer
+      id: symfony_maker_serializer_normalizer
+      cmd: php bin/console make:serializer:normalizer
+      help: null
+    - content: Stimulus Controller
+      id: symfony_maker_stimulus_controller
+      cmd: php bin/console make:stimulus-controller
+      help: null
+    - content: Subscriber
+      id: symfony_maker_subscriber
+      cmd: php bin/console make:subscriber
+      help: null
+    - content: Twig-component
+      id: symfony_maker_twig_component
+      cmd: php bin/console make:twig-component
+      help: null
+    - content: Twig-extension
+      id: symfony_maker_twig_extension
+      cmd: php bin/console make:twig-extension
+      help: null
+    - content: Unit-test
+      id: symfony_maker_unit_test
+      cmd: php bin/console make:unit-test
+      help: null
+    - content: User
+      id: symfony_maker_user
+      cmd: php bin/console make:user
+      help: null
+    - content: Validator
+      id: symfony_maker_validator
+      cmd: php bin/console make:validator
+      help: null
+    - content: Voter
+      id: symfony_maker_voter
+      cmd: php bin/console make:voter
+      help: null
+
+debug:
+  direction: vertical
+  section: Debug
+  icon: null
+  items:
+    - content: Debug Router
+      id: symfony_debug_debug_router
+      cmd: php bin/console debug:router
+      help: null
+    - content: Debug Router (export)
+      id: symfony_debug_debug_router_export
+      cmd: php bin/console debug:router > route.yaml
+      help: null
+    - content: Liste
+      id: symfony_route_debug_router_routename
+      cmd: php bin/console debug:router ROUTENAME
+      help: null
+    - content: Liste
+      id: symfony_route_debug_router_uri
+      cmd: php bin/console debug:router URI
+      help: null
+    - content: Match
+      id: symfony_route_router_match
+      cmd: php bin/console router:match
+      help: null
+    - content: Debug Twig
+      id: symfony_debug_debug_twig
+      cmd: php bin/console debug:twig
+      help: null
+    - content: Debug Autowiring
+      id: symfony_debug_XXX
+      cmd: php bin/console debug:autowiring
+      help: null
+    - content: Debug Config
+      id: symfony_debug_config
+      cmd: php bin/console debug:config
+      help: null
+    - content: Debug Config Doctrine (export)
+      id: symfony_debug_config_export
+      cmd: php bin/console debug:config doctrine > doctrine.yaml
+      help: null
+    - content: Debug Container
+      id: symfony_debug_container
+      cmd: php bin/console debug:container
+      help: null
+    - content: Debug Container + parameter
+      id: symfony_debug_container_parameter
+      cmd: php bin/console debug:container --parameter=configuration
+      help: null
+    - content: Debug Container all parameters
+      id: symfony_debug_container_parameters
+      cmd: php bin/console debug:container --parameters
+      help: null
+    - content: Debug Container by Type
+      id: symfony_debug_container_type
+      cmd: php bin/console debug:container --types
+      help: null
+    - content: Debug Container (export)
+      id: symfony_debug_container_export
+      cmd: php bin/console debug:container > container.yaml
+      help: null
+    - content: Debug Container Make
+      id: symfony_debug_container_make
+      cmd: php bin/console debug:container make
+      help: null
+    - content: Debug Event Dispatcher
+      id: symfony_debug_event_dispatcher
+      cmd: php bin/console debug:event-dispatcher
+      help: null
+# php bin/console debug:autowiring
+# php bin/console debug:autowiring > autowiring.yaml
+
+# php bin/console debug:config
+# php bin/console debug:config debug
+# php bin/console debug:config doctrine > doctrine.yaml
+# php bin/console debug:config doctrine_migrations > doctrine_migrations.yaml
+# php bin/console debug:config monolog > monolog.yaml
+# php bin/console debug:config web_profiler
+
+# php bin/console debug:container
+# php bin/console debug:container --parameter=configuration
+# php bin/console debug:container --parameter=doctrine
+# php bin/console debug:container --parameter=doctrine.connections
+# php bin/console debug:container --parameter=doctrine.default_connection
+# php bin/console debug:container --parameters
+# php bin/console debug:container --parameters --env=dev
+# php bin/console debug:container --parameters > params.yaml
+# php bin/console debug:container --parameters | grep cocur
+# php bin/console debug:container --parameters | grep twig
+# php bin/console debug:container --show-hidden > container.yaml
+# php bin/console debug:container --tag=data_collector
+# php bin/console debug:container --tag=event
+# php bin/console debug:container --tag=kernel
+# php bin/console debug:container > container.yaml
+# php bin/console debug:container doctrine
+# php bin/console debug:container doctrine_migrations
+# php bin/console debug:container Entities
+# php bin/console debug:container Entity User
+# php bin/console debug:container User
+
+# php bin/console debug:dotenv
+# php bin/console debug:event > event.yaml
+# php bin/console debug:form [nameFormType]
+# php bin/console debug:router
+# php bin/console debug:router | grep app
+# php bin/console debug:translation fr --domain=forms --only-missing
+# php bin/console debug:translation fr --only-missing
+# php bin/console debug:translation fr forms --only-missing
+dump:
+  direction: vertical
+  section: Config Dump Référence
+  icon: null
+  items:
+    - content: Référence
+      id: symfony_reference_config
+      cmd: php bin/console config:dump-reference
+      help: null
+    - content: Référence
+      id: symfony_reference_maker
+      cmd: php bin/console config:dump-reference MakerBundle
+      help: null
+    - content: EEEE
+      id: symfony_reference_cache
+      cmd: php bin/console config:dump-reference cache
+      help: null
+    - content: EEEE
+      id: symfony_reference_doctrine
+      cmd: php bin/console config:dump-reference doctrine
+      help: null
+    - content: EEEE
+      id: symfony_reference_framework
+      cmd: php bin/console config:dump-reference framework
+      help: null
+    - content: EEEE
+      id: symfony_reference_security
+      cmd: php bin/console config:dump-reference security
+      help: null
+    - content: EEEE
+      id: symfony_reference_sensio_framework_extra
+      cmd: php bin/console config:dump-reference sensio_framework_extra
+      help: null
+    - content: EEEE
+      id: symfony_reference_stof_doctrine_extensions
+      cmd: php bin/console config:dump-reference stof_doctrine_extensions
+      help: null
+    - content: EEEE
+      id: symfony_reference_swiftmailer
+      cmd: php bin/console config:dump-reference swiftmailer
+      help: null
+    - content: EEEE
+      id: symfony_reference_twig
+      cmd: php bin/console config:dump-reference twig
+      help: null
+# php bin/console config:dump
+# php bin/console config:dump fos_rest > fos.yaml
+# php bin/console config:dump layout
+# php bin/console config:dump layout > layout.yaml
+# php bin/console config:dump-reference --format=yaml
+# php bin/console config:dump-reference cache > cache.yaml
+# php bin/console config:dump-reference doctrine > doctrine.yaml
+# php bin/console config:dump-reference doctrine_migrations > doctrine_migrations.yaml
+# php bin/console config:dump-reference framework > framework.yaml
+# php bin/console config:dump-reference monolog > monolog.yaml
+# php bin/console config:dump-reference security > security.yaml
+# php bin/console config:dump-reference sensio_framework_extra > sensio_framework_extra.yaml
+# php bin/console config:dump-reference twig > twig.yaml
+# php bin/console config:dump-reference validator > validator.yaml
+# php bin/console config:dump-reference web_profiler > web_profiler.yaml
+
+translation:
+  direction: horizontal
+  section: Translation
+  icon: null
+  items:
+    - content: Translation
+      id: symfony_trans_debug_translation_lang
+      cmd: php bin/console debug:translation
+      help: null
+    - content: Translation Force
+      id: symfony_trans_debug_translation_update
+      cmd: php bin/console translation:update fr --force
+      help: null
+    - content: Translation + ISO
+      id: symfony_trans_debug_translation_lang_fr
+      cmd: php bin/console debug:translation fr
+      help: null
+    - content: Translation Missing
+      id: symfony_trans_debug_translation_missing
+      cmd: php bin/console debug:translation fr --only-missing
+      help: null
+    - content: Translation Unused
+      id: symfony_trans_debug_translation_unused
+      cmd: php bin/console debug:translation fr --only-unused
+      help: null
+
+globals:
+  direction: horizontal
+  section: Global Parameters
+  icon: null
+  items:
+    - content: Project Directory
+      id: kernel_project_dir
+      cmd: kernel.project_dir
+      help: null
+    - content: Cache Directory
+      id: kernel_cache_dir
+      cmd: kernel.cache_dir
+      help: null
+    - content: Logs Directory
+      id: kernel_logs_dir
+      cmd: kernel.logs_dir
+      help: null
+    - content: Charset
+      id: kernel_charset
+      cmd: kernel.charset
+      help: null
+    - content: Default Locale
+      id: kernel_default_locale
+      cmd: kernel.default_locale
+      help: null
+    - content: Environment
+      id: kernel_environment
+      cmd: kernel.environment
+      help: null
+    - content: Secret
+      id: kernel_secret
+      cmd: kernel.secret
+      help: null
+
+security:
+  direction: horizontal
+  section: Security
+  icon: null
+  items:
+    - content: Encode Password
+      id: symfony_security_secu_encode
+      cmd: php bin/console security:encode-password
+      help: null
+    - content: Hash Password
+      id: symfony_security_hash
+      cmd: php bin/console security:hash-password
+      help: null
+
+tricks:
+  direction: null
+  section: Tricks
+  icon: null
+  items:
+    - content: Truncate Table
+      id: null
+      cmd: null
+      help: null
+      prism: 'language-html'
+      free: |
+        $manager = $this->container->get('doctrine.orm.entity_manager');
+        $connection = $manager->getConnection();
+        $platform   = $connection->getDatabasePlatform();
+        $connection->executeQuery('SET FOREIGN_KEY_CHECKS = 0;');
+        $connection->executeUpdate($platform->getTruncateTableSQL('post', true /* whether to cascade */));
+        $connection->executeQuery('SET FOREIGN_KEY_CHECKS = 1;');
+
+    - content: Doctrine Fixtures Reference
+      id: null
+      cmd: null
+      help: null
+      prism: 'language-html'
+      free: |
+        Add the Reference :
+        $this->addReference(self::ADMIN_USER_REFERENCE, $userAdmin);
+
+        Get the Reference :
+        $this->getReference(UserFixtures::ADMIN_USER_REFERENCE);
+
+    - content: Foreign Key
+      id: null
+      cmd: null
+      help: null
+      prism: 'language-html'
+      free: |
+        ### optimiser les relations
+        Si Doctrine semble un peu magique dans sa gestion des relations, il est important, pour des raisons de performance, de préciser la stratégie de récupération des données.
+
+        @ManyToOne(targetEntity="Post", fetch="LAZY")
+        Le mode LAZY est celui par défaut. Les données sont chargées uniquement si nécessaires et l'appel aux données de relations provoque une requête supplémentaire.
+
+        @ManyToOne(targetEntity="Post", fetch="EAGER")
+        Le mode EAGER précharge les données de la relation automatiquement en réalisant la jointure par défaut. Ainsi votre entité sera nettement plus grande mais vous économiserez des requêtes.
+
+        @ManyToOne(targetEntity="Post",  fetch="EXTRA_LAZY")
+        En EXTRA_LAZY, les données ne seront pas entièrement chargées mais vous pourrez toutefois réaliser des opérations du type "contains()", "slice()" ou "count()" sur la collection.
+
+        ### Sécurisez vos requêtes
+
+        Il est courant d’exécuter directement les requêtes via Doctrine sans se soucier des potentielles erreurs. On utilise généralement la bonne vieille méthode du backup avant l’exécution. Mais le système de transaction est implémenté dans Doctrine et vous permet de sécuriser vos exécutions en offrant la possibilité du rollback.
+
+        $em = $this->getDoctrine()->getEntityManager();
+        try {
+          $em->getConnection()->beginTransaction();
+          $user = $this->getDoctrine()->getRepository('AppBundle:User')->find($user_id);
+          $profile =  $user->getProfile();
+          $em->remove($profile);
+          $em->remove($user);
+          $em->flush();
+          $em->getConnection()->commit();
+        } catch (Exception $e) {
+          $em->getConnection()->rollback();
+          throw $e;
+        }
+
+        ### Alléger les traitements par lots
+        Vous avez peut-être déjà utilisé PHP pour des traitements lourds (migration, importation...). Mettons de côté la pertinence ou non de l’utilisation de PHP à ces fins, et penchons nous sur le comportement des traitements de Doctrine sur des grosses volumétrie.
+
+        Tout le monde le sait, PHP a un vilain défaut : une gestion de la mémoire un peu paresseuse.
+        Doctrine n'étant pas avare en mémoire,
+        l’utilisation des deux sur des gros volumes de traitement n'est pas des plus "joyeux".
+
+        Par défaut, vous verrez certainement votre script se ralentir au fur et à mesure car Doctrine ne délestera jamais la quantité d'objets qu'il a traités.
+
+        Pour freiner un peu cet effet, commencez par désactiver les logs Doctrine :
+
+        $this->getDoctrine()->getEntityManager()->getConnection()->getConfiguration()->setSQLLogger(null);
+        Si possible, utilisez dès que possible la fonction clear() pour détacher et vider les ressources.
+
+# php bin/console fos:js-routing:debug
+# php bin/console fos:js-routing:dump --format=json --target=public/js/fos_js_routes.json
+
+# php bin/console messenger:consume
+# php bin/console messenger:consume async
+# php bin/console messenger:failed:remove
+# php bin/console messenger:failed:retry
+# php bin/console messenger:failed:show
+# php bin/console messenger:setup-transports
+# php bin/console messenger:stop-workers
+# php bin/console search:replace

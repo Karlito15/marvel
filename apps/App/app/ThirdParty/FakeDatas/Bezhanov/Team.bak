@@ -1,0 +1,36 @@
+<?php
+
+namespace Karlito\ThirdParty\Bezhanov;
+
+use Faker\Factory;
+use Faker\Generator;
+use Fatalis\ThirdParty\Bezhanov;
+
+class Team extends Bezhanov
+{
+    /** @return string */
+    public static function team(): string
+    {
+        $faker = self::provider();
+
+        return $faker->team();
+    }
+
+    /** @return string */
+    public static function sport(): string
+    {
+        $faker = self::provider();
+
+        return $faker->sport();
+    }
+
+    /** @return \Bezhanov\Faker\Provider\Team|Generator */
+    private static function provider()
+    {
+        $faker = Factory::create();
+        $faker->addProvider(new \Bezhanov\Faker\Provider\Team($faker));
+
+        /** @var \Bezhanov\Faker\Provider\Team $faker */
+        return $faker;
+    }
+}

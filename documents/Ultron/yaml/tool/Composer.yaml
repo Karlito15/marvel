@@ -1,0 +1,453 @@
+update:
+  direction: vertical
+  section: "Update"
+  icon: '<i class="fa-solid fa-robot fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: "Update"
+    id: composer_update
+    cmd: composer update
+    help: null
+  - content: "optimize-autoloader"
+    id: composer_update_optimize_autoloader
+    cmd: composer update --optimize-autoloader
+    help: "Convert PSR-0/4 autoloading to classmap to get a faster autoloader. This is recommended especially for production, but can take a bit of time to run so it is currently not done by default."
+  - content: no-scripts
+    id: composer_update_no_scripts
+    cmd: composer update --no-scripts
+    help: "Skips execution of scripts defined in composer.json."
+  - content: no-autoloader
+    id: composer_update_no_autoloader
+    cmd: composer update --no-autoloader
+    help: "Skips autoloader generation."
+  - content: prefer-source
+    id: composer_update_prefer_source
+    cmd: composer update --prefer-source
+    help: "Install packages from source when available."
+  - content: prefer-dist
+    id: composer_update_prefer_dist
+    cmd: composer update --prefer-dist
+    help: "Install packages from dist when available."
+  - content: dev
+    id: composer_update_dev
+    cmd: composer update --dev
+    help: "Install packages listed in require-dev (this is the default behavior)."
+  - content: no-dev
+    id: composer_update_no_dev
+    cmd: composer update --no-dev
+    help: "Skip installing packages listed in require-dev. The autoloader generation skips the autoload-dev rules."
+  - content: ignore-platform-reqs
+    id: composer_update_ignore_platform_reqs
+    cmd: composer update --ignore-platform-reqs
+    help: "ignore php, hhvm, lib-* and ext-* requirements and force the installation even if the local machine does not fulfill these. See also the platform config option."
+  - content: dry-run
+    id: composer_update_dry_run
+    cmd: composer update --dry-run
+    help: "Simulate the command without actually doing anything."
+  - content: no-progress
+    id: composer_update_no_progress
+    cmd: composer update --no-progress
+    help: "Removes the progress display that can mess with some terminals or scripts which don't handle backspace characters."
+  - content: no-suggest
+    id: composer_update_no_suggest
+    cmd: composer update --no-suggest
+    help: "Skips suggested packages in the output."
+  - content: classmap-authoritative
+    id: composer_update_classmap_authoritative
+    cmd: composer update --classmap-authoritative (-a)
+    help: "Autoload classes from the classmap only. Implicitly enables --optimize-autoloader."
+  - content: lock
+    id: composer_update_lock
+    cmd: composer update --lock
+    help: "Only updates the lock file hash to suppress warning about the lock file being out of date."
+  - content: with-dependencies
+    id: composer_update_with_dependencies
+    cmd: composer update --with-dependencies
+    help: "Add also all dependencies of whitelisted packages to the whitelist."
+  - content: root-reqs
+    id: composer_update_root_reqs
+    cmd: composer update --root-reqs
+    help: "Restricts the update to your first degree dependencies."
+  - content: prefer-stable
+    id: composer_update_prefer_stable
+    cmd: composer update --prefer-stable
+    help: "Prefer stable versions of dependencies."
+  - content: prefer-lowest
+    id: composer_update_prefer_lowest
+    cmd: composer update --prefer-lowest
+    help: "Prefer lowest versions of dependencies. Useful for testing minimal versions of requirements, generally used with --prefer-stable."
+
+install:
+  direction: vertical
+  section: "Install"
+  icon: '<i class="fa-solid fa-robot fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Install
+    id: composer_install
+    cmd: composer install
+    help: null
+  - content: optimize-autoloader
+    id: composer_install_optimize_autoloader
+    cmd: composer install --optimize-autoloader
+    help: "Convert PSR-0/4 autoloading to classmap to get a faster autoloader. This is recommended especially for production, but can take a bit of time to run so it is currently not done by default."
+  - content: no-scripts
+    id: composer_install_no_scripts
+    cmd: composer install --no-scripts
+    help: "Skips execution of scripts defined in composer.json."
+  - content: no-autoloader
+    id: composer_install_no_autoloader
+    cmd: composer install --no-autoloader
+    help: "Skips autoloader generation."
+  - content: prefer-source
+    id: composer_install_prefer_source
+    cmd: composer install --prefer-source
+    help: "There are two ways of downloading a package : source and dist. For stable versions Composer will use the dist by default. The source is a version control repository."
+  - content: prefer-dist
+    id: composer_install_prefer_dist
+    cmd: composer install --prefer-dist
+    help: "Reverse of --prefer-source, Composer will install from dist if possible. This can speed up installs on build servers and other use cases where you typically do not run updates of the vendors."
+  - content: dev
+    id: composer_install_dev
+    cmd: composer install --dev
+    help: "Install packages listed in require-dev (this is the default behavior)."
+  - content: no-dev
+    id: composer_install_no_dev
+    cmd: composer install --no-dev
+    help: "Skip installing packages listed in require-dev. The autoloader generation skips the autoload-dev rules."
+  - content: ignore-platform-reqs
+    id: composer_install_ignore_platform_reqs
+    cmd: composer install --ignore-platform-reqs
+    help: "ignore php, hhvm, lib-* and ext-* requirements and force the installation even if the local machine does not fulfill these. See also the platform config option."
+  - content: dry-run
+    id: composer_install_dry_run
+    cmd: composer install --dry-run
+    help: "If you want to run through an installation without actually installing a package, you can use --dry-run. This will simulate the installation and show you what would happen."
+  - content: no-progress
+    id: composer_install_no_progress
+    cmd: composer install --no-progress
+    help: "Removes the progress display that can mess with some terminals or scripts which don't handle backspace characters."
+  - content: no-suggest
+    id: composer_install_no_suggest
+    cmd: composer install --no-suggest
+    help: "Skips suggested packages in the output."
+  - content: classmap-authoritative
+    id: composer_install_classmap_authoritative
+    cmd: composer install --classmap-authoritative (-a)
+    help: "Autoload classes from the classmap only. Implicitly enables --optimize-autoloader."
+
+require:
+  direction: vertical
+  section: "Require"
+  icon: '<i class="fa-solid fa-robot fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: composer require
+    id: composer_require
+    cmd: composer require
+    help: null
+  - content: composer require --prefer-source
+    id: composer_require
+    cmd: composer require --prefer-source
+    help: "Install packages from source when available."
+  - content: composer require --prefer-dist
+    id: composer_require
+    cmd: composer require --prefer-dist
+    help: "Install packages from dist when available."
+  - content: composer require --ignore-platform-reqs
+    id: composer_require
+    cmd: composer require --ignore-platform-reqs
+    help: "ignore php, hhvm, lib-* and ext-* requirements and force the installation even if the local machine does not fulfill these. See also the platform config option."
+  - content: composer require --dev
+    id: composer_require
+    cmd: composer require --dev
+    help: "Add packages to require-dev."
+  - content: composer require --no-update
+    id: composer_require
+    cmd: composer require --no-update
+    help: "Disables the automatic update of the dependencies."
+  - content: composer require --no-progress
+    id: composer_require
+    cmd: composer require --no-progress
+    help: "Removes the progress display that can mess with some terminals or scripts which don't handle backspace characters."
+  - content: composer require --no-suggest
+    id: composer_require
+    cmd: composer require --no-suggest
+    help: "Skips suggested packages in the output."
+  - content: composer require --no-scripts
+    id: composer_require
+    cmd: composer require --no-scripts
+    help: "Skips execution of scripts defined in composer.json."
+  - content: composer require --update-no-dev
+    id: composer_require
+    cmd: composer require --update-no-dev
+    help: "Run the dependency update with the --no-dev option."
+  - content: composer require --update-with-dependencies
+    id: composer_require
+    cmd: composer require --update-with-dependencies
+    help: "Also update dependencies of the newly required packages."
+  - content: composer require --sort-packages
+    id: composer_require
+    cmd: composer require --sort-packages
+    help: "Keep packages sorted in composer.json."
+  - content: composer require --optimize-autoloader
+    id: composer_require
+    cmd: composer require --optimize-autoloader
+    help: "Convert PSR-0/4 autoloading to classmap to get a faster autoloader. This is recommended especially for production, but can take a bit of time to run so it is currently not done by default."
+  - content: composer require --classmap-authoritative
+    id: composer_require
+    cmd: composer require --classmap-authoritative
+    help: "Autoload classes from the classmap only. Implicitly enables --optimize-autoloader."
+  - content: composer require --prefer-stable
+    id: composer_require
+    cmd: composer require --prefer-stable
+    help: "Prefer stable versions of dependencies."
+  - content: composer require --prefer-lowest
+    id: composer_require
+    cmd: composer require --prefer-lowest
+    help: "Prefer lowest versions of dependencies. Useful for testing minimal versions of requirements, generally used with --prefer-stable."
+    
+run_script:
+  direction: vertical
+  section: "Run Script"
+  icon: '<i class="fa-solid fa-robot fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Symfony
+    id: composer_run_script_symfony
+    cmd: composer run-script auto-scripts
+    help: null
+  - content: Script Name
+    id: composer_run_script_scriptname
+    cmd: composer run-script SCRIPTNAME
+    help: null
+
+autoloader:
+  direction: vertical
+  section: "Autoloader"
+  icon: '<i class="fa-solid fa-robot fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Dump
+    id: composer_dump
+    cmd: composer dump-autoload
+    help: "If you need to update the autoloader because of new classes in a classmap package for example, you can use dump-autoload to do that without having to go through an install or update."
+  - content: Dump
+    id: composer_dump_optimize
+    cmd: composer dump-autoload --optimize
+    help: null
+  - content: Dump
+    id: composer_dump_apcu
+    cmd: composer dump-autoload --apcu
+    help: null
+  - content: Dump
+    id: composer_dump_ignore
+    cmd: composer dump-autoload --ignore-platform-reqs
+    help: null
+
+init:
+  direction: vertical
+  section: "Initialisation of Project"
+  icon: '<i class="fa-solid fa-robot fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Name
+    id: composer_init_name
+    cmd: composer init --name
+    help: "Name of the package."
+  - content: Description
+    id: composer_init_description
+    cmd: composer init --description
+    help: "Description of the package."
+  - content: Author
+    id: composer_init_author
+    cmd: composer init --author
+    help: "Author name of the package."
+  - content: Homepage
+    id: composer_init_homepage
+    cmd: composer init --homepage
+    help: "Homepage of the package."
+  - content: Require
+    id: composer_init_require
+    cmd: composer init --require
+    help: "Package to require with a version constraint. Should be in format foo/bar:1.0.0."
+  - content: Stability
+    id: composer_init_stability
+    cmd: composer init --stability
+    help: "Value for the minimum-stability field."
+  - content: Repository
+    id: composer_init_repository
+    cmd: composer init --repository
+    help: "Provide one (or more) custom repositories. They will be stored in the generated composer.json, and used for auto-completion when prompting for the list of requires. Every repository can be either an HTTP URL pointing to a composer repository or a JSON string which similar to what the repositories key accepts."
+
+alls:
+  direction: vertical
+  section: "Others"
+  icon: '<i class="fa-solid fa-robot fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: composer self-update
+    id: composer_self_update
+    cmd: composer self-update
+    help: null
+  - content: composer self-update --rollback (-r)
+    id: composer_self_update_rollback
+    cmd: composer self-update --rollback (-r)
+    help: "Rollback to the last version you had installed."
+  - content: composer self-update --clean-backups
+    id: composer_self_update_clean
+    cmd: composer self-update --clean-backups
+    help: "Delete old backups during an update. This makes the current version of Composer the only backup available after the update."
+  - content: composer suggests
+    id: composer_suggests
+    cmd: composer suggests
+    help: null
+  - content: composer depends doctrine/lexer
+    id: composer_depends_doctrine
+    cmd: composer depends doctrine/lexer
+    help: null
+  - content: composer prohibits symfony/symfony 3.1
+    id: composer_prohibits_symfony
+    cmd: composer prohibits symfony/symfony 3.1
+    help: null
+  - content: composer prohibits php:8
+    id: composer_prohibits_php
+    cmd: composer prohibits php:8
+    help: null
+  - content: composer validate
+    id: composer_validate
+    cmd: composer validate
+    help: null
+  - content: composer validate --no-check-all
+    id: composer_validate_no_check_all
+    cmd: composer validate --no-check-all
+    help: "Do not emit a warning if requirements in composer.json use unbound version constraints."
+  - content: composer validate --no-check-lock
+    id: composer_validate_no_check_lock
+    cmd: composer validate --no-check-lock
+    help: "Do not emit an error if composer.lock exists and is not up to date."
+  - content: composer validate --no-check-publish
+    id: composer_validate_no_check_publish
+    cmd: composer validate --no-check-publish
+    help: "Do not emit an error if composer.json is unsuitable for publishing as a package on Packagist but is otherwise valid."
+  - content: composer diagnose
+    id: composer_diagnose
+    cmd: composer diagnose
+    help: null
+  - content: composer clear-cache
+    id: composer_clear_cache
+    cmd: composer clear-cache
+    help: null
+  - content: composer config --list
+    id: composer_config
+    cmd: composer config --list
+    help: null
+  - content: composer global update
+    id: composer_global_update
+    cmd: composer global update
+    help: null
+  - content: composer search monolog
+    id: composer_search_monolog
+    cmd: composer search monolog
+    help: null
+  - content: composer show
+    id: composer_show
+    cmd: composer show
+    help: null
+  - content: composer global require fabpot/php-cs-fixer
+    id: composer_global_require
+    cmd: composer global require fabpot/php-cs-fixer
+    help: null
+  - content: composer status
+    id: composer_status
+    cmd: composer status
+    help: null
+  - content: composer remove PACKAGE
+    id: composer_remove
+    cmd: composer remove PACKAGE
+    help: null
+
+download:
+  direction: html
+  section: "Download"
+  icon: '<i class="fa-solid fa-robot fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Download
+    id: composer_download
+    cmd: null
+    help: null
+    prism: 'language-powershell'
+    free: |
+      php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+      php -r "if (hash_file('SHA384', 'composer-setup.php') === '93b54496392c062774670ac18b134c3b3a95e5a5e5c8f1a9f115f203b75bf9a129d5daa8ba6a13e2cc8a1da0806388a8') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+      php composer-setup.php
+      php -r "unlink('composer-setup.php');"
+      /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+      Sur Windows.
+      1- Cliquez sur l'icône Rechercher et saisissez "Panneau de configuration".
+      2- Cliquez sur Panneau de configuration >> Système >> Avancé
+      3- Cliquez sur "Variables d'environnement", puis, sous "Variables Système", recherchez la valeur "PATH" et cliquez dessus.
+      /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+      Sur Linux.
+      1- Déplacer "composer" dans dossier :
+      sudo mv composer.phar /usr/local/bin/composer
+      2- Rendre composer executable :
+      chmod +x composer
+      /* ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** */
+
+list:
+  direction: html
+  section: "List of Commands"
+  icon: '<i class="fa-solid fa-robot fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: composer list
+    id: composer_list
+    cmd: composer list
+    help: null
+    prism: 'language-powershell'
+    free: |
+      Usage:
+        command [options] [arguments]
+      
+      Options:
+        -h, --help                     Display help for the given command. When no command is given display help for the list command
+        -q, --quiet                    Do not output any message
+        -V, --version                  Display this application version
+            --ansi|--no-ansi           Force (or disable --no-ansi) ANSI output
+        -n, --no-interaction           Do not ask any interactive question
+            --profile                  Display timing and memory usage information
+            --no-plugins               Whether to disable plugins.
+            --no-scripts               Skips the execution of all scripts defined in composer.json file.
+        -d, --working-dir=WORKING-DIR  If specified, use the given directory as working directory.
+            --no-cache                 Prevent use of the cache
+        -v|vv|vvv, --verbose           Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+      
+      Available commands:
+        about                Shows a short information about Composer
+        archive              Creates an archive of this composer package
+        audit                Checks for security vulnerability advisories for installed packages
+        browse               [home] Opens the package's repository URL or homepage in your browser
+        bump                 Increases the lower limit of your composer.json requirements to the currently installed versions
+        check-platform-reqs  Check that platform requirements are satisfied
+        clear-cache          [clearcache|cc] Clears composer's internal package cache
+        completion           Dump the shell completion script
+        config               Sets config options
+        create-project       Creates new project from a package into given directory
+        depends              [why] Shows which packages cause the given package to be installed
+        diagnose             Diagnoses the system to identify common errors
+        dump-autoload        [dumpautoload] Dumps the autoloader
+        exec                 Executes a vendored binary/script
+        fund                 Discover how to help fund the maintenance of your dependencies
+        global               Allows running commands in the global composer dir ($COMPOSER_HOME)
+        help                 Display help for a command
+        init                 Creates a basic composer.json file in current directory
+        install              [i] Installs the project dependencies from the composer.lock file if present, or falls back on the composer.json
+        licenses             Shows information about licenses of dependencies
+        list                 List commands
+        outdated             Shows a list of installed packages that have updates available, including their latest version
+        prohibits            [why-not] Shows which packages prevent the given package from being installed
+        reinstall            Uninstalls and reinstalls the given package names
+        remove               Removes a package from the require or require-dev
+        require              [r] Adds required packages to your composer.json and installs them
+        run-script           [run] Runs the scripts defined in composer.json
+        search               Searches for packages
+        self-update          [selfupdate] Updates composer.phar to the latest version
+        show                 [info] Shows information about packages
+        status               Shows a list of locally modified packages
+        suggests             Shows package suggestions
+        test                 Runs the test script as defined in composer.json
+        update               [u|upgrade] Updates your dependencies to the latest version according to composer.json, and updates the composer.lock file
+        validate             Validates a composer.json and composer.lock

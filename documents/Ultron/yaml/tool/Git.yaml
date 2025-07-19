@@ -1,0 +1,437 @@
+reset:
+  direction: vertical
+  section: "Reset"
+  icon: '<i class="fa-brands fa-github fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Reset Cache
+    id: git_rm
+    cmd: git rm -r --cached .
+    help: null
+  - content: Hard HEAD
+
+    id: git_reset_head
+    cmd: git reset --hard HEAD
+    help: null
+  - content: Hard
+    id: git_reset
+    cmd: git reset --hard
+    help: null
+
+status:
+  direction: vertical
+  section: "Status"
+  icon: '<i class="fa-brands fa-github fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Status
+    id: git_status
+    cmd: git status
+    help: null
+
+add:
+  direction: vertical
+  section: "Add Files"
+  icon: '<i class="fa-brands fa-github fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: All Files
+    id: git_add_all
+    cmd: git add -A
+    help: null
+  - content: Shortcut
+    id: git_add_point
+    cmd: git add .
+    help: null
+
+push:
+  direction: vertical
+  section: "Push"
+  icon: '<i class="fa-brands fa-github fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Master
+    id: git_push_origin_master
+    cmd: git push origin master
+    help: null
+  - content: Force
+    id: git_push_origin_master_force
+    cmd: git push origin master --force
+    help: null
+
+pull:
+  direction: vertical
+  section: "Pull"
+  icon: '<i class="fa-brands fa-github fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Master
+    id: git_pull_origin_master
+    cmd: git pull origin master
+    help: null
+  - content: Force
+    id: git_pull_origin_master_force
+    cmd: git pull origin master --force
+    help: null
+  - content: Master
+    id: git_pull_origin_main
+    cmd: git pull origin main
+    help: null
+  - content: Force
+    id: git_pull_origin_main_force
+    cmd: git pull origin main --force
+    help: null
+
+commit:
+  direction: vertical
+  section: "Commit"
+  icon: '<i class="fa-brands fa-github fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Message
+    id: git_commit_m
+    cmd: "git commit -m [MESSAGE]"
+    help: null
+  - content: Commit
+    id: git_commit_a
+    cmd: git commit -a
+    help: null
+  - content: Commit
+    id: git_commit_amend
+    cmd: git commit --amend
+    help: null
+
+logs:
+  direction: vertical
+  section: "Logs"
+  icon: '<i class="fa-brands fa-github fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Log
+    id: git_log
+    cmd: git log
+    help: null
+  - content: One Line
+    id: git_log_one_line
+    cmd: git log --oneline
+    help: null
+  - content: Log
+    id: git_log_p
+    cmd: git log -p
+    help: null
+  - content: Stat
+    id: git_log_stat
+    cmd: git log --stat
+    help: null
+  - content: Pretty
+    id: git_log_pretty
+    cmd: git log --pretty
+    help: null
+  - content: Graph
+    id: git_log_graph_oneline_all
+    cmd: git log --graph --oneline --all
+    help: null
+
+config:
+  direction: vertical
+  section: "Git Config"
+  icon: '<i class="fa-brands fa-github fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Config
+    id: git_config
+    cmd: git config
+    help: null
+  - content: Config List
+    id: null
+    cmd: git config --list
+    help: null
+  - content: git config --global user.name "Karlito15"
+    id: null
+    cmd: git config --global user.name "Karlito15"
+    help: null
+  - content: git config --global user.email "giancarlo.palumbo@free.fr"
+    id: null
+    cmd: git config --global user.email "giancarlo.palumbo@free.fr"
+    help: null
+  - content: git config --global color.ui true
+    id: null
+    cmd: git config --global color.ui true
+    help: null
+  - content: git config --global color.diff auto
+    id: null
+    cmd: git config --global color.diff auto
+    help: null
+  - content: git config --global color.status auto
+    id: null
+    cmd: git config --global color.status auto
+    help: null
+  - content: git config --global color.interactive true
+    id: null
+    cmd: git config --global color.interactive true
+    help: null
+  - content: git config --global color.branch auto
+    id: null
+    cmd: git config --global color.branch auto
+    help: null
+  - content: git config --global help.autocorrect -1
+    id: null
+    cmd: git config --global help.autocorrect -1
+    help: null
+  - content: git config --global help.format html
+    id: null
+    cmd: git config --global help.format html
+    help: null
+  - content: git config --global rebase.autosquash true
+    id: null
+    cmd: git config --global rebase.autosquash true
+    help: null
+  - content: git config --global core.bare false
+    id: null
+    cmd: git config --global core.bare false
+    help: null
+  - content: git config --global core.filemode false
+    id: null
+    cmd: git config --global core.filemode false
+    help: null
+  - content: git config --global core.fscache true
+    id: null
+    cmd: git config --global core.fscache true
+    help: null
+  - content: git config --global core.ignorecase true
+    id: null
+    cmd: git config --global core.ignorecase true
+    help: null
+  - content: git config --global core.logallrefupdates true
+    id: null
+    cmd: git config --global core.logallrefupdates true
+    help: null
+  - content: git config --global core.longpaths true
+    id: null
+    cmd: git config --global core.longpaths true
+    help: null
+  - content: git config --global core.repositoryformatversion 0
+    id: null
+    cmd: git config --global core.repositoryformatversion 0
+    help: null
+  - content: git config --global core.symlinks false
+    id: null
+    cmd: git config --global core.symlinks false
+    help: null
+  - content: git config --global core.autocrlf true
+    id: null
+    cmd: git config --global core.autocrlf true
+    help: null
+  - content: git config --global diff.astextplain.textconv astextplain
+    id: null
+    cmd: git config --global diff.astextplain.textconv astextplain
+    help: null
+  - content: git config --global filter.lfs.clean git-lfs clean -- %f
+    id: null
+    cmd: git config --global filter.lfs.clean git-lfs clean -- %f
+    help: null
+  - content: git config --global filter.lfs.process git-lfs filter-process
+    id: null
+    cmd: git config --global filter.lfs.process git-lfs filter-process
+    help: null
+  - content: git config --global filter.lfs.required true
+    id: null
+    cmd: git config --global filter.lfs.required true
+    help: null
+  - content: git config --global filter.lfs.smudge git-lfs smudge -- %f
+    id: null
+    cmd: git config --global filter.lfs.smudge git-lfs smudge -- %f
+    help: null
+  - content: git config --global pull.ff only
+    id: null
+    cmd: git config --global pull.ff only
+    help: null
+  - content: git config --global pull.rebase true
+    id: null
+    cmd: git config --global pull.rebase true
+    help: null
+  - content: git config --global status.submodulesummary true
+    id: null
+    cmd: git config --global status.submodulesummary true
+    help: null
+
+alls:
+  direction: vertical
+  section: "Alls"
+  icon: '<i class="fa-brands fa-github fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Help
+    id: git_help
+    cmd: git help
+    help: null
+  - content: Init
+    id: git_init
+    cmd: git init --bare
+    help: null
+  - content: Clone
+    id: git_clone
+    cmd: git clone --recursive
+    help: null
+  - content: Diff
+    id: git_diff
+    cmd: git diff
+    help: null
+  - content: Remove
+    id: git_rm
+    cmd: git rm
+    help: null
+  - content: Remove
+    id: git_rm_cached
+    cmd: git rm --cached
+    help: null
+  - content: Remove
+    id: git_rm_ignore_unmatch
+    cmd: git rm --ignore-unmatch
+    help: null
+  - content: Move
+    id: git_mv
+    cmd: git mv
+    help: null
+  - content: Clean
+    id: git_clean
+    cmd: git clean
+    help: null
+  - content: Branch
+    id: git_branch
+    cmd: git branch
+    help: null
+  - content: Branch
+    id: git_branch_u
+    cmd: git branch -u
+    help: null
+  - content: Checkout
+    id: git_checkout
+    cmd: git checkout --track
+    help: null
+  - content: Merge
+    id: git_merge
+    cmd: git merge
+    help: null
+  - content: MergeTool
+    id: git_mergetool
+    cmd: git mergetool
+    help: null
+  - content: Stash
+    id: git_stash
+    cmd: git stash
+    help: null
+  - content: Tag
+    id: git_tag
+    cmd: git tag
+    help: null
+  - content: Fetch
+    id: git_fetch
+    cmd: git fetch
+    help: null
+  - content: Remote
+    id: git_remote
+    cmd: git remote
+    help: null
+  - content: Archive
+    id: git_archive
+    cmd: git archive
+    help: null
+  - content: Submodule
+    id: git_submodule
+    cmd: git submodule
+    help: null
+  - content: Show
+    id: git_show
+    cmd: git show
+    help: null
+  - content: Shortlog
+    id: git_shortlog
+    cmd: git shortlog
+    help: null
+  - content: Describe
+    id: git_describe
+    cmd: git describe
+    help: null
+  - content: Bisect
+    id: git_bisect
+    cmd: git bisect
+    help: null
+  - content: Blame
+    id: git_blame
+    cmd: git blame
+    help: null
+  - content: Grep
+    id: git_grep
+    cmd: git grep
+    help: null
+  - content: Cherry-pick
+    id: git_cherry_pick
+    cmd: git cherry-pick
+    help: null
+  - content: Rebase
+    id: git_rebase
+    cmd: git rebase
+    help: null
+  - content: Revert
+    id: git_revert
+    cmd: git revert
+    help: null
+  - content: git apply
+    id: git_apply
+    cmd: git apply
+    help: null
+  - content: git am
+    id: git_am
+    cmd: git am
+    help: null
+  - content: git format-patch
+    id: git_format_patch
+    cmd: git format-patch
+    help: null
+  - content: git imap-send
+    id: git_imap_send
+    cmd: git imap-send
+    help: null
+  - content: git send-email
+    id: git_send_email
+    cmd: git send-email
+    help: null
+  - content: git request-pull
+    id: git_request_pull
+    cmd: git request-pull
+    help: null
+  - content: git gc
+    id: git_gc
+    cmd: git gc
+    help: null
+  - content: git fsck
+    id: git_fsck
+    cmd: git fsck
+    help: null
+  - content: git reflog
+    id: git_reflog
+    cmd: git reflog
+    help: null
+  - content: git filter-branch
+    id: git_filter_branch
+    cmd: git filter-branch
+    help: null
+
+submodules:
+  direction: html
+  section: "Submodules"
+  icon: '<i class="fa-brands fa-github fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Submodules
+    id: null
+    cmd: null
+    help: null
+    prism: "language-css"
+    free: |
+      Submodules
+      git submodule update --init
+      
+      Git Submodules
+      1/ create repository
+      2/ go to new app
+      3/ git clone repository
+      4/ git submodule update --init
+      5/ git submodule update --recursive
+      
+      Before Push :
+      - commit submodule
+      - push submodule
+      - update submodule (git submodule update --recursive)
+      - push repository

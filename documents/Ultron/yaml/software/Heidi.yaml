@@ -1,0 +1,23 @@
+request:
+  direction: html
+  section: Request
+  icon: '<i class="fas fa-database fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Set a Variable
+    id: variable
+    cmd: null
+    help: null
+    prism: 'language-sql'
+    free: |
+      SET @a = 612;
+      SELECT * FROM user_datas WHERE user_id = @a;
+      SELECT * FROM user WHERE id = @a;
+  - content: Disabled Foreign Key
+    id: foreign-key
+    cmd:
+    help: null
+    prism: 'language-sql'
+    free: |
+      SET FOREIGN_KEY_CHECKS=0;
+      TRUNCATE `my_table`;
+      SET FOREIGN_KEY_CHECKS=1;

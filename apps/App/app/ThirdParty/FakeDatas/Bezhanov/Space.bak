@@ -1,0 +1,132 @@
+<?php
+
+namespace Karlito\ThirdParty\Bezhanov;
+
+use Faker\Generator;
+use Fatalis\ThirdParty\Bezhanov;
+use Fatalis\ThirdParty\Fakr;
+
+class Space extends Bezhanov
+{
+    /** @return string */
+    public static function planet(): string
+    {
+        $faker = self::provider();
+
+        return $faker->planet();
+    }
+
+    /** @return string */
+    public static function moon(): string
+    {
+        $faker = self::provider();
+
+        return $faker->moon();
+    }
+
+    /** @return string */
+    public static function galaxy(): string
+    {
+        $faker = self::provider();
+
+        return $faker->galaxy();
+    }
+
+    /** @return string */
+    public static function nebula(): string
+    {
+        $faker = self::provider();
+
+        return $faker->nebula();
+    }
+
+    /** @return string */
+    public static function starCluster(): string
+    {
+        $faker = self::provider();
+
+        return $faker->starCluster();
+    }
+
+    /** @return string */
+    public static function constellation(): string
+    {
+        $faker = self::provider();
+
+        return $faker->constellation();
+    }
+
+    /** @return string */
+    public static function star(): string
+    {
+        $faker = self::provider();
+
+        return $faker->star();
+    }
+
+    /** @return string */
+    public static function agency(): string
+    {
+        $faker = self::provider();
+
+        return $faker->agency();
+    }
+
+    /** @return string */
+    public static function agencyAbv(): string
+    {
+        $faker = self::provider();
+
+        return $faker->agencyAbv();
+    }
+
+    /** @return string */
+    public static function nasaSpaceCraft(): string
+    {
+        $faker = self::provider();
+
+        return $faker->nasaSpaceCraft();
+    }
+
+    /** @return string */
+    public static function spaceCompany(): string
+    {
+        $faker = self::provider();
+
+        return $faker->spaceCompany();
+    }
+
+    /** @return string */
+    public static function distanceMeasurement(): string
+    {
+        $faker = self::provider();
+
+        return $faker->distanceMeasurement();
+    }
+
+    /** @return string */
+    public static function meteorite(): string
+    {
+        $faker = self::provider();
+
+        return $faker->meteorite();
+    }
+
+    /** @return string */
+    public static function launchVehicle(): string
+    {
+        $faker = self::provider();
+
+        return $faker->launchVehicle();
+    }
+
+    /** @return \Bezhanov\Faker\Provider\Space|Generator */
+    private static function provider()
+    {
+        $faker = Faker::init();
+        $faker->addProvider(new \Bezhanov\Faker\Provider\Space($faker));
+
+        /** @var \Bezhanov\Faker\Provider\Space $faker */
+        return $faker;
+    }
+}

@@ -1,0 +1,26 @@
+mailtrap:
+  direction: html
+  section: 'Mailtrap'
+  icon: '<i class="fa-solid fa-envelope fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Config
+    id: config
+    cmd: null
+    help: null
+    prism: 'language-php'
+    free: |
+        $config = [
+          'protocol' => 'smtp',
+          'smtp_host' => 'sandbox.smtp.mailtrap.io',
+          'smtp_port' => 2525,
+          'smtp_user' => '91e28e6925405c',
+          'smtp_pass' => '0918d9756f5996',
+          'crlf' => "\r\n",
+          'newline' => "\r\n"
+        ];
+        - Log to : https://mailtrap.io/home
+        - Go to Inboxes : https://mailtrap.io/inboxes/2189502/messages
+        - Onglet SMTP Settings
+        - Choisir le framework
+        - Copier le code
+        - Coller ds le fichier .env

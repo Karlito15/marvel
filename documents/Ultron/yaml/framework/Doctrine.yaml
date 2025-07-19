@@ -1,0 +1,242 @@
+migration:
+  direction: vertical
+  section: Migration
+  icon: null
+  items:
+  - content: Migration Diff
+    id: doctrine_migrations_diff
+    cmd: php bin/console doctrine:migrations:diff
+    help: Generate a migration by comparing your current database to your mapping information.
+  - content: Migration Diff Check Platform
+    id: doctrine_migrations_diff_check_platform
+    cmd: php bin/console doctrine:migrations:diff --check-database-platform
+    help: null
+  - content: Migration Diff Editor
+    id: doctrine_migrations_diff_editor
+    cmd: php bin/console doctrine:migrations:diff --editor-cmd
+    help: null
+  - content: Migration Diff Formatted
+    id: doctrine_migrations_diff_formatted
+    cmd: php bin/console doctrine:migrations:diff --formatted
+    help: null
+  - content: Migration Dump Schema
+    id: doctrine_migrations_diff_dump_schema
+    cmd: php bin/console doctrine:migrations:dump-schema
+    help: Dump the schema for your database to a migration.
+  - content: Migration Execute
+    id: doctrine_migrations_execute
+    cmd: php bin/console doctrine:migrations:execute
+    help: Execute a single migration version up or down manually.
+  - content: Migration Up
+    id: doctrine_migrations_execute_up
+    cmd: php bin/console doctrine:migrations:execute FILENAME --up
+    help: null
+  - content: Migration Down
+    id: doctrine_migrations_execute_down
+    cmd: php bin/console doctrine:migrations:execute FILENAME --down
+    help: null
+  - content: Migration Generate
+    id: doctrine_migrations_generate
+    cmd: php bin/console doctrine:migrations:generate
+    help: Generate a blank migration class.
+  - content: Migration Migrate
+    id: doctrine_migrations_migrate
+    cmd: php bin/console doctrine:migrations:migrate
+    help: Execute a migration to a specified version or the latest available version.
+  - content: Migration Migrate Prev
+    id: doctrine_migrations_migrate_prev
+    cmd: php bin/console doctrine:migrations:migrate prev
+    help: null
+  - content: Migration Status
+    id: doctrine_migrations_status
+    cmd: php bin/console doctrine:migrations:status
+    help: View the status of a set of migrations.
+  - content: Migration Version
+    id: doctrine_migrations_version
+    cmd: php bin/console doctrine:migrations:version
+    help: Manually add and delete migration versions from the version table.
+  - content: Migration Last Version
+    id: doctrine_migrations_latest
+    cmd: php bin/console doctrine:migrations:latest
+    help: Outputs the latest version number.
+  - content: Migration List
+    id: doctrine_migrations_list
+    cmd: php bin/console doctrine:migrations:list
+    help: Display a list of all available migrations and their status.
+  - content: Migration Current
+    id: doctrine_migrations_current
+    cmd: php bin/console doctrine:migrations:current
+    help: Outputs the current version.
+
+fixture:
+  direction: vertical
+  section: Fixture
+  icon: null
+  items:
+  - content: Load Fixtures
+    id: doctrine_fixtures_load
+    cmd: php bin/console doctrine:fixtures:load
+    help: null
+  - content: Load Fixtures Append
+    id: doctrine_fixtures_load_append
+    cmd: php bin/console doctrine:fixtures:load --append
+    help: null
+  - content: Load Fixtures Purge With Truncate
+    id: doctrine_fixtures_load_purge_with_truncate
+    cmd: php bin/console doctrine:fixtures:load --purge-with-truncate
+    help: null
+
+doctrine:
+  direction: vertical
+  section: Doctrine
+  icon: null
+  items:
+  - content: Create Database
+    id: doctrine_database_create
+    cmd: php bin/console doctrine:database:create
+    help: null
+  - content: Drop Database
+    id: doctrine_database_drop
+    cmd: php bin/console doctrine:database:drop --force
+    help: null
+  - content: Import Database
+    id: doctrine_database_import
+    cmd: php bin/console doctrine:database:import
+    help: null
+  - content: Create Schema
+    id: doctrine_schema_create
+    cmd: php bin/console doctrine:schema:create
+    help: null
+  - content: Drop Schema Dump
+    id: doctrine_schema_drop_dump
+    cmd: php bin/console doctrine:schema:drop --dump-sql
+    help: null
+  - content: Drop Schema Force
+    id: doctrine_schema_drop_force
+    cmd: php bin/console doctrine:schema:drop --force
+    help: null
+  - content: Update Schema Dump
+    id: doctrine_schema_update_dump
+    cmd: php bin/console doctrine:schema:update --dump-sql
+    help: null
+  - content: Update Schema Force
+    id: doctrine_schema_update_force
+    cmd: php bin/console doctrine:schema:update --force
+    help: null
+  - content: Validate Schema
+    id: doctrine_schema_validate
+    cmd: php bin/console doctrine:schema:validate
+    help: null
+  - content: Mapping
+    id: doctrine_mapping_info
+    cmd: php bin/console doctrine:mapping:info
+    help: null
+  - content: Mapping
+    id: doctrine_mapping_convert
+    cmd: php bin/console doctrine:mapping:convert
+    help: null
+  - content: Mapping
+    id: doctrine_mapping_import
+    cmd: php bin/console doctrine:mapping:import
+    help: null
+  - content: Query
+    id: doctrine_query_dql
+    cmd: php bin/console doctrine:query:dql
+    help: null
+  - content: Query
+    id: doctrine_query_sql
+    cmd: php bin/console doctrine:query:sql
+    help: null
+
+cache:
+  direction: vertical
+  section: Doctrine
+  icon: null
+  items:
+  - content: Cache Clear Collection
+    id: doctrine_cache_clear_collection
+    cmd: php bin/console doctrine:cache:clear-collection-region
+    help: null
+  - content: Cache Clear Entity
+    id: doctrine_cache_clear_entity
+    cmd: php bin/console doctrine:cache:clear-entity-region
+    help: null
+  - content: Cache Clear Metadata
+    id: doctrine_cache_clear_metadata
+    cmd: php bin/console doctrine:cache:clear-metadata
+    help: null
+  - content: Cache Clear Query
+    id: doctrine_cache_clear_query
+    cmd: php bin/console doctrine:cache:clear-query
+    help: null
+  - content: Cache Clear Query Region
+    id: doctrine_cache_clear_query_region
+    cmd: php bin/console doctrine:cache:clear-query-region
+    help: null
+  - content: Cache Clear Result
+    id: doctrine_cache_clear_result
+    cmd: php bin/console doctrine:cache:clear-result
+    help: null
+  - content: Cache Contains
+    id: doctrine_cache_contains
+    cmd: php bin/console doctrine:cache:contains
+    help: null
+  - content: Cache Delete
+    id: doctrine_cache_delete
+    cmd: php bin/console doctrine:cache:delete
+    help: null
+  - content: Cache Flush
+    id: doctrine_cache_flush
+    cmd: php bin/console doctrine:cache:flush
+    help: null
+  - content: Cache Stats
+    id: doctrine_cache_stats
+    cmd: php bin/console doctrine:cache:stats
+    help: null
+
+
+# php bin/console doctrine:cache:clear-metadata
+# php bin/console doctrine:cache:clear-query
+# php bin/console doctrine:cache:clear-result
+# php bin/console doctrine:database:create
+# php bin/console doctrine:database:drop
+# php bin/console doctrine:database:drop --force
+# php bin/console doctrine:database:import [filepath]
+# php bin/console doctrine:fixtures:load
+# php bin/console doctrine:fixtures:load --append
+# php bin/console doctrine:fixtures:load --purge-with-truncate
+# php bin/console doctrine:migrations:diff
+# php bin/console doctrine:migrations:diff --check-database-platform[=CHECK-DATABASE-PLATFORM]
+# php bin/console doctrine:migrations:diff --editor-cmd
+# php bin/console doctrine:migrations:diff --formatted
+# php bin/console doctrine:migrations:diff --namespace=NAMESPACE
+# php bin/console doctrine:migrations:dump-schema
+# php bin/console doctrine:migrations:execute
+# php bin/console doctrine:migrations:generate
+# php bin/console doctrine:migrations:migrate
+# php bin/console doctrine:migrations:migrate --no-interaction
+# php bin/console doctrine:migrations:migrate diff
+# php bin/console doctrine:migrations:migrate prev
+# php bin/console doctrine:migrations:rollup                 [rollup] Roll migrations up by deleting all tracked versions and inserting the one version that exists.
+# php bin/console doctrine:migrations:status
+# php bin/console doctrine:migrations:sync-metadata-storage
+# php bin/console doctrine:migrations:sync-metadata-storage  [sync-metadata-storage] Ensures that the metadata storage is at the latest version.
+# php bin/console doctrine:migrations:up-to-date             [up-to-date] Tells you if your schema is up-to-date.
+# php bin/console doctrine:query:dql --help
+# php bin/console doctrine:query:sql --help
+# php bin/console doctrine:schema:create
+# php bin/console doctrine:schema:drop
+# php bin/console doctrine:schema:drop --dump-sql
+# php bin/console doctrine:schema:drop --force
+# php bin/console doctrine:schema:update
+# php bin/console doctrine:schema:update --dump-sql
+# php bin/console doctrine:schema:update --dump-sql --force
+# php bin/console doctrine:schema:update --dump-sql --force --complete
+# php bin/console doctrine:schema:update --dump-sql --formated
+# php bin/console doctrine:schema:update --dump-sql --formatted
+# php bin/console doctrine:schema:update --dump-sql --help
+# php bin/console doctrine:schema:update --force
+# php bin/console doctrine:schema:update --force --complete --dump-sql
+# php bin/console doctrine:schema:update --force --full-database
+# php bin/console doctrine:schema:validate
+# php bin/console doctrine:schema:validate --skip-mapping

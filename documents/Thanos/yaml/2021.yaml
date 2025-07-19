@@ -1,0 +1,46 @@
+2021:
+  -
+    name: "capatel"
+    title: ""
+    uri: "/template/2021/"
+    thumbnail: null #"thumbnails/2021/capatel.jpg"
+    tags: ['solar-energy']
+    enabled: false
+    one_page: false
+    multiple: false
+  -
+    name: "olmo"
+    title: ""
+    uri: "/template/2021/"
+    thumbnail: null #"thumbnails/2021/olmo.jpg"
+    tags: ['software']
+    enabled: false
+    one_page: false
+    multiple: false
+  -
+    name: "starbelly"
+    title: ""
+    uri: "/template/2021/"
+    thumbnail: null #"thumbnails/2021/starbelly.jpg"
+    tags: ['restaurant']
+    enabled: false
+    one_page: false
+    multiple: false
+  -
+    name: "techex-1"
+    title: ""
+    uri: "/template/2021/"
+    thumbnail: null #"thumbnails/2021/techex-1.jpg"
+    tags: ['techex', 'information', 'technology']
+    enabled: false
+    one_page: false
+    multiple: false
+  -
+    name: "techex-2"
+    title: ""
+    uri: "/template/2021/"
+    thumbnail: null #"thumbnails/2021/techex-2.jpg"
+    tags: ['techex', 'information', 'technology']
+    enabled: false
+    one_page: false
+    multiple: false

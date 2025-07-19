@@ -1,0 +1,49 @@
+nav:
+  - content:    "Colossus"
+    link_dev:   "http://colossus.ci/"
+    link_prod:  "http://colossus.prod/"
+    help: null
+  - content:    "Deadpool"
+    link_dev:   "http://deadpool.ci/"
+    link_prod:  "http://deadpool.prod/"
+    help: null
+  - content:    "Fatalis"
+    link_dev:   "http://fatalis.ci/"
+    link_prod:  "http://fatalis.prod/"
+    help: null
+  - content:    "Galactus"
+    link_dev:   "http://galactus.ci/"
+    link_prod:  "http://galactus.prod/"
+    help: null
+  - content:    "Hela"
+    link_dev:   "http://hela.ci/"
+    link_prod:  "http://hela.prod/"
+    help: null
+  - content:    "Kang"
+    link_dev:   "http://kang.ci/"
+    link_prod:  "http://kang.prod/"
+    help: null
+  - content:    "Loki"
+    link_dev:   "http://loki.ci/"
+    link_prod:  "http://loki.prod/"
+    help: null
+  - content:    "Mephisto"
+    link_dev:   "http://mephisto.ci/"
+    link_prod:  "http://mephisto.prod/"
+    help: null
+  - content:    "Onslaught"
+    link_dev:   "http://onslaught.ci/"
+    link_prod:  "http://onslaught.prod/"
+    help: null
+  - content:    "Surtur"
+    link_dev:   "http://surtur.ci/"
+    link_prod:  "http://surtur.prod/"
+    help: null
+  - content:    "Thanos"
+    link_dev:   "http://thanos.ci/"
+    link_prod:  "http://thanos.prod/"
+    help: null
+  - content:    "Ultron"
+    link_dev:   "http://ultron.ci/"
+    link_prod:  "http://ultron.prod/"
+    help: null

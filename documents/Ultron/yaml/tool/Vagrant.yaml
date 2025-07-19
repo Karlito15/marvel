@@ -1,0 +1,107 @@
+vagrant_usage:
+  direction: vertical
+  section: Vagrant Usage
+  icon: '<i class="fas fa-code fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: "Affiche le status de la box"
+    id: null
+    cmd: vagrant status                    
+  - content: "Suspend la box"
+    id: null
+    cmd: vagrant suspend                   
+  - content: "Lance la box"
+    id: null
+    cmd: vagrant up                      
+  - content: "Lance la box en rechargeant le fichier Homestead.yaml"
+    id: null
+    cmd: vagrant up --provision                
+  - content: null
+    id: null
+    cmd: vagrant validate
+  - content: "Arrête la box"
+    id: null
+    cmd: vagrant halt                    
+
+vagrant_part1:
+  direction: vertical
+  section: Vagrant
+  icon: '<i class="fas fa-code fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Command
+    id: null
+    cmd: vagrant
+  - content: Version
+    id: null
+    cmd: vagrant --version
+  - content: "Permet d'afficher l'aide"
+    id: null
+    cmd: vagrant -h                      
+  - content: null
+    id: null
+    cmd: vagrant -v
+  - content: null
+    id: null
+    cmd: vagrant global-status
+  - content: "Permet d'installer, supprimer et mettre à jour des plugins vagrant"
+    id: null
+    cmd: vagrant plugin install vagrant-bindfs       
+  - content: "Permet d'installer, supprimer et mettre à jour des plugins vagrant"
+    id: null
+    cmd: vagrant plugin install vagrant-winnfsd        
+  - content: null
+    id: null
+    cmd: vagrant provision
+
+vagrant_part2:
+  direction: vertical
+  section: Vagrant
+  icon: '<i class="fas fa-code fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: relance la box
+    id: null
+    cmd: vagrant reload                    
+  - content: "Relance la box en rechargeant le fichier Homestead.yaml"
+    id: null
+    cmd: vagrant reload --provision              
+  - content: "Reprend la box après un vagrant suspend"
+    id: null
+    cmd: vagrant resume                    
+  - content: null
+    id: null
+    cmd: vagrant run
+  - content: "Connexion à la box en SSH"
+    id: null
+    cmd: vagrant ssh                     
+  - content: null
+    id: null
+    cmd: vagrant ssh-config
+  - content: null
+    id: null
+    cmd: vagrant winrm-config
+  - content: "Arrête et supprime tout trace de la machine vagrant-winnfsd"
+    id: null
+    cmd: vagrant destroy                               
+
+vagrant_box:
+  direction: vertical
+  section: Vagrant Box
+  icon: '<i class="fas fa-code fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: null
+    id: null
+    cmd: vagrant box
+  - content: null
+    id: null
+    cmd: vagrant box add laravel/homestead
+  - content: null
+    id: null
+    cmd: vagrant box list
+  - content: null
+    id: null
+    cmd: vagrant box repackage
+  - content: null
+    id: null
+    cmd: vagrant box repackage --laravel/homestead
+  - content: null
+    id: null
+    cmd: vagrant box update

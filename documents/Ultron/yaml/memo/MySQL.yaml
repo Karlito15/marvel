@@ -1,0 +1,56 @@
+command:
+  direction: horizontal
+  section: Command
+  icon: '<i class="fa-solid fa-server fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+    - content: Config My.ini
+      id: config
+      cmd: 'Change the values max_allowed_packet'
+      help: null
+    - content: Import
+      id: import
+      cmd: "mysql -u root -p DATABASENAME < FILEPATH.sql"
+      help: null
+    - content: Export
+      id: export
+      cmd: "mysqldump -u root -p DATABASENAME > FILEPATH.sql"
+      help: null
+# MariaDB > my.ini
+# add :
+# character-set-server            = utf8
+# collation-server                = utf8_unicode_ci
+
+request:
+  direction: vertical
+  section: Request
+  icon: '<i class="fa-solid fa-server fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+    - content: Débloquer les Clés étrangères
+      id: foreign_key_unblock
+      cmd: "SET FOREIGN_KEY_CHECKS=0;"
+      help: null
+    - content: Bloquer les Clés étrangères
+      id: foreign_key_block
+      cmd: "SET FOREIGN_KEY_CHECKS=1;"
+      help: null
+
+tricks:
+  direction: html
+  section: Astuces
+  icon: '<i class="fa-solid fa-server fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+    - content: Sélectionner les doublons
+      id: null
+      cmd: null
+      help: null
+      prism: 'language-sql'
+      free: |
+        SELECT * FROM `ta_table` GROUP BY `ma_colonne` HAVING COUNT(*) > 1;
+        SELECT `ma_colonne` FROM `ta_table` GROUP BY `ma_colonne` HAVING COUNT(*) > 1;
+    - content: Supprimer doublons
+      id: delete
+      cmd: null
+      help: null
+      prism: 'language-sql'
+      free: |
+        DELETE FROM `ta_table` WHERE `id` NOT IN (SELECT `ma_colonne` FROM `archives` GROUP BY `ma_colonne` HAVING COUNT(*) > 1;);

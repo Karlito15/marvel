@@ -1,0 +1,97 @@
+starter_part1:
+  direction: vertical
+  section: Starter Package Plugins
+  icon: '<i class="fas fa-box-open fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: "Webpack-Merge"
+    id: webpack-merge
+    cmd: 'npm install webpack-merge -g'
+    help: null
+  - content: "CSS LOader"
+    id: CSS Loader
+    cmd: 'npm install css-loader -g'
+    help: null
+  - content: "Sass-Loader"
+    id: sass-loader
+    cmd: 'npm install sass-loader node-sass webpack -g'
+    help: null
+  - content: "Postcss-Loader"
+    id: postcss-loader
+    cmd: 'npm install postcss-loader -g'
+    help: null
+  - content: "Extract-Text-webpack-plugin"
+    id: extract-text-webpack-plugin
+    cmd: 'npm install extract-text-webpack-plugin -g'
+    help: null
+  - content: "Clean-Webpack-plugin"
+    id: clean-webpack-plugin
+    cmd: 'npm install clean-webpack-plugin -g'
+    help: null
+  - content: "File-Loader"
+    id: file-loader
+    cmd: 'npm install file-loader -g'
+    help: null
+  - content: "Html-Webpack-plugin"
+    id: html-webpack-plugin
+    cmd: 'npm install html-webpack-plugin -g'
+    help: null
+
+starter_part2:
+  direction: vertical
+  section: Starter Package Plugins
+  icon: '<i class="fas fa-box-open fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: "Babel"
+    id: BabelXX
+    cmd: 'npm install babel-loader babel-core babel-preset-.env webpack -g'
+    help: null
+  - content: "Style LOader"
+    id: Style Loader
+    cmd: 'npm install style-loader -g'
+    help: null
+  - content: "Node-Loader"
+    id: node-loader
+    cmd: 'npm install node-loader -g'
+    help: null
+  - content: "Autoprefixer"
+    id: autoprefixer
+    cmd: 'npm install autoprefixer -g'
+    help: null
+  - content: "Webpack-Manifest-plugin"
+    id: webpack-manifest-plugin
+    cmd: 'npm install webpack-manifest-plugin -g'
+    help: null
+  - content: "Url-Loader"
+    id: url-loader
+    cmd: 'npm install url-loader -g'
+    help: null
+  - content: "Uglifyjs-Webpack-plugin"
+    id: uglifyjs-webpack-plugin
+    cmd: 'npm install uglifyjs-webpack-plugin -g'
+    help: null
+  - content: "Favicons-Webpack-plugin"
+    id: favicons-webpack-plugin
+    cmd: 'npm install favicons-webpack-plugin -g'
+    help: null
+
+install:
+  direction: vertical
+  section: Installation
+  icon: '<i class="fas fa-box-open fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: "NodeJS"
+    id: nodejs
+    cmd: 'https://nodejs.org/en/'
+    help: null
+  - content: "NPM"
+    id: npm
+    cmd: 'https://www.npmjs.com/get-npm'
+    help: null
+  - content: "Initialisation"
+    id: init
+    cmd: 'npm init -y'
+    help: null
+  - content: "Configuration"
+    id: config
+    cmd: 'https://webpack.js.org/configuration/'
+    help: null

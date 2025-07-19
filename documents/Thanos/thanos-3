@@ -1,0 +1,239 @@
+	public function arter(): string
+	{
+		$cache = (getenv('CI_ENVIRONMENT') === 'development') ? [] : ['cache' => 60 * 60 * 24 * 7, 'cache_name' => 'arter'];
+		$datas = [];
+
+		return view('/templates/2022/arter/index', $datas, $cache);
+	}
+
+	public function launch(): string
+	{
+		$cache = (getenv('CI_ENVIRONMENT') === 'development') ? [] : ['cache' => 60 * 60 * 24 * 7, 'cache_name' => 'launch'];
+		$datas = [];
+
+		return view('/templates/2022/launch/index', $datas, $cache);
+	}
+
+	public function clarks(): string
+	{
+		$cache = (getenv('CI_ENVIRONMENT') === 'development') ? [] : ['cache' => 60 * 60 * 24 * 7, 'cache_name' => 'clarks'];
+		$datas = [];
+
+		return view('/templates/2021/clarks/index', $datas, $cache);
+	}
+
+	public function about_me(): string
+	{
+		$cache = (getenv('CI_ENVIRONMENT') === 'development') ? [] : ['cache' => 60 * 60 * 24 * 7, 'cache_name' => 'about-me'];
+		$datas = [];
+
+		return view('/templates/2020/about-me/index', $datas, $cache);
+	}
+
+	public function mx_tonz(): string
+	{
+		$cache = (getenv('CI_ENVIRONMENT') === 'development') ? [] : ['cache' => 60 * 60 * 24 * 7, 'cache_name' => 'mx-tonz'];
+		$datas = [];
+
+		return view('/templates/2020/mx-tonz/index', $datas, $cache);
+	}
+
+	public function vrocket(): string
+	{
+		$cache = (getenv('CI_ENVIRONMENT') === 'development') ? [] : ['cache' => 60 * 60 * 24 * 7, 'cache_name' => 'vrocket'];
+		$datas = [];
+
+		return view('/templates/2020/vrocket/index', $datas, $cache);
+	}
+
+	public function coagex(): string
+	{
+		$cache = (getenv('CI_ENVIRONMENT') === 'development') ? [] : ['cache' => 60 * 60 * 24 * 7, 'cache_name' => 'coagex'];
+		$datas = [];
+
+		return view('/templates/2019/coagex/index', $datas, $cache);
+	}
+
+	public function edina(): string
+	{
+		$cache = (getenv('CI_ENVIRONMENT') === 'development') ? [] : ['cache' => 60 * 60 * 24 * 7, 'cache_name' => 'edina'];
+		$datas = [];
+
+		return view('/templates/2019/edina/index', $datas, $cache);
+	}
+
+	public function accounts(): string
+	{
+		$cache = (getenv('CI_ENVIRONMENT') === 'development') ? [] : ['cache' => 60 * 60 * 24 * 7, 'cache_name' => 'accounts'];
+		$datas = [];
+
+		return view('/templates/2018/accounts/index', $datas, $cache);
+	}
+
+	public function bizplus(): string
+	{
+		$cache = (getenv('CI_ENVIRONMENT') === 'development') ? [] : ['cache' => 60 * 60 * 24 * 7, 'cache_name' => 'bizplus'];
+		$datas = [];
+
+		return view('/templates/2018/bizplus/index', $datas, $cache);
+	}
+
+	public function conceit(): string
+	{
+		$cache = (getenv('CI_ENVIRONMENT') === 'development') ? [] : ['cache' => 60 * 60 * 24 * 7, 'cache_name' => 'conceit'];
+		$datas = [];
+
+		return view('/templates/2018/conceit/index', $datas, $cache);
+	}
+
+	public function digital_biz(): string
+	{
+		$cache = (getenv('CI_ENVIRONMENT') === 'development') ? [] : ['cache' => 60 * 60 * 24 * 7, 'cache_name' => 'digital-biz'];
+		$datas = [];
+
+		return view('/templates/2018/digital-biz/index', $datas, $cache);
+	}
+
+	public function eventr(): string
+	{
+		$cache = (getenv('CI_ENVIRONMENT') === 'development') ? [] : ['cache' => 60 * 60 * 24 * 7, 'cache_name' => 'eventr'];
+		$datas = [];
+
+		return view('/templates/2018/eventr/index', $datas, $cache);
+	}
+
+	public function lifer(): string
+	{
+		$cache = (getenv('CI_ENVIRONMENT') === 'development') ? [] : ['cache' => 60 * 60 * 24 * 7, 'cache_name' => 'lifer'];
+		$datas = [];
+
+		return view('/templates/2018/lifer/index', $datas, $cache);
+	}
+
+	public function lina(): string
+	{
+		$cache = (getenv('CI_ENVIRONMENT') === 'development') ? [] : ['cache' => 60 * 60 * 24 * 7, 'cache_name' => 'lina'];
+		$datas = [];
+
+		return view('/templates/2018/lina/index', $datas, $cache);
+	}
+
+	public function tinybar_mobile_tablet(): string
+	{
+		$cache = (getenv('CI_ENVIRONMENT') === 'development') ? [] : ['cache' => 60 * 60 * 24 * 7, 'cache_name' => 'tinybar-mobile-tablet'];
+		$datas = [];
+
+		return view('/templates/2018/tinybar-mobile-tablet/index', $datas, $cache);
+	}
+
+	public function allstore(): string
+	{
+		$cache = (getenv('CI_ENVIRONMENT') === 'development') ? [] : ['cache' => 60 * 60 * 24 * 7, 'cache_name' => 'allstore'];
+		$datas = [];
+
+		return view('/templates/2017/allstore/index', $datas, $cache);
+	}
+
+	public function appsperia(): string
+	{
+		$cache = (getenv('CI_ENVIRONMENT') === 'development') ? [] : ['cache' => 60 * 60 * 24 * 7, 'cache_name' => 'appsperia'];
+		$datas = [];
+
+		return view('/templates/2017/appsperia/index', $datas, $cache);
+	}
+
+	public function career_corp(): string
+	{
+		$cache = (getenv('CI_ENVIRONMENT') === 'development') ? [] : ['cache' => 60 * 60 * 24 * 7, 'cache_name' => 'career-corp'];
+		$datas = [];
+
+		return view('/templates/2017/career-corp/index', $datas, $cache);
+	}
+
+	public function deft(): string
+	{
+		$cache = (getenv('CI_ENVIRONMENT') === 'development') ? [] : ['cache' => 60 * 60 * 24 * 7, 'cache_name' => 'deft'];
+		$datas = [];
+
+		return view('/templates/2017/deft/index', $datas, $cache);
+	}
+
+	public function eydia(): string
+	{
+		$cache = (getenv('CI_ENVIRONMENT') === 'development') ? [] : ['cache' => 60 * 60 * 24 * 7, 'cache_name' => 'eydia'];
+		$datas = [];
+
+		return view('/templates/2017/eydia/index', $datas, $cache);
+	}
+
+	public function geo(): string
+	{
+		$cache = (getenv('CI_ENVIRONMENT') === 'development') ? [] : ['cache' => 60 * 60 * 24 * 7, 'cache_name' => 'geo'];
+		$datas = [];
+
+		return view('/templates/2017/geo/index', $datas, $cache);
+	}
+
+	public function my_career(): string
+	{
+		$cache = (getenv('CI_ENVIRONMENT') === 'development') ? [] : ['cache' => 60 * 60 * 24 * 7, 'cache_name' => 'my-career'];
+		$datas = [];
+
+		return view('/templates/2017/my-career/index', $datas, $cache);
+	}
+
+	public function proprietor_ship(): string
+	{
+		$cache = (getenv('CI_ENVIRONMENT') === 'development') ? [] : ['cache' => 60 * 60 * 24 * 7, 'cache_name' => 'proprietor-ship'];
+		$datas = [];
+
+		return view('/templates/2017/proprietor-ship/index', $datas, $cache);
+	}
+
+	public function synthetica(): string
+	{
+		$cache = (getenv('CI_ENVIRONMENT') === 'development') ? [] : ['cache' => 60 * 60 * 24 * 7, 'cache_name' => 'synthetica'];
+		$datas = [];
+
+		return view('/templates/2017/synthetica/index', $datas, $cache);
+	}
+
+	public function technical_solutions(): string
+	{
+		$cache = (getenv('CI_ENVIRONMENT') === 'development') ? [] : ['cache' => 60 * 60 * 24 * 7, 'cache_name' => 'technical-solutions'];
+		$datas = [];
+
+		return view('/templates/2017/technical-solutions/index', $datas, $cache);
+	}
+
+	public function the_jobs(): string
+	{
+		$cache = (getenv('CI_ENVIRONMENT') === 'development') ? [] : ['cache' => 60 * 60 * 24 * 7, 'cache_name' => 'the-jobs'];
+		$datas = [];
+
+		return view('/templates/2017/the-jobs/index', $datas, $cache);
+	}
+
+	public function Giancarlo_PALUMBO(): string
+	{
+		$cache = (getenv('CI_ENVIRONMENT') === 'development') ? [] : ['cache' => 60 * 60 * 24 * 7, 'cache_name' => 'XXX'];
+		$datas = [];
+
+		return view('/templates/2016/Giancarlo_PALUMBO/index', $datas, $cache);
+	}
+
+	public function elegant(): string
+	{
+		$cache  = (getenv('CI_ENVIRONMENT') === 'development') ? [] : ['cache' => 60 * 60 * 24 * 7, 'cache_name' => 'elegant'];
+		$datas  = [];
+
+		return view('/templates/resumes/elegant', $datas, $cache);
+	}
+
+	public function nina_black(): string
+	{
+		$cache  = (getenv('CI_ENVIRONMENT') === 'development') ? [] : ['cache' => 60 * 60 * 24 * 7, 'cache_name' => 'nina-black'];
+		$datas  = [];
+
+		return view('/templates/resumes/nina-black/index', $datas, $cache);
+	}

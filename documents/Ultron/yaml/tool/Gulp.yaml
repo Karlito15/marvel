@@ -1,0 +1,15 @@
+gulp:
+  direction: vertical
+  section: Gulp
+  icon: '<i class="fas fa-code fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: 'Example #1'
+    id: gulp_1
+    cmd: 'cmd #1'
+    help: null
+
+# gulp
+# gulp --prod
+# gulp --version
+# gulp build
+# gulp localhost

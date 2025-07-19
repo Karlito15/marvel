@@ -1,0 +1,44 @@
+<?php
+
+namespace Karlito\ThirdParty\Bezhanov;
+
+use Faker\Generator;
+use Fatalis\ThirdParty\Bezhanov;
+use Fatalis\ThirdParty\Fakr;
+
+class Science extends Bezhanov
+{
+    /** @return string */
+    public static function chemicalElement(): string
+    {
+        $faker = self::provider();
+
+        return $faker->chemicalElement();
+    }
+
+    /** @return string */
+    public static function chemicalElementSymbol(): string
+    {
+        $faker = self::provider();
+
+        return $faker->chemicalElementSymbol();
+    }
+
+    /** @return string */
+    public static function scientist(): string
+    {
+        $faker = self::provider();
+
+        return $faker->scientist();
+    }
+
+    /** @return \Bezhanov\Faker\Provider\Science|Generator */
+    private static function provider()
+    {
+        $faker = Faker::init();
+        $faker->addProvider(new \Bezhanov\Faker\Provider\Science($faker));
+
+        /** @var \Bezhanov\Faker\Provider\Science $faker */
+        return $faker;
+    }
+}

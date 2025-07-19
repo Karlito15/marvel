@@ -1,0 +1,103 @@
+<?php
+
+namespace Karlito\ThirdParty\JZonta;
+
+use Faker\Generator;
+use Fatalis\ThirdParty\Fakr;
+
+class Restaurant
+{
+    /**
+     * A random Food Name
+     *
+     * @return string
+     */
+    public static function foodName(): string
+    {
+        $faker = self::provider();
+
+        return $faker->foodName();
+    }
+
+    /**
+     * A random Beverage Name
+     *
+     * @return string
+     */
+    public static function beverageName(): string
+    {
+        $faker = self::provider();
+
+        return $faker->beverageName();
+    }
+
+    /**
+     * A random Dairy Name
+     *
+     * @return string
+     */
+    public static function dairyName(): string
+    {
+        $faker = self::provider();
+
+        return $faker->dairyName();
+    }
+
+    /**
+     * A random Vegetable Name
+     *
+     * @return string
+     */
+    public static function vegetableName(): string
+    {
+        $faker = self::provider();
+
+        return $faker->vegetableName();
+    }
+
+    /**
+     * A random Fruit Name
+     *
+     * @return string
+     */
+    public static function fruitName(): string
+    {
+        $faker = self::provider();
+
+        return $faker->fruitName();
+    }
+
+    /**
+     * A random Meat Name
+     *
+     * @return string
+     */
+    public static function meatName(): string
+    {
+        $faker = self::provider();
+
+        return $faker->meatName();
+    }
+
+    /**
+     * A random Sauce Name
+     *
+     * @return string
+     */
+    public static function sauceName(): string
+    {
+        $faker = self::provider();
+
+        return $faker->sauceName();
+    }
+
+    /** @return \FakerRestaurant\Provider\fr_FR\Restaurant|Generator */
+    private static function provider(): object
+    {
+        $faker = Faker::init();
+        $faker->addProvider(new \FakerRestaurant\Provider\fr_FR\Restaurant($faker));
+
+        /** @var \FakerRestaurant\Provider\fr_FR\Restaurant $faker */
+        return $faker;
+    }
+}

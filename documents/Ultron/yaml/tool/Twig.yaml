@@ -1,0 +1,174 @@
+twig:
+  direction: vertical
+  section: Twig
+  icon: '<i class="fas fa-code fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: 'True si le mode debug est activé, False sinon.'
+    id: twig_global_debug
+    cmd: '{{ app.debug }}'
+    help: null
+  - content: "L'environnement courant : « dev », « prod », et ceux que vous avez définis."
+    id: twig_global_environment
+    cmd: '{{ app.environment }}'
+    help: null
+  - content: "La requête « request »"
+    id: twig_global_request
+    cmd: '{{ app.request }}'
+    help: null
+  - content: "Le service « session »"
+    id: twig_global_session
+    cmd: '{{ app.session }}'
+    help: null
+  - content: "L'utilisateur courant"
+    id: twig_global_user
+    cmd: '{{ app.user }}'
+    help: null
+  - content: "An array of all the flash messages stored in the session. (e.g. app.flashes('notice'))"
+    id: twig_global_flashes
+    cmd: '{{ app.flashes }}'
+    help: null
+  - content: "object representing the security token"
+    id: twig_global_token
+    cmd: '{{ app.token }}'
+    help: null
+
+tricks:
+  direction: html
+  section: Tricks
+  icon: '<i class="fas fa-code fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: 'Break a Loop'
+    id: twig_tricks_break_a_lopp
+    cmd: null
+    help: null
+    prism: 'language-twig'
+    free: |
+      {% if loop.index is divisible by(3) %}
+      {% endif %}
+
+      {% for key, value in urls %}
+      <div class="col-sm-2">
+          </div>
+          {% if loop.index is divisible by(6) and not loop.last %}
+          </div>
+          <div class="row">
+          {% endif %}
+      {% endfor %}
+  - content: "Add class : Active"
+    id: twig_tricks_add_class
+    cmd: null
+    help: null
+    prism: 'language-twig'
+    free: |
+      {% set hightlight = ' active open' %}
+      {% set menu = {'home': null, 'link': null}
+      {% if app.request.pathInfo == '/admin/' %} {% set menu = menu|merge({'home': hightlight}) %} {% endif %}
+      {% if app.request.pathInfo starts with '' %} {% set menu = menu|merge({'': hightlight}) %}{% endif %}
+
+  - content: "Condition : {% if … %} … {% endif %}"
+    id: twig_tricks_if
+    cmd: '{{ app.request }}'
+    help: null
+    prism: 'language-twig'
+    free: |
+      and, or, not, is defined, starts with
+      ends with, matches, in, empty
+
+        is null, is constant, is divisible by(x), is even
+        is odd, is iterable, is same as
+  - content: "Boucle"
+    id: twig_tricks_loop
+    cmd: null
+    help: null
+    prism: 'language-twig'
+    free: |
+      {% for i in 0..9 %}  // pareil que {% for i in range(0, 9) %}
+              {{ i }}
+      {% endfor %}
+
+      {% for produit in produits %}
+           {{ produit.nom }}
+      {% endfor %}
+
+      - avec une condition:
+      {% for produit in produits if produit.etat==1 %}
+              {{ produit.nom }}
+      {% endfor %}
+
+      - boucle for avec condition vide:
+      {% for article in articles %}
+              {{ article.nom }}
+      {% else %}
+              pas d'article trouvé
+      {% endfor %}
+
+      - clés et valeurs:
+      {% for key, value in table %}
+              {{ key }} {{ value }}
+      {% endfor %}
+
+      - les 10 premiers users:
+      {% for user in users|slice(0, 9) %}
+              <li>{{ user.username }}</li>
+      {% endfor %}
+
+      - bascule:
+      {% for i in 0..10 %}
+              <div class="{{ cycle(['fond-noir', 'fond-blanc'], i) }}">   //  fond-noir / fond-blanc  /  …
+              </div>
+      {% endfor %}
+
+  - content: "Filtre"
+    id: twig_tricks_filter
+    cmd: null
+    help: null
+    prism: 'language-twig'
+    free: |
+      abs, batch, capitalize, convert_encoding, date, date_modify, default, escape, first, format,
+      join, json_encode, keys, last, length, lower, merge, nl2br, number_format, raw, replace, reverse,
+      round, slice, sort, split, striptags, title, trim, upper, url_encode
+
+
+# TWIG
+# <h3>Loop</h3>
+# La variable loop de la boucle for:
+#     {{ loop.index }}        // Numéro de l'itération courante en commençant par 1
+#     {{ loop.index0 }}       // Numéro de l'itération courante en commençant par 0
+#     {{ loop.revindex }}     // Nombre itérations restantes avant la fin en commençant par 1
+#     {{ loop.revindex0 }}    // Nombre itérations restantes avant la fin en commençant par 0
+#     {{ loop.first }}        // La première itération?  True ou false
+#     {{ loop.last }}         // La dernière itération? True ou false
+#     {{ loop.length }}       // Nombre total d'itérations
+
+# <h3>Fonctions</h3>
+# attribute, block, constant, cycle, date, dump, include, max, min, parent, random, range, source, template_from_string
+# > http://twig.sensiolabs.org/doc/functions/index.html
+
+# <h3>Import</h3>
+# mapage.html.twig : avec import de toutes les macros se trouvant dans forms.html.twig
+# {% import "forms.html.twig" as forms %}
+# <p>{{ forms.input('livre', 'saint-exupery') }}</p>
+
+# mapage.html.twig : avec import d'une seule macro parmi les macros se trouvant dans forms.html.twig
+# {% from 'forms.html.twig' import input as input_field %}
+# <p>{{ input_field('livre', 'saint-exupery') }}</p>
+
+# mapage.html.twig : la macro se trouve dans la page même. (sans import)
+# {% macro input(name, value, type, size) %}
+#     <input type="{{ type|default('text') }}" name="{{ name }}" value="{{ value|e }}" size="{{ size|default(20) }}" />
+# {% endmacro %}
+# <p>{{ _self.input('livre', 'saint-exupery', 'text', 64) }}</p>
+
+# <h3>Named Arguments</h3>
+# - au lieu de  ... range(1, 10, 2) :
+# {% for i in range(low=1, high=10, step=2) %}
+#     {{ i }},
+# {% endfor %}
+
+# <h3>(Symfony)</h3>
+
+# Un include avec une condition:
+# {% include isValid ? 'option1.html.twig' : 'option2.html,twig' %}
+
+# Si la page de l'include n'existe pas, alors il n'y aura pas d'erreur. Rien ne se passe.
+# {% include "index.html" ignore missing %}

@@ -1,0 +1,94 @@
+tag:
+  direction: horizontal
+  section: Tags
+  icon: '<i class="fas fa-music fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: artist
+    id: artist
+    cmd: '%artist%'
+  - content: title
+    id: title
+    cmd: '%title%'
+  - content: album
+    id: album
+    cmd: '%album%'
+  - content: track
+    id: track
+    cmd: '%track%'
+  - content: discnumber
+    id: discnumber
+    cmd: '%discnumber%'
+  - content: year
+    id: year
+    cmd: '%year%'
+  - content: genre
+    id: genre
+    cmd: '%genre%'
+  - content: comment
+    id: comment
+    cmd: '%comment%'
+  - content: filename
+    id: filename
+    cmd: '%_filename%'
+
+function:
+  direction: vertical
+  section: Functions
+  icon: '<i class="fas fa-music fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: Format Number
+    id: num
+    cmd: '$num(%track%,2)'
+  - content: Lower
+    id: lower
+    cmd: '$lower(%title%)'
+  - content: Upper
+    id: upper
+    cmd: '$upper(%title%)'
+  - content: Capitalize Word
+    id: cap
+    cmd: '$caps(%title%)'
+  - content: trim
+    id: trim
+    cmd: '$trim(%title%)'
+  - content: replace
+    id: replace
+    cmd: '$replace(%title%,$num(%track%,2) - ,)'
+  - content: cut Left
+    id: cut Left
+    cmd: '$cutLeft(%title%,2)'
+
+mp3:
+  direction: vertical
+  section: MP3Tag
+  icon: '<i class="fas fa-file-audio fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: "Rename #1"
+    id: tag1
+    cmd: '$num(%track%,2) - %artist% - %title%'
+    help: "ex: (00 - artiste - titre)"
+  - content: "Rename #2"
+    id: tag2
+    cmd: '$num(%discnumber%,1)-$num(%track%,2)- %title%'
+    help: "ex: (0-00- titre)"
+  - content: "Rename #3"
+    id: tag3
+    cmd: '$caps($num(%discnumber%,1)-$num(%track%,2)- %title%)'
+    help: "ex: (0-00- Titre)"
+
+example:
+  direction: vertical
+  section: Example
+  icon: '<i class="fas fa-file-audio fa-xl mr-3" style="color: #a5a8ad;"></i>'
+  items:
+  - content: null
+    id: null
+    cmd: null
+    help: null
+    prism: null
+    free: |
+      $caps(%artist% - %title%)
+      $num(%track%,2) - %title%
+      $trim($caps($cutLeft(%_filename%,3)))
+      $trim($caps($cutLeft(%title%,2)))
+      %discnumber%-%track%- %title%

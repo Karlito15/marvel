@@ -1,0 +1,16 @@
+<?php
+
+namespace Karlito\ThirdParty\Faker;
+
+use Fatalis\ThirdParty\Fakr;
+
+class Uuid extends Faker
+{
+    /**
+     * Generate name based md5 UUID (version 3).
+     * * @return string */
+    public static function uuid(): string
+    {
+        return self::init()->uuid;
+    }
+}

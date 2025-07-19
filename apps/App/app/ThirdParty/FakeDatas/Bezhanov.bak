@@ -1,0 +1,47 @@
+<?php
+
+namespace Karlito\ThirdParty;
+
+/**
+ * Class Bezhanov
+ *
+ * @see : http://github.com/mbezhanov/faker-provider-collection
+ * @package KarlitoWeb\ThirdParty
+ */
+class Bezhanov
+{
+    /**
+     * @param string $size
+     * @param string $extension
+     * @return string
+     * @throws \Exception
+     */
+    public static function avatar(string $size = '800x600', string $extension = 'jpg'): string
+    {
+        $set   = 'set' . random_int(1, 5);
+        $bg    = 'bg' . random_int(1, 2);
+        $faker = Faker::init();
+        $faker->addProvider(new \Bezhanov\Faker\Provider\Avatar($faker));
+
+        /** @var \Bezhanov\Faker\Provider\Avatar $faker */
+        return $faker->avatar('foo', $size, $extension, $set, $bg);
+    }
+
+    public static function medicine(): string
+    {
+        $faker = Faker::init();
+        $faker->addProvider(new \Bezhanov\Faker\Provider\Medicine($faker));
+
+        /** @var \Bezhanov\Faker\Provider\Medicine $faker */
+        return $faker->medicine();
+    }
+
+    public static function placeholder(string $size = '300x300', string $format = 'png', string $backgroundColor = null, string $textColor = null, string $text = null): string
+    {
+        $faker = Faker::init();
+        $faker->addProvider(new \Bezhanov\Faker\Provider\Placeholder($faker));
+
+        /** @var \Bezhanov\Faker\Provider\Placeholder $faker */
+        return $faker->placeholder($size, $format, $backgroundColor, $textColor, $text);
+    }
+}

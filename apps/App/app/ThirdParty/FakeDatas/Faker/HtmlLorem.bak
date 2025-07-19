@@ -1,0 +1,18 @@
+<?php
+
+namespace Karlito\ThirdParty\Faker;
+
+use Fatalis\ThirdParty\Fakr;
+
+class HtmlLorem extends Faker
+{
+    /**
+     * @param int $maxDepth
+     * @param int $maxWidth
+     * @return string
+     */
+    public static function randomHtml(int $maxDepth = 4, int $maxWidth = 4): string
+    {
+        return self::init()->randomHtml($maxDepth, $maxWidth);
+    }
+}

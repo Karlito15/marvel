@@ -1,0 +1,32 @@
+<?php
+
+namespace Karlito\ThirdParty\Faker;
+
+use Fatalis\ThirdParty\Fakr;
+
+class Barcode extends Faker
+{
+    /** * @return string */
+    public static function ean13(): string
+    {
+        return self::init()->ean13;
+    }
+
+    /** * @return string */
+    public static function ean8(): string
+    {
+        return self::init()->ean8;
+    }
+
+    /** * @return string */
+    public static function isbn10(): string
+    {
+        return self::init()->isbn10;
+    }
+
+    /** * @return string */
+    public static function isbn13(): string
+    {
+        return self::init()->isbn13;
+    }
+}
